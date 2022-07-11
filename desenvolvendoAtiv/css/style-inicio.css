@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+}
+
+h1{
+	font-size: 45px;
+	margin-bottom: 10px;
+}
+
+h2{
+	font-size: 28px;
+	font-family: 'DM Sans', sans-serif;
+}
+
+header{
+	display: flex;
+	justify-content: space-around;
+	padding: 25px 40px;
+	align-items: center;
+	height: 50px;
+}
+.img-logo img{
+	width: 120px;
+}
+.nav-links nav ul{
+	display: flex;
+	gap: 50px;
+}
+li{
+	list-style: nome;
+}
+a{
+	color: #00453A;
+	text-decoration: none;
+  	transition: all 0.3s;
+}
+button{
+	width: 90px;
+	height: 35px;
+	background-color: #DCE9E2;
+	border: none;
+	border-radius: 20px;
+}
+
+
+#inicio{
+	display: flex;
+	justify-content: center;
+	margin-top: 90px;
+	gap: 30px;
+}
+.txt-inicio{
+	width: 530px;
+}
+.btn-logon{
+	display: flex;
+	justify-content: center;
+	margin-top: 35px;
+}
+.btn-logon button{
+	width: 170px;
+}
+.img-inicio{
+	position: relative;
+}
+.img-inicio .sombra1{
+	width: 430px;
+	height: 322px;
+	background-color: #384633;
+	z-index: -2;
+	position: absolute;
+ 	top: 0;
+  	left: 0;
+  	transform: translate(40px, -40px);
+}
+.img-inicio .sombra2{
+	width: 430px;
+	height: 322px;
+	background-color: #DCE9E2;
+	z-index: -1;
+	position: absolute;
+ 	top: 0;
+  	left: 0;
+  	transform: translate(20px, -20px);
+}
+.img-inicio img{
+	width: 430px;
+}
+
+
+#treinos{
+	margin-top: 90px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 70px;
+}
+.container-treino{
+	position: relative;
+}
+.card-treino{
+	width: 350px;
+	background-color: #DCE9E2;
+}
+.card-treino img{
+	width: 350px;
+}
+.descricao-card-treino{
+	text-align: center;
+}
+.descricao-card-treino p{
+	padding: 5px 30px;
+}
+.requisituos-card-treinos{
+	padding: 10px 30px;
+}
+.sombra-treino{
+	width: 350px;
+	height: 470px;
+	background-color: #384633;
+	z-index: -1;
+	position: absolute;
+ 	top: 0;
+  	left: 0;
+  	transform: translate(20px, -20px);
+}
+.txt-treinos{
+	width: 600px;
+}
+.txt-treinos h1{
+	text-align: center;
+}
+.text p{
+	margin-top: 10px;
+}
+
+#beneficios{
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	margin-top: 90px;
+}
+.txt-beneficios{
+	width: 525px;
+}
+.txt-beneficios h1{
+	text-align: center;
+}
+.text li{
+	list-style: block;
+}
+p span{
+	font-size: 1.5em;
+}
+.img-beneficios{
+	position: relative;
+}
+.img-beneficios img{
+	width: 450px;
+}
+.img-beneficios .sombra3{
+	width: 450px;
+	height: 380px;
+	background-color: #DCE9E2;
+	z-index: -1;
+	position: absolute;
+ 	top: 0;
+  	left: 0;
+  	transform: translate(20px, -20px);
+}
+
+#depoimentos{
+	display: flex;
+	justify-content: center;
+	gap: 70px;
+	margin-top: 90px;
+	margin-bottom: 20px;
+}
+.carrosel-depoimentos{
+	position: relative;
+}
+.txt-depoimentos{
+	width: 600px;
+}
+.txt-depoimentos h1{
+	text-align: center;
+}
+.sombra-depoimentos{
+	width: 350px;
+	height: 300px;
+	background-color: #384633;
+	z-index: -1;
+	position: absolute;
+ 	top: 0;
+  	left: 0;
+  	transform: translate(20px, -20px);
+}
+.card-depoimentos{
+	width: 350px;
+	height: 300px;
+	background-color:  #DCE9E2;
+}
+.identificacao{
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	padding: 15px;
+}
+.identificacao img{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+}
+.text-card-depoimentos{
+	padding: 5px 15px;
+}
+
+
+footer{
+	background-color: #DCE9E2;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0px;
+}
+footer > div{
+	width: 300px;
+}
+li svg{
+	color: #384633;
+}
