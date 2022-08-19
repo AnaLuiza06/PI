@@ -26,7 +26,7 @@
 		</div>
 		<div class="btn-login">
 			<button>
-				<a href="./login.html">Entrar</a>
+				<a href="./login.php">Entrar</a>
 			</button>
 		</div>
 	</header>
@@ -37,7 +37,7 @@
 			<div class="txt-inicio">
 				<h1>Tenha uma Vida mais Saudável</h1>
 				<h2>Conheça a ATIV e comece hoje mesmo a praticar atividades físicas com apoio de uma profissional.</h2>
-				<div class="btn-logon"><button><a href="">Cadastre-se aquí!</a></button></div>
+				<div class="btn-logon"><button><a href="./cadastro.php">Cadastre-se aquí!</a></button></div>
 			</div>
 			<div class="img-inicio">
 				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-oP3ZpsbFzPuIiQWqBbTw6JHExhz1PHPYg&usqp=CAU">

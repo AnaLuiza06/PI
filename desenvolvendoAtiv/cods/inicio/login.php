@@ -16,7 +16,7 @@
 		</section>
 		<section class="form-login">
 			<div class="card-login">
-				<form>
+				<form method="post" action="../conexao/validarlogin.php">
 					<h2>Login</h2>
 
 					<div class="input-form-login">
@@ -29,9 +29,9 @@
 					</div>
 					<div class="links-form-login">
 						<a href="#">Esqueci minha Senha</a>
-						<a href="#">Ainda não tenho cadastro</a>
+						<a href="./cadastro.php">Ainda não tenho cadastro</a>
 					</div>
-					<button>Entrar</button>
+					<button type="submit">Entrar</button>
 				</form>
 			</div>
 		</section>

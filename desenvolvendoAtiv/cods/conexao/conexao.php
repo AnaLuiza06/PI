@@ -2,7 +2,9 @@
 	$servidor = 'localhost';
 	$usuario = 'root';
 	$senha = '';
-	$dbnome = 'bd_ativ';
+	$banco = 'bd_ativ';
 
-	$cn = mysqli_connect($servidor, $usuario, $senha, $dbnome);
+	$cn = mysqli_connect($servidor, $usuario, $senha, $banco);
+
 ?>
+
