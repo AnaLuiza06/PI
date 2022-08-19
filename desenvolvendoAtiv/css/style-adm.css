@@ -1,0 +1,53 @@
+/* Abre Page Add Exercício */
+    .form-add{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .form-desafio{
+        width: 500px;
+	    min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border: 2px solid #5BC2A3;
+        color: #5BC2A3;
+        border-radius: 20px;
+    }
+    .form-desafio h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .form-desafio button{
+        justify-content: center;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    .form-desafio{
+        display: none;
+    }
+/* Fecha Page Add Exercício */
+
+/* Abre Page Add Exercício */
+    .cards-videos{
+        width: 700px;
+        height: 600px;
+        background-color: #EEA7FF;
+        color: #fff;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .card-videos{
+        width: 660px;
+        display: flex;
+        gap: 20px;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    .card-videos img{
+        width: 90px;
+    }
+/* Fecha Page Add Exercício */

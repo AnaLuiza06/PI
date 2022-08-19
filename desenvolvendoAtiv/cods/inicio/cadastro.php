@@ -11,7 +11,7 @@
 <body>
 
 	<?php 
-		include ('../conexao/conexao.php')
+		include ('../conexao/conexao.php');
 	?>
 
 	<div class="container-cadastro">
