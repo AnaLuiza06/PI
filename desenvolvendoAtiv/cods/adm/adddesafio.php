@@ -17,12 +17,12 @@
             include ('./menu.php');
             // include menu
 
-            $consulta = mysqli_query($cn, "select * from exercicio");
-            $exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC)
+            $consulta = mysqli_query($cn, "SELECT * from exercicio");
+            $exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
         ?>
         <section class="form-add">
                 <h2>Adicionar</h2>
-				<form class="form-desafio" method="post" action="../conexao/inserts/iexercicio.php">
+				<form class="form-desafio" method="post" action="../conexao/inserts/idesafios.php">
                     <div>
                         <section>
                             <div class="input-form-cadastro">
@@ -57,21 +57,20 @@
                                 <label>Vídeos</label>
                                 <section>
                                     <?php
-                                        for ($i=0; $i < count($exibe); $i++) {
-                                            echo "<div class='card-videos'>
-                                            <input class='card-videos-checkbox' type='checkbox' value='' id='video".$exibe[$i]['id_exercicio']."'>
-                                            <img src='".$exibe[$i]['imagem_exercicio']."' alt=''>
+                                        foreach($exibe as &$exercicio):
+                                    ?>
+                                    <div class='card-videos'>
+                                            <input class='card-videos-checkbox' type='checkbox' name="videos[]" value='<?= $exercicio['id_exercicio'] ?>' id='video <?= $exercicio['id_exercicio'] ?> '>
+                                            <img src='<?= $exercicio['imagem_exercicio']?>' alt=''>
                                             <div>
-                                                <h5>".$exibe[$i]['nome_exercicio']."</h5>
-                                                <p>".$exibe[$i]['duracao_exercicio']."</p>  
+                                                <h5><?=$exercicio['nome_exercicio']?></h5>
+                                                <p><?=$exercicio['duracao_exercicio']?></p>  
                                             </div>
                                             <div class='tipo-maisteinos'>
-                                                <p>".$exibe[$i]['foco_exercicio']."</p>
+                                                <p><?=$exercicio['foco_exercicio']?></p>
                                             </div>
-                                        </div>";
-
-                                        };
-                                    ?>
+                                        </div>
+                                    <?php endforeach; ?>
                                 </section>
                             </div>  
                         </section>
@@ -79,11 +78,12 @@
 					<button onclick="" type="submit">Entrar</button>
 				</form>
 		</section>
-        <!-- <script type="text/javascript">
+        <script type="text/javascript">
             const cards = document.querySelectorAll(".input-form-cadastro .card-videos")
             function marcaCheckBox(card) {
                 const input = card.querySelector('input')
                 const isChecked = input.checked
+                card.classList.toggle("active", !isChecked)
                 input.checked = !isChecked
 
                 // if (isChecked == true) {
@@ -95,7 +95,7 @@
                 card.addEventListener("click", (event) => marcaCheckBox(card))
 
             })
-        </script> -->
+        </script>
     </body>
 
 </html>
