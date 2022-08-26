@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
         <link rel="stylesheet" type="text/css" href="../../css/style-inicio.css">
+        <link rel="stylesheet" type="text/css" href="../../css/style-usua.css">
 	    <link rel="stylesheet" type="text/css" href="../../css/style-adm.css">
 
     </head>
@@ -13,9 +14,10 @@
     <body>
         <?php
             include ('../conexao/conexao.php');
+            include ('./menu.php');
             // include menu
         ?>
-        <section class="form-add">
+        <section class="form-add-exercicio">
 				<form method="post" action="../conexao/inserts/iexercicio.php">
                     <h2>Adicionar</h2>
 					<div class="input-form-cadastro">
@@ -54,10 +56,13 @@
 						<input type="text" name="video" id="inputvideo">
 					</div>
 
+					<div class="input-form-cadastro">
+						<label for="inputimagem">Imagem</label>
+						<input type="text" name="imagem" id="inputimagem">
+					</div>
+
 					<button onclick="" type="submit">Entrar</button>
 				</form>
-			<div class="sombra-5"></div>
-			<div class="sombra-6"></div>
 		</section>
     </body>
 

@@ -9,10 +9,11 @@
 	$equipamentos = $_POST['equipamentos'];
 	$contraindocacoes = $_POST['contraindocacoes'];
     $video = $_POST['video'];
+    $imagem = $_POST['imagem'];
 
 	// echo $nome;
 	
-	 $consulta = mysqli_query($cn, "select nome from alongamentos where nome = '$nome'");
+	 $consulta = mysqli_query($cn, "select nome_exercicio from exercicio where nome_exercicio = '$nome'");
 	 $exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
 
 	 // echo count($exibe);
@@ -22,10 +23,10 @@
 		echo "<script>alert('Alongamento já existente.')</script>";
 	} else{
 		// echo "Usuário NÃO cadastrado";
-		$sql = "INSERT INTO `alongamentos`(`nome_usuario`, `email_usario`, `nascimento_usuario`, `altura_usuario`, `peso_usuario`, `senha_usuario`) VALUES ('$nome','$email','nascimento','$altura','$peso','$senha')";
+		$sql = "INSERT INTO `exercicio`(`nome_exercicio`, `foco_exercicio`, `desc_exercicio`, `duracao_exercicio`, `equipamentos_exercicio`, `contra_indicacoes_exercicio`, `video_exercicio`, `imagem_exercicio`) VALUES ('$nome','$foco','$descricao','$duracao','$equipamentos','$contraindocacoes','$video','$imagem')";
 		print_r($sql);
 		$incluir = mysqli_query($cn, $sql);
-		// echo "<script>alert('Usuário cadastrado!!.')</script>";
+		 echo "<script>alert('Usuário cadastrado!!.')</script>";
 	}
 
 ?>

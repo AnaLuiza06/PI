@@ -111,6 +111,7 @@ body p{
 /*Abre Minha Área*/
 .minhaarea-usua{
 	width: 100%;
+	min-height: 100vh;
 	background-color: #fff;
 	position: absolute;
 	top: 0;
@@ -266,11 +267,8 @@ body p{
 /*Fechar Favoritos*/
 
 /*Abrir Page Alongamentos*/
-.cards-treinos{
-	margin-left: 125px;
-	margin-top: 30px;
-	display: flex;
-	gap: 30px;
+.card-exercicios{
+	margin-top: 20px;
 }
 /*Fechar Page Alongamentos*/
 

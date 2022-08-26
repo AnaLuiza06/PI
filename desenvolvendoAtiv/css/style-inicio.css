@@ -326,6 +326,7 @@ button:hover a{
 .desc-exercicios h2 {
 	background-image: linear-gradient(8.5deg, #E599F7 60%, transparent 10%);	
 	padding: 20px 10px;
+	margin: 0px ;
 
     transition: all .3s ease-in-out;
 }

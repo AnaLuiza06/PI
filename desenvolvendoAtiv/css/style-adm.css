@@ -1,53 +1,86 @@
 /* Abre Page Add Exercício */
-    .form-add{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .form-desafio{
+    .form-add-exercicio{
         width: 500px;
-	    min-height: 400px;
+        min-height: 400px;
         display: flex;
         flex-direction: column;
+        justify-content: center;    
         background-color: #fff;
         border: 2px solid #5BC2A3;
         color: #5BC2A3;
         border-radius: 20px;
+        margin: auto;   
+        margin-top: 30px;
     }
-    .form-desafio h2{
+    .form-add{
+        width: 980px;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        background-color: #fff;
+        border: 2px solid #5BC2A3;
+        color: #5BC2A3;
+        border-radius: 20px;
+        margin: auto;   
+        margin-top: 30px;
+    }
+    .form-desafio > div{
+        display: flex;
+        gap: 10px;
+    }
+    .form-add-exercicio h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .form-add h2{
         text-align: center;
         margin-top: 20px;
     }
     .form-desafio button{
-        justify-content: center;
         margin: auto;
         margin-top: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         color: #fff;
     }
-    .form-desafio{
-        display: none;
+    .input-form-cadastro section{
+        overflow: auto;
+        width: 430px;
+        height: 325px;
+        margin-bottom: 15px;
     }
-/* Fecha Page Add Exercício */
-
-/* Abre Page Add Exercício */
-    .cards-videos{
-        width: 700px;
-        height: 600px;
-        background-color: #EEA7FF;
-        color: #fff;
-        border-radius: 20px;
-        padding: 20px;
+    ::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 20px;
+    background-color: #D9D9D9; 
     }
     .card-videos{
-        width: 660px;
+        width: 420px;
+        background-color: #5BC2A3;
         display: flex;
+        align-items: center;    
         gap: 20px;
         border: 2px solid #fff;
         border-radius: 20px;
-        padding: 10px;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    .card-videos-checkbox{
+        display: none;
+    }
+    .card-videos h5{
+        margin-bottom:  0px;
+    }
+    .card-videos p{
+        margin-bottom:  0px;
     }
     .card-videos img{
         width: 90px;
+        height: 60px;
     }
+    .tipo-maisteinos{
+        height: 2em;
+    }
+    
 /* Fecha Page Add Exercício */
