@@ -23,6 +23,7 @@
 		echo "<script>alert('Alongamento já existente.')</script>";
 	} else{
 		// echo "Usuário NÃO cadastrado";
+
 		$sql = "INSERT INTO `exercicio`(`nome_exercicio`, `foco_exercicio`, `desc_exercicio`, `duracao_exercicio`, `equipamentos_exercicio`, `contra_indicacoes_exercicio`, `video_exercicio`, `imagem_exercicio`) VALUES ('$nome','$foco','$descricao','$duracao','$equipamentos','$contraindocacoes','$video','$imagem')";
 		print_r($sql);
 		$incluir = mysqli_query($cn, $sql);

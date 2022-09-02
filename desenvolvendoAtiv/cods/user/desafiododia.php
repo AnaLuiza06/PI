@@ -16,14 +16,17 @@
             include ('./menu.php');
             // include menu
 
-			$sql = "SELECT * FROM `desafios` WHERE `id_desafios` = '10'";
-
+			$sql = "SELECT * FROM `desafios` WHERE `id_desafios` = '1'";
     		$consulta = mysqli_query($cn, $sql);
 			$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
 
 			// $nome = $exibe['nome_desafios'];
 
-			print_r( $exibe[0]['nome_desafios'])
+			//print_r( $exibe[0]['nome_desafios']);
+			$id_desafio = $exibe[0]['id_desafios'];
+			$nome = $exibe[0]['nome_desafios'];
+			$duracao = $exibe[0]['duracao_desafios'];
+
         ?>
 
 	<div class="container-treinodehoje">
@@ -47,13 +50,36 @@
 		</section>
 
 		<section class="descricao-treinodehoje">
-			<h2>Desafio 7 Dias</h2>
+			<h2><?php echo $nome; ?></h2>
 			<div class="dias-treinodehoje"> <!-- Se o numero de dias for > 10 -> display:block -->
 				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16" id="voltar-dias">
   					<path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
 				</svg>
 				<ul>
-					<li>01</li>
+
+					<?php
+						$sql = "SELECT * FROM `videosDesafio` WHERE `id_desafio` = '$id_desafio'";
+
+    					$consulta = mysqli_query($cn, $sql);
+						$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
+
+						for ($i = 1; $i <= $duracao ; $i++) {
+
+							if ($i < 10) {
+								?>
+
+								<li><a href="videodesafio.php?cd=<?php echo $exibe['id_video'];?>">0<?php echo $i;?></a></li>
+
+						<?php
+							}
+							else{
+								echo "<li>".$i."</li>";
+						?>
+					<?php
+							}
+						}
+					?>
+					<!-- <li>01</li>
 					<li>02</li>
 					<li>03</li>
 					<li>04</li>
@@ -62,7 +88,7 @@
 					<li>07</li>
 					<li>07</li>
 					<li>07</li>
-					<li>07</li>
+					<li>07</li> -->
 
 				</ul>
 				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16" id="indo-dias">
@@ -70,99 +96,11 @@
 				</svg>
 
 			</div>
-			<div class="txt-treinodehoje">
-				<p>O Alongamento de hoje é direcionado às articulações, auxiliando no alivio de possiveis dores e no desenvolvimento dessa estrutura.</p>
-				<p>Dia: 03/07</p>
-				<p>Duração: 23 min</p>
-				<p>Equipamentos: uma barra(cabo de vassoura).</p>
-			</div>
-			<!-- <div class="btns-treinodehoje">
-				<button class="btn-treinodehoje active">Autoavaliação</button>
-				<button class="btn-treinodehoje">Meu Grupo</button>
-				<button class="btn-treinodehoje">Sejestões</button>
-			</div> -->
 
-			<div class="cards-btns-treinodehoje">
-				
-				<section class="card-btns active" id="autoavaliacao">
-					<form class="depoimento-treinodehoje">
-						<h5>Autoavaliação</h5>
-						<p>Como você acha que foi seu rendimento hoje?</p>
-						<div class="redios-rendimento">
-							<div class="redio-form">
-  								<input type="radio" name="radio-rendimento" value="bom" checked>
-  								<label>
-    								Bom
-  								</label>
-							</div>
-							<div class="redio-form">
-  								<input type="radio" name="radio-rendimento" value="mau">
-  								<label>
-    								Mau
-  								</label>
-							</div>
-							<div class="redio-form">
-  								<input type="radio" name="radio-rendimento" value="melhorqueontem">
-  								<label>
-    								Melhor que ontem
-  								</label>
-							</div>
-						</div>
 
-						<p>Se sente cansado(a)?</p>
-						<div class="redios-rendimento">
-							<div class="radio-form">
-  								<input type="radio" name="radio-cansaco" value="sim" checked>
-  								<label>
-    								Sim
-  								</label>
-							</div>
-							<div class="radio-form">
-  								<input type="radio" name="radio-cansaco" value="nao">
-  								<label>
-    								Não
-  								</label>
-							</div>
-						</div>
-
-						<p>Sentil alguma dor por conta do exercício anterior?</p>
-						<div class="redios-rendimento">
-							<div class="radio-form">
-  								<input type="radio" name="radio-dores" value="sim" checked>
-  								<label>
-    								Sim
-  								</label>
-							</div>
-							<div class="radio-form">
-  								<input type="radio" name="radio-dores" value="nao">
-  								<label>
-    								Não
-  								</label>
-							</div>
-						</div>
-
-						<p>Ao terminar o exercício, tem dor no peito?</p>
-						<div class="redios-rendimento">
-							<div class="radio-form">
-  								<input type="radio" name="radio-dornopeito" value="sim" checked>
-  								<label>
-    								Sim
-  								</label>
-							</div>
-							<div class="radio-form">
-  								<input type="radio" name="radio-dornopeito" value="nao">
-  								<label>
-    								Não
-  								</label>
-							</div>
-						</div>
-						<div class="btn-alterar">
-							<button type="submit">Enviar</button>
-						</div>
-					</form>
-				</section>
-
-			</div>
+			<?php
+				include ('./videodesafio.php');
+			?>
 		</section>
 	</div>
 

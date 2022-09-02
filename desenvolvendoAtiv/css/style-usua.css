@@ -448,6 +448,15 @@ body p{
 	cursor: pointer;
 	transition: all 0.3s;
 }
+.dias-treinodehoje li a{
+	color: #fff;
+	list-style: none;
+}
+.dias-treinodehoje li a:hover{
+	color: #fff;
+	list-style: none;
+	border: none;
+}
 
 .depoimento-treinodehoje{
 	width: 470;

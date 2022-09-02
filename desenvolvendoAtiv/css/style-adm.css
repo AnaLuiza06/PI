@@ -38,7 +38,7 @@
         margin-top: 20px;
     }
     .form-desafio button{
-        margin: auto;
+        margin-left: 440px;
         margin-top: 15px;
         margin-bottom: 15px;
         color: #fff;
@@ -68,7 +68,7 @@
     }
 
     .card-videos.active {
-        background-color: red;
+        background-color: #EEA7FF;
     }
     .card-videos > input[type='checkbox'] {
         display: none;

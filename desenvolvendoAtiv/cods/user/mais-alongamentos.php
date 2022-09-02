@@ -34,6 +34,7 @@
 			<?php
 				for ($i=0; $i < count($exibe); $i++) { 
 			?>
+				<a href="./videoexercicio.php?cd=<?php echo $exibe[$i]['id_exercicio'];?>">
 				<div class="card-exercicios">
 					<div class="desc-exercicios">
 						<div class="topo-desc-exercicios">
@@ -55,7 +56,7 @@
 					</div>
 					<img src="../../imgs/img-inicio.png">
 				</div>
-
+				</a>
 			<?php
 				};
 			?>
