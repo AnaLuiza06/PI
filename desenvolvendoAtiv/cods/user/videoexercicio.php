@@ -25,7 +25,7 @@
 		<section class="video-treinodehoje">
 
 			<div class="tela-video">
-				<iframe width="730" height="520" src="https://www.youtube.com/embed/CM-uO5x7ZVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<?php echo $exibe[0]['video_exercicio']; ?>
 			</div>
 
 			<!-- <div class="outros-video">
@@ -57,7 +57,7 @@
 			<div class="cards-btns-treinodehoje">
 				
 				<section class="card-btns active" id="autoavaliacao">
-					<form class="depoimento-treinodehoje">
+					<form class="depoimento-treinodehoje" method="post" action="../conexao/inserts/iautoavaliacao.php">
 						<h5>Autoavaliação</h5>
 						<p>Como você acha que foi seu rendimento hoje?</p>
 						<div class="redios-rendimento">
@@ -127,6 +127,9 @@
     								Não
   								</label>
 							</div>
+						</div>
+						<div class="campos_escondidos">
+							<input type="text" name="id_video" value="<?= $exibe[0]['id_exercicio']?>">
 						</div>
 						<div class="btn-alterar">
 							<button type="submit">Enviar</button>

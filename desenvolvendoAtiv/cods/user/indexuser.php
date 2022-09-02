@@ -14,13 +14,16 @@
 
 	<?php
 		session_start();
-		include ('../conexao/conexao.php');
+
+		require ('../conexao/conexao.php');
 
 		if (empty($_SESSION['ID'])) {
 			echo '<script>window.location="../inicio/login.php"</script>';
 		}
 		else{
-			$consulta = mysqli_query($cn, "select * from usuario where id_usario = '$_SESSION['ID']'");
+			$id = $_SESSION['ID'];
+			$sql = "select * from usuario where id_usuario = '$id'";
+			$consulta = mysqli_query($cn, $sql);
 	 		$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
 		}
 	?>
@@ -33,20 +36,20 @@
 				<ul>
 					<li><a href="#">Minha Área</a></li>
 					<li><a href="#">Desafios</a></li>
-					<li><a href="#">Alongamentos</a></li>
+					<li><a href="./mais-alongamentos.php">Alongamentos</a></li>
 					<li><a href="#">Favoritos</a></li>
 					<li><a href="#">Ajuda</a></li>
 				</ul>
 			</div>
 			<div class="menu-identificacao">
-				<h5>Lenira Fatima</h5>
+				<h5><?php echo $exibe[0]['nome_usuario'];?></h5>
 				<img src="https://essaseoutras.com.br/wp-content/uploads/2011/01/gatinhos-fofinhos-3.jpg">
 			</div>
 	</div>
 
 	<section class="imguser">
 		<div class="txt-imguser">
-			<h1>Olá, Lenira!</h1>
+			<h1>Olá, <?php echo $exibe[0]['nome_usuario'];?>!</h1>
 			<h4>Escolha um exercício ou continue o desafio escolhido. Vamos nos exercitar!!</h4>
 		</div>
 		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
@@ -78,6 +81,15 @@
 		<div class="minha-evolucao">
 			<h2>Minha Evolução</h2>
 
+			<?php
+				$sql = "SELECT * FROM autoavaliacao where id_usuario = '$id'";
+				$consulta = mysqli_query($cn, $sql);
+				$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
+
+				$Nexercicios = count($exibe);
+
+			?>
+
 			<div class="cards-evolucao">
 				<section class="aproveitamento-evolucao">
 					<div class="grafico-evolucao" id="evolucao">
@@ -95,7 +107,16 @@
 				<section class="numeros-evolucaouser">
 					<div class="ntreinos-evolucao">
 						<div class="numero-videos">
-							<h1>09</h1>
+
+							<?php
+								if($Nexercicios < 10){
+									echo "<h1>0".$Nexercicios."</h1>";
+								}
+								else{
+									echo "<h1>".$Nexercicios."</h1>";
+								}
+							?>
+							
 							<h5>Alongamentos Feitos</h5>
 						</div>
 						<div class="numero-desafios">

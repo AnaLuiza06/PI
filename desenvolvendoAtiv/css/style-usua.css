@@ -307,7 +307,7 @@ body p{
 	margin-left: 125px;
 	display: flex;
 }
-..card-minhaevolucao h2{
+.card-minhaevolucao h2{
 	margin: 0px;
 }
 .dias-minhaevolucao li{
@@ -457,7 +457,10 @@ body p{
 	list-style: none;
 	border: none;
 }
-
+iframe{
+	width: 730px;
+	height: 520px;
+}
 .depoimento-treinodehoje{
 	width: 470;
 	border: 2px solid #5BC2A3;
@@ -485,7 +488,9 @@ body p{
 	gap: 20px;
 }
 
-
+.campos_escondidos {
+	display: none;
+}
 /*Abre Meus Dados*/
 .form-dadospessoais{
 	width: 800px;
