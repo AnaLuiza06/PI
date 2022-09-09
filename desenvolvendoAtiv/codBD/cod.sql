@@ -12,6 +12,13 @@ create table usuario(
     peso_usuario float(5,2),
     senha_usuario varchar(40)
 )
+create table anamnese(
+    id_anamnese int not null AUTO_INCREMENT PRIMARY KEY,
+    id_usuario int,
+    nivelativo_anamnese varchar(30),
+    fumante_anamnese varchar(30),
+    doenca_anamnese varchar(30)
+)
 create table videosDesafio(
     id_videosDesafio int NOT null AUTO_INCREMENT PRIMARY KEY,
     id_desafio int not null,

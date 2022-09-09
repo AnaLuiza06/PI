@@ -86,10 +86,6 @@
                 card.classList.toggle("active", !isChecked)
                 input.checked = !isChecked
 
-                // if (isChecked == true) {
-                //     const cardCheck = document.querySelectorAll(".input-form-cadastro .card-videos")
-                //     cardCheck = document.body.style.backgroundColor = "red"
-                // }
             }
             cards.forEach(card => {
                 card.addEventListener("click", (event) => marcaCheckBox(card))
