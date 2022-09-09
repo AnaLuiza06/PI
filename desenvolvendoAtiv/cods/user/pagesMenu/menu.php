@@ -1,7 +1,7 @@
 	<?php
 		session_start();
 
-		include ('../conexao/conexao.php');
+		include ('../../conexao/conexao.php');
 
 		if (empty($_SESSION['ID'])) {
 			echo '<script>window.location="../inicio/login.php"</script>';
@@ -20,11 +20,11 @@
 			</div>
 			<div class="menu-links">
 				<ul>
-					<li><a href="./indexuser.php">Minha Área</a></li>
-					<li><a href="./pagesMenu/mais-desafios.php">Desafios</a></li>
-					<li><a href="./pagesMenu/mais-alongamentos.php">Alongamentos</a></li>
-					<li><a href="./pagesMenu/favoritos.php">Favoritos</a></li>
-					<li><a href="./pagesMenu/ajuda.php">Ajuda</a></li>
+					<li><a href="../indexuser.php">Minha Área</a></li>
+					<li><a href="../pagesMenu/mais-desafios.php">Desafios</a></li>
+					<li><a href="../pagesMenu/mais-alongamentos.php">Alongamentos</a></li>
+					<li><a href="../pagesMenu/favoritos.php">Favoritos</a></li>
+					<li><a href="../pagesMenu/ajuda.php">Ajuda</a></li>
 				</ul>
 			</div>
 			<div class="menu-identificacao">

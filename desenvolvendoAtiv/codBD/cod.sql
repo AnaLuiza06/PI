@@ -56,9 +56,17 @@ create table autoavaliacao(
     dornopeito_autoavaliacao varchar(20)
 ) DEFAULT charset = utf8;
 
-create table evolucao_exercicios(
+create table favoritos(
+    id_favoritos int not null AUTO_INCREMENT PRIMARY KEY,
+    id_usuario int not null,
+    id_exercicio int not null
+) DEFAULT charset = utf8;
 
-);
+create table evolucaoDesafios(
+    id_evolucaoDesafios int not null AUTO_INCREMENT PRIMARY KEY,
+    id_desafio int not null,
+    id_usuario int not null,
+)
 
 INSERT INTO
     `exercicio`(

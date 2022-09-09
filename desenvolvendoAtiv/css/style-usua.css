@@ -264,6 +264,14 @@ body p{
 	margin-top: 60px;
 	margin-left: 130px;
 }
+
+.favoritar button {
+ background-color: transparent;
+ outline: none;
+ border: none;
+}
+
+
 /*Fechar Favoritos*/
 
 /*Abrir Page Alongamentos*/

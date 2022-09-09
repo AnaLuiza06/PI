@@ -13,39 +13,9 @@
 <body>
 
 	<?php
-		session_start();
 
-		require ('../conexao/conexao.php');
-
-		if (empty($_SESSION['ID'])) {
-			echo '<script>window.location="../inicio/login.php"</script>';
-		}
-		else{
-			$id = $_SESSION['ID'];
-			$sql = "select * from usuario where id_usuario = '$id'";
-			$consulta = mysqli_query($cn, $sql);
-	 		$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
-		}
+		require ("./menu.php");
 	?>
-
-	<div class="menu-pageuser">
-			<div class="menu-logo">
-				<h2>A T I V</h2>
-			</div>
-			<div class="menu-links">
-				<ul>
-					<li><a href="#">Minha Área</a></li>
-					<li><a href="#">Desafios</a></li>
-					<li><a href="./mais-alongamentos.php">Alongamentos</a></li>
-					<li><a href="#">Favoritos</a></li>
-					<li><a href="#">Ajuda</a></li>
-				</ul>
-			</div>
-			<div class="menu-identificacao">
-				<h5><?php echo $exibe[0]['nome_usuario'];?></h5>
-				<img src="https://essaseoutras.com.br/wp-content/uploads/2011/01/gatinhos-fofinhos-3.jpg">
-			</div>
-	</div>
 
 	<section class="imguser">
 		<div class="txt-imguser">
@@ -120,7 +90,7 @@
 							<h5>Alongamentos Feitos</h5>
 						</div>
 						<div class="numero-desafios">
-							<h1>01</h1>
+							<h1>00</h1>
 							<h5>Desafios Feitos</h5>
 						</div>
 					</div>

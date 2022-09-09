@@ -1,0 +1,27 @@
+/* Abre Page Ajuda */
+    .card-ajuda{
+        margin: auto;
+        margin-top: 30px;;
+        width: 1100px;
+	    height: 500px;
+        padding: 20px;
+        border: #5BC2A3 2px solid;
+        border-radius: 20px;
+        position: relative;
+    }
+    .desc-ajuda{
+        height: 360px;
+    }
+    .btn-mais-ajuda{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-ajuda button{
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+/* Fecha Page Ajuda */
