@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" type="text/css" href="../../../css/style-inicio.css">
   <link rel="stylesheet" type="text/css" href="../../../css/style-usua.css">
+  <link rel="stylesheet" type="text/css" href="../../../css/style-usua-pagesmenu.css">
 </head>
 
 <body>
@@ -19,18 +20,15 @@
   // include menu
   $id_usuario = $_SESSION['ID'];
   // Acessar Dados
-  $consulta = mysqli_query($cn, "SELECT * from exercicio");
+  $consulta = mysqli_query($cn, "SELECT * from desafios");
   $exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
 
-  $favoritos_consulta = mysqli_query($cn, "SELECT * FROM `favoritos` WHERE `id_usuario` = '$id_usuario'");
-  $favoritos = mysqli_fetch_all($favoritos_consulta, MYSQLI_ASSOC);
-  // print_r($favoritos)
   ?>
 
   <section class="imguser">
     <div class="txt-imguser">
-      <h1>Alongamentos</h1>
-      <h4>O hábito de se alongar todos os dias trás muitos beneficios ao corpo. O como você irá se alongar hoje?</h4>
+      <h1>Desafios</h1>
+      <h4>Comece um desafio e crie o hábito de se exercitar todos os dias.</h4>
     </div>
     <img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
   </section>
@@ -43,37 +41,17 @@
         <div class="card-exercicios">
           <div class="desc-exercicios">
             <div class="topo-desc-exercicios">
-              <h2><?php echo $exibe[$i]['nome_exercicio']; ?></h2>
+              <h2><?php echo $exibe[$i]['nome_desafios']; ?></h2>
             </div>
             <div class="descricao-exercicio">
-              <p><?php echo $exibe[$i]['desc_exercicio']; ?></p>
-              <p><?php echo $exibe[$i]['duracao_exercicio']; ?></p>
-              <p><?php echo $exibe[$i]['equipamentos_exercicio']; ?></p>
-              <button><a href="../videoexercicio.php?cd=<?php echo $exibe[$i]['id_exercicio']; ?>">Começar</a></button>
-            </div>
-            <div class="favoritar">
-              <div class="tipo-maisteinos">
-                <p>Articulações</p>
+              <p><?php echo $exibe[$i]['desc_desafios']; ?></p>
+              <p>Duração: <?php echo $exibe[$i]['duracao_desafios']; ?> dias</p>
+              <div>
+                <button><a href="../desafiododia.php?cd=<?php echo $exibe[$i]['id_desafios']; ?>">Começar</a></button>
               </div>
-              <button id="<?php echo $exibe[$i]['id_exercicio']; ?>">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16" class="bi bi-heart-fill
-                <?php
-                $id_exercicio = $exibe[$i]['id_exercicio'];
-
-                for ($favorito = 0; $favorito < count($favoritos); $favorito++) {
-                  if ($id_exercicio == $favoritos[$favorito]['id_exercicio']) {
-                    $classe = 'active';
-                    break;
-                  }
-                }
-                echo $classe;
-                ?>">
-                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                </svg>
-              </button>
             </div>
           </div>
-          <img src="<?php echo $exibe[$i]['imagem_exercicio']; ?>">
+          <img src="<?php echo $exibe[$i]['imagem_desafio']; ?>">
         </div>
       <?php
       };

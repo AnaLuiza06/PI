@@ -1,10 +1,7 @@
 <?php
-	$servidor = 'localhost';
-	$usuario = 'root';
-	$senha = '';
-	$banco = 'bd_ativ';
+$servidor = 'localhost';
+$usuario = 'root';
+$senha = '';
+$banco = 'bd_ativ';
 
-	$cn = mysqli_connect($servidor, $usuario, $senha, $banco);
-
-?>
-
+$cn = mysqli_connect($servidor, $usuario, $senha, $banco);

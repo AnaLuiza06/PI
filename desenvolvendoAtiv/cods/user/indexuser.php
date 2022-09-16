@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="utf-8">
 	<title>ATIV</title>
@@ -10,16 +11,17 @@
 	<link rel="stylesheet" type="text/css" href="../../css/style-inicio.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style-usua.css">
 </head>
+
 <body>
 
 	<?php
 
-		require ("./menu.php");
+	require("./menu.php");
 	?>
 
 	<section class="imguser">
 		<div class="txt-imguser">
-			<h1>Olá, <?php echo $exibe[0]['nome_usuario'];?>!</h1>
+			<h1>Olá, <?php echo $exibe[0]['nome_usuario']; ?>!</h1>
 			<h4>Escolha um exercício ou continue o desafio escolhido. Vamos nos exercitar!!</h4>
 		</div>
 		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
@@ -52,11 +54,11 @@
 			<h2>Minha Evolução</h2>
 
 			<?php
-				$sql = "SELECT * FROM autoavaliacao where id_usuario = '$id'";
-				$consulta = mysqli_query($cn, $sql);
-				$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
+			$sql = "SELECT * FROM autoavaliacao where id_usuario = '$id'";
+			$consulta = mysqli_query($cn, $sql);
+			$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
 
-				$Nexercicios = count($exibe);
+			$Nexercicios = count($exibe);
 
 			?>
 
@@ -79,14 +81,13 @@
 						<div class="numero-videos">
 
 							<?php
-								if($Nexercicios < 10){
-									echo "<h1>0".$Nexercicios."</h1>";
-								}
-								else{
-									echo "<h1>".$Nexercicios."</h1>";
-								}
+							if ($Nexercicios < 10) {
+								echo "<h1>0" . $Nexercicios . "</h1>";
+							} else {
+								echo "<h1>" . $Nexercicios . "</h1>";
+							}
 							?>
-							
+
 							<h5>Alongamentos Feitos</h5>
 						</div>
 						<div class="numero-desafios">
@@ -95,7 +96,7 @@
 						</div>
 					</div>
 					<div class="grafico-evolucao">
-						<div class="graficopizza" id="autoavaliacao"></div>
+						<?php include("./graficos/grafico-autoavaliacao.php") ?>
 						<h5>Autoavaliação</h5>
 					</div>
 				</section>
@@ -121,7 +122,7 @@
 								<p>Articulações</p>
 							</div>
 							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-	  							<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+								<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
 							</svg>
 						</div>
 					</div>
@@ -142,7 +143,7 @@
 								<p>Articulações</p>
 							</div>
 							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-	  							<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+								<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
 							</svg>
 						</div>
 					</div>
@@ -163,7 +164,7 @@
 								<p>Articulações</p>
 							</div>
 							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-	  							<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+								<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
 							</svg>
 						</div>
 					</div>
@@ -177,7 +178,7 @@
 		<form>
 			<div class="container-form-anamnese">
 				<h2>Anamnese</h2>
-				
+
 				<div class="perguntas-anamnese">
 					<p>Possuí algum problema cardiovascular?</p>
 					<div class="inputs-anamnese">
@@ -186,7 +187,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="problemas-cardiovasculares"value="não">
+							<input type="radio" name="problemas-cardiovasculares" value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -200,7 +201,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="fumaante"value="não">
+							<input type="radio" name="fumaante" value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -214,7 +215,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="problemas-ortopedicos"value="não">
+							<input type="radio" name="problemas-ortopedicos" value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -228,7 +229,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="pessoa-ativa"value="não">
+							<input type="radio" name="pessoa-ativa" value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -242,7 +243,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="dor-peito"value="não">
+							<input type="radio" name="dor-peito" value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -256,7 +257,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="medicamento-continuo"value="não">
+							<input type="radio" name="medicamento-continuo" value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -269,10 +270,36 @@
 		</form>
 	</section>
 
+	<?php
+	include("./form-anamnese.php");
+	?>
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script src="../../js/js-user.js"></script>
 
+	<script>
+		addEventListener('DOMContentLoaded', () => {
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+			const formParametro = urlParams.get('form')
+			if (!!formParametro) {
+				const form = document.querySelector(".form-anamnese")
+				form.classList.add("active")
+			} else {
+				const form = document.querySelector(".form-anamnese")
+				form.classList.remove("active")
+
+			}
+		})
+
+		function tirarForm() {
+			const form = document.querySelector(".form-anamnese")
+			form.classList.remove("active")
+		}
+	</script>
+
 </body>
+
 </html>

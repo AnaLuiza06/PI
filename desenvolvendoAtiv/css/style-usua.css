@@ -1,537 +1,561 @@
-body p{
-	margin: 0;
+body p {
+  margin: 0;
 }
 
 /* Abre Menu Usuário*/
-.menu-pageuser{
-	width: 100%;
-	height: 60px;
-	margin-top: 10px;
-	display: flex;
-	justify-content: space-between;
-	padding: 10px 100px;
-	z-index: -1;
+.menu-pageuser {
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 100px;
+  z-index: -1;
 }
-.menu-links ul{
-	display: flex;
-	gap: 40px;
+.menu-links ul {
+  display: flex;
+  gap: 40px;
 }
-.menu-identificacao{
-	display: flex;
-	gap: 10px;
-	align-items: center;
+.menu-identificacao {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
-.menu-identificacao img{
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	border: 2px solid #DDB7AC;
+.menu-identificacao img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ddb7ac;
 } /*Fecha Menu Usuário*/
 
 /*Abre Form Anamnese*/
-.primeiro-acesso{
-	width: 100%;
-	height: 100vh;
-	top: 0;
-	left: 0;
-	background: rgba(221, 183, 172, 0.4);
-	position: fixed;
-	display: none;
+.primeiro-acesso {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(221, 183, 172, 0.4);
+  position: fixed;
+  display: none;
 }
-.primeiro-acesso form{
-	width: 470px;
-	height: 540px;
-	background-color: #B9CDCB;
-	color: #00453A;
-	border-radius: 10px;
-	margin: auto;
-	padding: 30px 25px;
-	margin-top: 60px;
-	overflow: auto;
+.primeiro-acesso form {
+  width: 470px;
+  height: 540px;
+  background-color: #b9cdcb;
+  color: #00453a;
+  border-radius: 10px;
+  margin: auto;
+  padding: 30px 25px;
+  margin-top: 60px;
+  overflow: auto;
 }
-.primeiro-acesso form h2{
-	text-align: center;
+.primeiro-acesso form h2 {
+  text-align: center;
 }
-.perguntas-anamnese{
-	margin-top: 10px;
+.perguntas-anamnese {
+  margin-top: 10px;
 }
 /*.container-form-anamnese{
-	border: 1px solid #00453A;
-	border-radius: 10px;
-	padding: 20px;
+border: 1px solid #00453A;
+border-radius: 10px;
+padding: 20px;
 }*/
-.inputs-anamnese{
-	display: flex;
-	gap: 20px;
+.inputs-anamnese {
+  display: flex;
+  gap: 20px;
 }
-.btn-anamnese{
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
+.btn-anamnese {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
-.btn-anamnese button{
-	background-color: #00453A;
-	color: #fff;
+.btn-anamnese button {
+  background-color: #00453a;
+  color: #fff;
 }
 /*Fecha Form Anamnese*/
 
 /*Abre Imagem Pages User*/
-#imguser{
-	position: relative;
+#imguser {
+  position: relative;
 }
-.background-user{
-	width: 100%;
-	height: 390px;
-	background: rgba(229, 153, 247, 0.4);
-	position: absolute;
-	top: 0;
-	left: 0;
-	transform: translate(0px, 80px);
-	z-index: -1;
-	background-image: linear-gradient(4deg, #fff 33%, transparent 15%);
+.background-user {
+  width: 100%;
+  height: 390px;
+  background: rgba(229, 153, 247, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0px, 80px);
+  z-index: -1;
+  background-image: linear-gradient(4deg, #fff 33%, transparent 15%);
 }
-.imguser img{
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -3;
-	transform: translate(0px, 80px);
-	background-image: linear-gradient(-20deg, #EEA7FF 33%, transparent 15%);
+.imguser img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  transform: translate(0px, 80px);
+  background-image: linear-gradient(-20deg, #eea7ff 33%, transparent 15%);
 }
-.txt-imguser{
-	width: 600px;
-	margin-left: 130px;
-	margin-top: 80px;
-	color: #fff;
+.txt-imguser {
+  width: 600px;
+  margin-left: 130px;
+  margin-top: 80px;
+  color: #fff;
 }
 /*Fecha Imagem Pages User*/
 
-
 /*Abre Minha Área*/
-.minhaarea-usua{
-	width: 100%;
-	min-height: 100vh;
-	background-color: #fff;
-	position: absolute;
-	top: 0;
-	left: 0;
-	transform: translate(0px, 450px);
-	z-index: -1;
+.minhaarea-usua {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0px, 450px);
+  z-index: -1;
 } /*Fecha Minha Área*/
 
 /*Abre Desafio Atual*/
-.desafio-atual h2{
-	margin-left: 130px;
+.desafio-atual h2 {
+  margin-left: 130px;
 }
-.card-desafioatual{
-	width: 1100px;
-	height: 300px;
-	background-image: linear-gradient(110deg, #EEA7FF 55%, transparent 15%);
-	margin-left: 125px;
-	border-radius: 10px;
-	padding: 20px;
-	position: relative;
-	color: #fff;
+.card-desafioatual {
+  width: 1100px;
+  height: 300px;
+  background-image: linear-gradient(110deg, #eea7ff 55%, transparent 15%);
+  margin-left: 125px;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  color: #fff;
 }
-.card-desafioatual img{
-	width: 690px;
-	height: 300px;
-	z-index: -2;
-	position: absolute;
-	top: 0;
-	right: 0;
-	transform: translate(0px, 0px);
-	border-radius: 10px;
+.card-desafioatual img {
+  width: 690px;
+  height: 300px;
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0px, 0px);
+  border-radius: 10px;
 }
-.expo-geral h3{
-	font-size: 27px;
+.expo-geral h3 {
+  font-size: 27px;
 }
-.evolucao{
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	margin-top: 10px;
+.evolucao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
 }
-.evolucao p{
-	color: #5BC2A3;
-	font-size: 20px;
+.evolucao p {
+  color: #5bc2a3;
+  font-size: 20px;
 }
-.container-evolucao{
-	width: 500px;
-	height: 12px;
-	border: 2px solid #5BC2A3;
-	border-radius: 20px;
-	margin-top: 5px;
-	margin-bottom: 15px;
+.container-evolucao {
+  width: 500px;
+  height: 12px;
+  border: 2px solid #5bc2a3;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
-.container-evolucao div{
-	width: 30%;
-	height: 8px;
-	background-color: #5BC2A3;
-	border-radius: 20px;
+.container-evolucao div {
+  width: 30%;
+  height: 8px;
+  background-color: #5bc2a3;
+  border-radius: 20px;
 }
-.expo-geral{
-	width: 550px;
+.expo-geral {
+  width: 550px;
 }
-.card-desafioatual button{
-	background-color: #00453A;
-	color: #fff;
-	transition: all 0.5s;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	transform: translate(-40px, -20px);
+.card-desafioatual button {
+  background-color: #00453a;
+  color: #fff;
+  transition: all 0.5s;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  transform: translate(-40px, -20px);
 }
-.card-desafioatual button a{
-	color: #fff;
+.card-desafioatual button a {
+  color: #fff;
 }
 /*Fecha Desafio Atual*/
 
 /*Abre Evolução*/
-.cards-evolucao{
-	display: flex;
-	margin-left: 125px;
-	border: 2px solid #5BC2A3;
-	width: 1100px;
-	height: 300px;
-	border-radius: 10px;
+.cards-evolucao {
+  display: flex;
+  margin-left: 125px;
+  border: 2px solid #5bc2a3;
+  width: 1100px;
+  height: 300px;
+  border-radius: 10px;
 }
-.aproveitamento-evolucao{
-	width: 250px;
-	padding: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.aproveitamento-evolucao {
+  width: 250px;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.calendario-evolucao{
-	text-align: center;
-	padding: 15px 15px;
-	border-left: 2px solid #5BC2A3;
-	border-right: 2px solid #5BC2A3;
+.calendario-evolucao {
+  text-align: center;
+  padding: 15px 15px;
+  border-left: 2px solid #5bc2a3;
+  border-right: 2px solid #5bc2a3;
 }
-.graficopizza{
-	margin-left: 25px;
+.graficopizza {
+  margin-left: 25px;
 }
-.calendario-evolucao p{
-	font-size: 22px;
-	color: #5BC2A3;
-	margin-bottom: 	5px;
+.calendario-evolucao p {
+  font-size: 22px;
+  color: #5bc2a3;
+  margin-bottom: 5px;
 }
-.container-calendario{
-	width: 380px;
-	height: 230px;
-	background-color: #EEA7FF;
-} 
-.minha-evolucao h2{
-	margin-left: 135px;
-	margin-top: 50px;
-	margin-bottom: 5px;
+.container-calendario {
+  width: 380px;
+  height: 230px;
+  background-color: #eea7ff;
 }
-.numeros-evolucaouser{
-	display: flex;
-	padding: 15px;
-	align-items: center;
-	width: 435px;
+.minha-evolucao h2 {
+  margin-left: 135px;
+  margin-top: 50px;
+  margin-bottom: 5px;
 }
-.ntreinos-evolucao{
-	width: 160px;
-	text-align: center;
+.numeros-evolucaouser {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  width: 435px;
 }
-.numero-videos h1{
-	font-size: 80px;
-	margin-bottom: 0px;
+.ntreinos-evolucao {
+  width: 160px;
+  text-align: center;
 }
-.numero-desafios h1{
-	font-size: 80px;
-	margin-bottom: 0px;
+.numero-videos h1 {
+  font-size: 80px;
+  margin-bottom: 0px;
 }
-.grafico-evolucao{
-	width: 250px;
-	text-align: center;
+.numero-desafios h1 {
+  font-size: 80px;
+  margin-bottom: 0px;
 }
-.graficopizza{
-	width: 200px;
-	height: 200px;
-	background-color: #B9CDCB;
-	border-radius: 50%;
+.grafico-evolucao {
+  width: 250px;
+  text-align: center;
+}
+.graficopizza {
+  width: 200px;
+  height: 200px;
+  background-color: #b9cdcb;
+  border-radius: 50%;
 }
 /*Fechar Numeros de Evolução*/
 
 /*Abrir Favoritos*/
-.titulo-maistreinos{
-	margin-top: 60px;
-	margin-left: 130px;
+.titulo-maistreinos {
+  margin-top: 60px;
+  margin-left: 130px;
 }
 
 .favoritar button {
- background-color: transparent;
- outline: none;
- border: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
 }
-
-
 /*Fechar Favoritos*/
 
+/* Abre Form Anamnese */
+.form-anamnese {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(91, 194, 163, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.form-anamnese form {
+  width: 500px;
+  height: 570px;
+  background: rgba(91, 194, 163, 0.85);
+  border-radius: 20px;
+  padding: 30px 15px;
+  margin: auto;
+  margin-top: 200px;
+  color: #fff;
+}
+
+@keyframes form {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, -60px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+.form-anamnese.active {
+  animation: form 0.3s;
+  display: block;
+}
+/* Fecha Form Anamnese */
+
 /*Abrir Page Alongamentos*/
-.card-exercicios{
-	margin-top: 20px;
+.card-exercicios {
+  margin-top: 20px;
 }
 /*Fechar Page Alongamentos*/
 
-
-.card-treinoatual{
-	background-image: url("../imgs/img-treinoatual.png");
-	width: 770px;
-	height: 300px;
-	display: flex; 
-	flex-direction: column;
-	border-radius: 20px;
-	padding: 20px;
-	position: relative;
+.card-treinoatual {
+  background-image: url("../imgs/img-treinoatual.png");
+  width: 770px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
 }
-.img-treinoatual img{
-	width: 450px;
-	height: 300px;
-	border-radius: 10px;
-	top: 0;
-	right: 0;
-	position: absolute;
-	transform: translate(-137px, 162px);
-	z-index: -2;
-}
-
-.container-minhaevolucao h2{
-	margin-left: 130px;
-	margin-top: 50px;
-	margin-bottom: 5px;
+.img-treinoatual img {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  transform: translate(-137px, 162px);
+  z-index: -2;
 }
 
-.card-minhaevolucao{
-	width: 600px;
-	height: 500px;
-	border: 2px solid #DDB7AC;
-	margin-left: 125px;
-	display: flex;
-}
-.card-minhaevolucao h2{
-	margin: 0px;
-}
-.dias-minhaevolucao li{
-	width: 60px;
-	height: 60px;
-	background-color: #DDB7AC;
-	border-radius: 50%;
-	margin-top: 15px;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-.dias-minhaevolucao li a{
-	font-size: 30px;
-	color: #fff;
-	margin: auto;
-}
-.txt-minhaevolucao{
-	border-left: 2px solid #DDB7AC;
-	padding: 15px 10px;
+.container-minhaevolucao h2 {
+  margin-left: 130px;
+  margin-top: 50px;
+  margin-bottom: 5px;
 }
 
-
-.container-meugrupo h2{
-	margin-left: 15px;
-	margin-top: 50px;
-	margin-bottom: 5px;
+.card-minhaevolucao {
+  width: 600px;
+  height: 500px;
+  border: 2px solid #ddb7ac;
+  margin-left: 125px;
+  display: flex;
 }
-.card-meugrupo{
-	background-color: #D9D9D9;
-	width: 460px;
-	height: 470px;
-	border-radius: 10px;
-	padding: 15px 15px;
-	position: relative;
+.card-minhaevolucao h2 {
+  margin: 0px;
 }
-.titulo-descricao{
-	display: flex;
-	align-items: center;
-	gap: 30px;
-	z-index: -1;
+.dias-minhaevolucao li {
+  width: 60px;
+  height: 60px;
+  background-color: #ddb7ac;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-.titulo-meugrupo h3{
-	font-size: 25px;
+.dias-minhaevolucao li a {
+  font-size: 30px;
+  color: #fff;
+  margin: auto;
 }
-.meugrupo-descricao{
-	margin-top: 15px;
-	z-index: -1;
+.txt-minhaevolucao {
+  border-left: 2px solid #ddb7ac;
+  padding: 15px 10px;
 }
-.descricao-usuarios{
-	margin-top: 10px;
-	display: flex;
-	align-items: center;
-	gap: 20px;
+.titulo-descricao {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  z-index: -1;
 }
-.nome-usuarios{
-	display: flex;
-	align-items: center;
-	gap: 15px;
+.titulo-meugrupo h3 {
+  font-size: 25px;
 }
-.nome-usuarios img{
-	width: 50px;
-	border-radius: 50%;
-	border: 2px solid #DDB7AC;
+.meugrupo-descricao {
+  margin-top: 15px;
+  z-index: -1;
 }
-.nome-usuarios h6{
-	font-size: 18px;
-	width: 200px;
+.descricao-usuarios {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.treinoconcluido-usuarios{
-	width: 100px;
-	background-color: #DDB7AC;
-	padding: 5px 0px;
-	text-align: center;
+.nome-usuarios {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
-
+.nome-usuarios img {
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #ddb7ac;
+}
+.nome-usuarios h6 {
+  font-size: 18px;
+  width: 200px;
+}
+.treinoconcluido-usuarios {
+  width: 100px;
+  background-color: #ddb7ac;
+  padding: 5px 0px;
+  text-align: center;
+}
 
 /*Page Treino de Hoje*/
-.container-treinodehoje{
-	display: flex;
-	background-image: linear-gradient(130deg, #EEA7FF 75%, transparent 15%);
-	gap: 30px;
-	padding: 30px 50px;
+.container-treinodehoje {
+  display: flex;
+  background-image: linear-gradient(130deg, #eea7ff 75%, transparent 15%);
+  gap: 30px;
+  padding: 30px 50px;
 }
-.video-treinodehoje{
-	width: 750px;
+.video-treinodehoje {
+  width: 750px;
 }
 
-.descricao-treinodehoje{
-	border: 2px solid #5BC2A3;
-	background-color: #fff;
-	border-radius: 20px;
-	padding: 15px;
-	width: 500px;
-	height: 520px;
-	overflow: auto;
+.descricao-treinodehoje {
+  border: 2px solid #5bc2a3;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  width: 500px;
+  height: 520px;
+  overflow: auto;
 }
-::-webkit-scrollbar{
-	width: 8px;
-	border-radius: 20px;
-	background-color: #D9D9D9; 
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
 }
-.dias-treinodehoje{
-	display: flex;
-	align-items: center;
+.dias-treinodehoje {
+  display: flex;
+  align-items: center;
 }
-#voltar-dias{
-	margin-right: 10px;
-	display: none;
+#voltar-dias {
+  margin-right: 10px;
+  display: none;
 }
-#indo-dias{
-	display: flex;
-	display: none;
-	flex-direction: row-reverse;
-	margin-left: 10px;
+#indo-dias {
+  display: flex;
+  display: none;
+  flex-direction: row-reverse;
+  margin-left: 10px;
 }
-.dias-treinodehoje ul{
-	width: 450px;
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	margin-top: 5px;
-	margin-bottom: 10px;
+.dias-treinodehoje ul {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
-.dias-treinodehoje li{
-	border-radius: 50%;
-	background-color: #EEA7FF;
-	color: #fff;
-	width: 35px;
-	height: 35px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	transition: all 0.3s;
+.dias-treinodehoje li {
+  border-radius: 50%;
+  background-color: #eea7ff;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
 }
-.dias-treinodehoje li:hover{
-	background-color: #5BC2A3;
-	cursor: pointer;
-	transition: all 0.3s;
+.dias-treinodehoje li:hover {
+  background-color: #5bc2a3;
+  cursor: pointer;
+  transition: all 0.3s;
 }
-.dias-treinodehoje li a{
-	color: #fff;
-	list-style: none;
+.dias-treinodehoje li a {
+  color: #fff;
+  list-style: none;
 }
-.dias-treinodehoje li a:hover{
-	color: #fff;
-	list-style: none;
-	border: none;
+.dias-treinodehoje li a:hover {
+  color: #fff;
+  list-style: none;
+  border: none;
 }
-iframe{
-	width: 730px;
-	height: 520px;
+iframe {
+  width: 730px;
+  height: 520px;
 }
-.depoimento-treinodehoje{
-	width: 470;
-	border: 2px solid #5BC2A3;
-	background-color: #fff;
-	border-radius: 10px;
-	margin-top: 10px;
-	padding: 15px;
+.depoimento-treinodehoje {
+  width: 470;
+  border: 2px solid #5bc2a3;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 15px;
 }
-.depoimento-treinodehoje h5{
-	text-align: center;
-	margin-bottom: 18px;
+.depoimento-treinodehoje h5 {
+  text-align: center;
+  margin-bottom: 18px;
 }
-.depoimento-treinodehoje p{
-	margin-top: 10px;
+.depoimento-treinodehoje p {
+  margin-top: 10px;
 }
-.depoimento-treinodehoje button{
-	margin: 10px auto;
+.depoimento-treinodehoje button {
+  margin: 10px auto;
 }
-.depoimento-treinodehoje button:hover{
-	color: #5BC2A3;
-	border: 1px solid #5BC2A3;
+.depoimento-treinodehoje button:hover {
+  color: #5bc2a3;
+  border: 1px solid #5bc2a3;
 }
-.redios-rendimento{
-	display: flex;
-	gap: 20px;
+.radios-rendimento {
+  display: flex;
+  gap: 20px;
 }
 
 .campos_escondidos {
-	display: none;
+  display: none;
 }
 /*Abre Meus Dados*/
-.form-dadospessoais{
-	width: 800px;
-	border: 2px solid #B9CDCB;
-	border-radius: 10px;
-	margin-top: 50px;
-	margin-left: 275px;
-	padding: 30px;
+.form-dadospessoais {
+  width: 800px;
+  border: 2px solid #b9cdcb;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 275px;
+  padding: 30px;
 }
-.form-row{
-	display: flex;
-	gap: 40px;
+.form-row {
+  display: flex;
+  gap: 40px;
 }
-.form-row div{
-	display: flex;
-	flex-direction: column;	
+.form-row div {
+  display: flex;
+  flex-direction: column;
 }
-.form-row input{
-	width: 350px;
-	height: 30px;
-	border: 1.5px solid #B9CDCB;
-	border-radius: 10px;
+.form-row input {
+  width: 350px;
+  height: 30px;
+  border: 1.5px solid #b9cdcb;
+  border-radius: 10px;
 }
-.form-row label{
-	margin-bottom: 0px;
-	margin-top: 15px;
+.form-row label {
+  margin-bottom: 0px;
+  margin-top: 15px;
 }
-.btn-alterar{
-	display: flex;
-	justify-content: center;
+.btn-alterar {
+  display: flex;
+  justify-content: center;
 }
-.btn-alterar button{
-	color: #fff;
-	margin-top: 20px;
+.btn-alterar button {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.campos-invisiveis {
+  display: none;
 }
 /*Fechar Meus Dados*/

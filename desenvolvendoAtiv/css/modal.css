@@ -1,0 +1,116 @@
+/* <div class="modal-alert active">
+<div class="modal-content">
+
+</div>
+</div> */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  color: #000;
+}
+
+.modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 15px;
+  margin: auto;
+  margin-top: 200px;
+  color: #fff;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.modal-body {
+  margin-top: 20px;
+}
+
+.modal-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-footer button {
+  margin-left: 10px;
+}
+
+.modal-footer button:first-child {
+  margin-left: 0;
+}
+
+/* Alert modal */
+
+.modal-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  color: #000;
+  height: 10vh;
+  animation: modal-alert__out 0.5s ease-in-out;
+}
+
+.modal-alert.modal-alert__danger {
+  background-color: rgb(238, 66, 66);
+}
+.modal-alert.modal-alert__success {
+  background-color: rgb(91, 194, 163);
+}
+
+.modal-alert.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-alert .modal-alert-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.modal-alert .modal-alert-progress {
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  margin-top: 10px;
+  transition: width 2s ease-in-out;
+}
+
+/* animation modal alert*/
+
+@keyframes modal-alert__out {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, -60px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
