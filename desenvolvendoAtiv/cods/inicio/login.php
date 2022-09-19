@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 	<title>ATIV</title>
 	<meta charset="utf-8">
@@ -8,7 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="../../css/style-inicio.css">
 
 </head>
-
 <body>
 
 	<div class="container-login">
@@ -18,10 +16,10 @@
 		</section>
 		<section class="form-login">
 			<!-- <div class="card-existe">
-<p>Esse usuário já existe. Realize o login.</p>
-</div> -->
+				<p>Esse usuário já existe. Realize o login.</p>
+			</div> -->
 			<div class="card-msgErro">
-				<p>Email e/ou senha invalidos.</p>
+				<p>Emaio e/ou senha invalidos.</p>
 			</div>
 			<div class="card-login">
 				<form method="post" action="../conexao/validarlogin.php">
@@ -46,25 +44,24 @@
 	</div>
 	<script>
 		// addEventListener('load', () => {
-		// const queryString = window.location.search;
-		// const urlParams = new URLSearchParams(queryString);
-		// const existe = urlParams.get('existe')
-		// if(Boolean(existe)) {
-		// const card = document.querySelector(".card-existe")
-		// card.classList.toggle("active")
-		// }
+		// 	const queryString = window.location.search;
+		// 	const urlParams = new URLSearchParams(queryString);
+		// 	const existe = urlParams.get('existe')
+		// 	if(Boolean(existe)) {
+		// 		const card = document.querySelector(".card-existe")
+		// 		card.classList.toggle("active")
+		// 	}
 		// })
 
 		addEventListener('load', () => {
 			const queryString = window.location.search;
 			const urlParams = new URLSearchParams(queryString);
 			const msgErro = urlParams.get('erro')
-			if (!!msgErro) {
+			if(!!msgErro) {
 				const card = document.querySelector(".card-msgErro")
 				card.classList.add("active")
 			}
 		})
 	</script>
 </body>
-
 </html>

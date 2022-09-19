@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 	<title>ATIV</title>
 
@@ -11,22 +10,21 @@
 	<link rel="stylesheet" type="text/css" href="../../../css/style-usua.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/style-adm.css">
 </head>
-
 <body>
 
 	<?php
-	include('../../conexao/conexao.php');
-	include('../menu.php');
-	// include menu
-	$id_usuario = $_SESSION['ID'];
-	// Acessar Dados
-	$consulta = mysqli_query($cn, "SELECT * from exercicio");
-	$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
-
-	$favoritos_consulta = mysqli_query($cn, "SELECT * FROM `favoritos` WHERE `id_usuario` = '$id_usuario'");
-	$favoritos = mysqli_fetch_all($favoritos_consulta, MYSQLI_ASSOC);
-	// print_r($favoritos)
-	?>
+        include ('../../conexao/conexao.php');
+        include ('../menu.php');
+        // include menu
+		$id_usuario = $_SESSION['ID'];
+        // Acessar Dados
+        $consulta = mysqli_query($cn, "SELECT * from exercicio");
+        $exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
+		
+		$favoritos_consulta =  mysqli_query($cn, "SELECT * FROM `favoritos` WHERE `id_usuario` = '$id_usuario'");
+		$favoritos = mysqli_fetch_all($favoritos_consulta, MYSQLI_ASSOC);
+		// print_r($favoritos)
+    ?>
 
 	<section class="imguser">
 		<div class="txt-imguser">
@@ -40,34 +38,34 @@
 	<section class="minhaarea-usua">
 		<div class="cards-tabela">
 			<?php
-			for ($i = 0; $i < count($exibe); $i++) {
+				for ($i=0; $i < count($exibe); $i++) { 
 			?>
 
-				<div class="card-tabela">
-					<section>
-						<div class="img-card-tabela">
-							<img src="<?php echo $exibe[$i]['imagem_exercicio']; ?>">
-						</div>
-						<div class="titulo-card-tabela">
-							<h3><?php echo $exibe[$i]['nome_exercicio']; ?></h3>
-							<p><?php echo $exibe[$i]['desc_exercicio']; ?></p>
-						</div>
-						<div class="desc-card-tabela">
-							<p><?php echo $exibe[$i]['duracao_exercicio']; ?></p>
-							<p><?php echo $exibe[$i]['equipamentos_exercicio']; ?></p>
-							<p><?php echo $exibe[$i]['contra_indicacoes_exercicio']; ?></p>
-						</div>
-					</section>
+			<div class="card-tabela">
+				<section>
+					<div class="img-card-tabela">
+						<img src="<?php echo $exibe[$i]['imagem_exercicio']; ?>">
+					</div>
+					<div class="titulo-card-tabela">
+						<h3><?php echo $exibe[$i]['nome_exercicio']; ?></h3>
+						<p><?php echo $exibe[$i]['desc_exercicio']; ?></p>
+					</div>
+					<div class="desc-card-tabela">
+						<p><?php echo $exibe[$i]['duracao_exercicio']; ?></p>
+						<p><?php echo $exibe[$i]['equipamentos_exercicio']; ?></p>
+						<p><?php echo $exibe[$i]['contra_indicacoes_exercicio']; ?></p>
+					</div>
+				</section>
 
-					<section>
-						<div class="btns-card-tabela">
-							<button><a href="#">Alterar</a></button>
-							<button><a href="#">Deletar</a></button>
-						</div>
-					</section>
-				</div>
+				<section>
+					<div class="btns-card-tabela">
+						<button><a href="#">Alterar</a></button>
+						<button><a href="#">Deletar</a></button>
+					</div>
+				</section>
+			</div>
 			<?php
-			};
+				};
 			?>
 
 
@@ -79,5 +77,4 @@
 
 	<script src="../../../js/js-user.js"></script>
 </body>
-
 </html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 	<meta charset="utf-8">
 	<title>ATIV</title>
@@ -12,13 +11,12 @@
 	<link rel="stylesheet" type="text/css" href="../../../css/style-usua.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/style-usua-pagesmenu.css">
 </head>
-
 <body>
 
 	<?php
-	include('../../conexao/conexao.php');
-	include('./menu.php');
-	// include menu
+			include ('../../conexao/conexao.php');
+			include ('./menu.php');
+			// include menu
 	?>
 
 	<section class="imguser">
@@ -35,24 +33,24 @@
 				<h2>Como eu começo um Alongamento?</h2>
 				<button onclick="mostrarmais()">Ver Mais</button>
 			</div>
-
+			
 			<div class="desc-ajuda">
 				<div class="mostrar-div">
 					<p>Primeiramente é pecisso acessar o página de Alongamenos. Para isso, basta ir a barra de menu e clicar no link "Alongamentos".</p>
-					<img src="../../../imgs/img-menu-alongamentos.png">
+					<img src="../../../imgs/img-menu-alongamentos.png"> 
 				</div>
 				<div class="mostrar-div">
-					<img src="../../../imgs/img-cards-alongamentos.png">
+					<img src="../../../imgs/img-cards-alongamentos.png"> 
 					<p>Depois, quando já tiver na página, é só escolher o alongamento que deseja fazer e clicar no botão começar.</p>
 				</div>
 				<div>
 					<p>Nisso, aparecerá a página do exercício, tendo o vídeo e toda a descrição sobre o alongamento. Para concluir é preciso preencher o formulário de autoavaluação. Caso não preenchido, não irá constar como feito.</p>
-					<img src="../../../imgs/img-page-alongamentos.png">
+					<img src="../../../imgs/img-page-alongamentos.png"> 
 				</div>
 			</div>
 
 			<div class="btn-mais-ajuda">
-
+				
 			</div>
 		</div>
 
@@ -75,15 +73,16 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script>
-		function mostrarmais() {
+
+		function mostrarmais(){
 			const cardAjuda = document.querySelector(".card-ajuda")
 			cardAjuda.classList.toggle("active")
 
 			const descAjuda = document.querySelector(".desc-ajuda")
 			descAjuda.classList.toggle("active")
 		}
+
 	</script>
 
 </body>
-
 </html>

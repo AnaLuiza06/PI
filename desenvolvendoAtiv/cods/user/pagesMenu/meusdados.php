@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 	<meta charset="utf-8">
 	<title>ATIV</title>
@@ -11,25 +10,24 @@
 	<link rel="stylesheet" type="text/css" href="../../css/style-inicio.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style-usua.css">
 </head>
-
 <body>
 
 	<div class="menu-pageuser">
-		<div class="menu-logo">
-			<h2>A T I V</h2>
-		</div>
-		<div class="menu-links">
-			<ul>
-				<li><a href="#">Minha Área</a></li>
-				<li><a href="#">Desafios</a></li>
-				<li><a href="#">Alongamentos</a></li>
-				<li><a href="#">Ajuda</a></li>
-			</ul>
-		</div>
-		<div class="menu-identificacao">
-			<h5>Lenira Fatima</h5>
-			<img src="https://essaseoutras.com.br/wp-content/uploads/2011/01/gatinhos-fofinhos-3.jpg">
-		</div>
+			<div class="menu-logo">
+				<h2>A T I V</h2>
+			</div>
+			<div class="menu-links">
+				<ul>
+					<li><a href="#">Minha Área</a></li>
+					<li><a href="#">Desafios</a></li>
+					<li><a href="#">Alongamentos</a></li>
+					<li><a href="#">Ajuda</a></li>
+				</ul>
+			</div>
+			<div class="menu-identificacao">
+				<h5>Lenira Fatima</h5>
+				<img src="https://essaseoutras.com.br/wp-content/uploads/2011/01/gatinhos-fofinhos-3.jpg">
+			</div>
 	</div>
 
 	<section class="imguser">
@@ -91,7 +89,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="problemas-cardiovasculares" value="não">
+							<input type="radio" name="problemas-cardiovasculares"value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -105,7 +103,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="fumaante" value="não">
+							<input type="radio" name="fumaante"value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -119,7 +117,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="problemas-ortopedicos" value="não">
+							<input type="radio" name="problemas-ortopedicos"value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -133,7 +131,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="pessoa-ativa" value="não">
+							<input type="radio" name="pessoa-ativa"value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -147,7 +145,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="dor-peito" value="não">
+							<input type="radio" name="dor-peito"value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -161,7 +159,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="medicamento-continuo" value="não">
+							<input type="radio" name="medicamento-continuo"value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -179,5 +177,4 @@
 	<script src="../../js/js-user.js"></script>
 
 </body>
-
 </html>

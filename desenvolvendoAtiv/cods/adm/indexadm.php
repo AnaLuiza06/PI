@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 	<meta charset="utf-8">
 	<title>ATIV</title>
@@ -11,11 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="../../css/style-inicio.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style-usua.css">
 </head>
-
 <body>
 
 	<?php
-	include('menu.php');
+		include('menu.php');
 	?>
 
 	<section class="imguser">
@@ -29,20 +27,20 @@
 
 	<section class="dados-plataforma">
 		<div class="card-dados">
-
+			
 		</div>
 
 		<div class="card-dados">
-
+			
 		</div>
 
 		<div class="card-dados">
-
+			
 		</div>
 	</section>
 
 	<section class="minhaarea-usua">
-
+		
 	</section>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -51,5 +49,4 @@
 	<script src="../../js/js-user.js"></script>
 
 </body>
-
 </html>
