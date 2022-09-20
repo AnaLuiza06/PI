@@ -50,6 +50,7 @@
         transform: translate(10px, 15px);
     }
 
+    /* Cards */
     .cards-inicio{
         width: 100%;
         display: flex;
@@ -59,13 +60,14 @@
     }
     .card-inicio{
         width: 180px;
-        height: 180px;
+        min-height: 180px;
         padding: 15px;
     }
     .card-inicio p{
         width: 150px;
     }
 
+        /* Propósito */
     #proposito{
         margin-top: 0px;
     }
@@ -83,6 +85,161 @@
     }
     .txt-proposito{
         width: 550px;
+    }
+
+    /* Beneficios */
+    .txt-beneficios{
+        width: 875px;
+    }
+    .card-beneficios{
+        width: 200px;
+        height: 180px;
+    
+    }
+    .card-beneficios p{
+        width: 180px;
+    }
+
+    /* Alongamentos */
+    #alongamentos{
+        width: 875px;
+        margin: auto;
+    }
+    .cards-exercicios{
+        gap: 15px;
+    }
+    .card-exercicios {
+        width: 280px;
+        height: 430px;
+    }
+    .desc-exercicios{
+        width: 280px;
+    }
+
+    /* Depoimentos */
+    .container-depoimentos{
+        width: 875px;
+        margin: auto;
+    }
+    .carrosel-depoimentos{
+        position: relative;
+        display: flex;
+        gap: 15px;
+    }
+    .card-depoimentos{
+        width: 280px;
+        height: 300px;
+    }
+
+    /* Perguntas */
+    #duvidas{
+        width: 875px;
+    }
+
+    /* Fecha Page Index */
+  }
+
+
+
+  @media (max-width: 900px) {
+
+    /* Modificar Menu */
+
+    /* Abre Page Index */
+
+    /* Inicio */
+    #inicio{
+        margin-top: 10px;
+        width: 100%;
+        min-height: 400px;
+    }
+    .img-inicio{
+        display: none;
+    }
+    .txt-inicio{
+        width: 510px;
+        background-color: blue;
+    }
+    .btn-logon{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+
+    /* Cards */
+    .cards-inicio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .card-inicio{
+        width: 
+        min-height: 240px;
+        padding: 15px;
+    }
+    .card-inicio p{
+        width: 140px;
+    }
+
+        /* Propósito */
+    #proposito{
+        margin-top: 0px;
+    }
+    .img-proposito{
+        display: none;
+    }
+    .txt-proposito{
+        width: 550px;
+    }
+
+    /* Beneficios */
+    .txt-beneficios{
+        width: 875px;
+    }
+    .card-beneficios{
+        width: 180px;
+        height: 180px;
+    
+    }
+    .card-beneficios p{
+        width: 160px;
+    }
+
+    /* Alongamentos */
+    #alongamentos{
+        width: 875px;
+        margin: auto;
+    }
+    .cards-exercicios{
+        gap: 15px;
+    }
+    .card-exercicios {
+        width: 280px;
+        height: 430px;
+    }
+    .desc-exercicios{
+        width: 280px;
+    }
+
+    /* Depoimentos */
+    .container-depoimentos{
+        width: 875px;
+        margin: auto;
+    }
+    .carrosel-depoimentos{
+        position: relative;
+        display: flex;
+        gap: 15px;
+    }
+    .card-depoimentos{
+        width: 280px;
+        height: 300px;
+    }
+
+    /* Perguntas */
+    #duvidas{
+        width: 875px;
     }
 
     /* Fecha Page Index */

@@ -177,9 +177,8 @@ button:hover a{
 	background-color: #E599F7;
 	height: 530px;
 	color: #fff;
-}
-.txt-beneficios h1{
-	margin-left: 135px;
+	width: 1075px;
+	margin: auto;
 }
 .container-beneficios{
 	width: 100%;
@@ -272,10 +271,11 @@ button:hover a{
 
 /*Abre Alongamentos*/
 #alongamentos{
-	margin-top: 80px;
+	width: 1110px;
+	margin: auto;
 }
 #alongamentos h1{
-	margin-left: 135px;
+	margin-top: 80px;
 }
 #alongamentos span{
 	font-size: 45px;
@@ -419,6 +419,8 @@ button:hover a{
 .container-depoimentos{
 	background-color: #E599F7;
 	color: #fff;
+	width: 1100px;
+	margin: auto;
 }
 .fundo-depoimentos{
 	background-color: #E599F7;
@@ -431,14 +433,10 @@ button:hover a{
 	transform-origin: bottom left;
 	transform: skewY(2deg);
 }
-.container-depoimentos h1{
-	margin-left: 135px;
-}
 .carrosel-depoimentos{
 	position: relative;
 	display: flex;
 	gap: 30px;
-	margin-left: 120px;
 }
 .card-depoimentos{
 	width: 350px;
@@ -468,10 +466,11 @@ button:hover a{
 }
 
 #duvidas{
-	margin-top: 90px;
+	width: 1100px;
+	margin:auto;
 }
 #duvidas h1{
-	margin-left: 135px;
+	margin-top: 90px;
 }
 #duvidas span{
 	color: #5BC2A3;
@@ -485,7 +484,6 @@ button:hover a{
 	margin-bottom: 10px;
 	cursor: pointer;
 	color: #fff;
-	margin-left: 120px;
 }
 .card-resposta{
 	width: 600px;
@@ -696,11 +694,4 @@ li svg{
 	background-color: transparent;
 	cursor: pointer;
 	transition: all 0.5s;
-}
-
-/* Tablet */
-@media screen and (max-width: 1200px) {
-	* {
-		margin: 0!important;
-	}
 }
