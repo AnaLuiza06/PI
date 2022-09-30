@@ -30,8 +30,28 @@
 			
 		</div>
 
-		<div class="card-dados">
-			
+		<div class="card-dados-numeros">
+			<div class="ntreinos-evolucao">
+				<div class="numero-videos">
+					<h1>00</h1>	
+					<h5>Usuários</h5>
+				</div>
+				<div class="numero-desafios">
+					<h1>00</h1>
+					<h5>Administradores</h5>
+				</div>
+			</div>
+
+			<div class="ntreinos-evolucao">
+				<div class="numero-videos">
+					<h1>00</h1>	
+					<h5>Alongamentos</h5>
+				</div>
+				<div class="numero-desafios">
+					<h1>00</h1>
+					<h5>Desafios</h5>
+				</div>
+			</div>
 		</div>
 
 		<div class="card-dados">

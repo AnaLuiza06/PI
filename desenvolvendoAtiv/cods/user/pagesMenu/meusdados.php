@@ -36,7 +36,7 @@
 	<section class="minhaarea-usua">
 		<div class="form-dadospessoais">
 			<h2>Dados Pessoais</h2>
-			<form>
+			<form method="post" action="../../conexao/updates/updados.php?cd=<?php echo $id;?>">
 				<div class="form-row">
 					<div>
 						<label>Nome</label>

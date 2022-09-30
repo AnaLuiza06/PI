@@ -570,3 +570,10 @@ iframe{
 	color: #5BC2A3;
 }
 /*Fechar Meus Dados*/
+
+.card-dados-numeros{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
