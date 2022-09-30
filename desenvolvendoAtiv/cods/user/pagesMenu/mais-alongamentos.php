@@ -47,7 +47,9 @@
 							<p><?php echo $exibe[$i]['desc_exercicio']; ?></p>
 							<p><?php echo $exibe[$i]['duracao_exercicio']; ?></p>
 							<p><?php echo $exibe[$i]['equipamentos_exercicio']; ?></p>
-							<button><a href="../videoexercicio.php?cd=<?php echo $exibe[$i]['id_exercicio'];?>">Começar</a></button>
+							<div>
+								<button><a href="../videoexercicio.php?cd=<?php echo $exibe[$i]['id_exercicio'];?>">Começar</a></button>
+							</div>
 						</div>
 						<div class="favoritar">
 							<div class="tipo-maisteinos">

@@ -13,21 +13,16 @@
 <body>
 
 	<?php
-        include ('../../conexao/conexao.php');
+        include ('../conexao/conexao.php');
         include ('./menu.php');
         // include menu
 
         // Acessar Dados
-        $id = $_SESSION['ID'];
-
-        $consulta = mysqli_query($cn, "SELECT * FROM usuario WHERE id_usuario = '$id'");
-        $exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
-        // print_r($exibe);
     ?>
 
 	<section class="imguser">
 		<div class="txt-imguser">
-			<h1>Olá, <?php echo $exibe[0]['nome_usuario'];?>!</h1>
+			<h1>Olá, Lenira!</h1>
 			<h4>Escolha um exercício ou continue o desafio escolhido. Vamos nos exercitar!!</h4>
 		</div>
 		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
@@ -40,31 +35,31 @@
 				<div class="form-row">
 					<div>
 						<label>Nome</label>
-						<input type="text" name="nome" value="<?php echo $exibe[0]['nome_usuario'];?>">
+						<input type="text" name="nome">
 					</div>
 					<div>
 						<label>Email</label>
-						<input type="email" name="email" value="<?php echo $exibe[0]['email_usario'];?>">
+						<input type="email" name="email">
 					</div>
 				</div>
 				<div class="form-row">
 					<div>
 						<label>Data de Nascimento</label>
-						<input type="date" name="nascimento" value="<?php echo $exibe[0]['nascimento_usuario'];?>">
+						<input type="date" name="nascimento">
 					</div>
 					<div>
 						<label>Senha</label>
-						<input type="password" name="senha" value="<?php echo $exibe[0]['senha_usuario'];?>">
+						<input type="password" name="senha">
 					</div>
 				</div>
 				<div class="form-row">
 					<div>
 						<label>Peso</label>
-						<input type="number" name="peso" value="<?php echo $exibe[0]['altura_usuario'];?>">
+						<input type="number" name="peso">
 					</div>
 					<div>
 						<label>Altura</label>
-						<input type="number" name="altura" value="<?php echo $exibe[0]['peso_usuario'];?>">
+						<input type="number" name="altura">
 					</div>
 				</div>
 				<div class="btn-alterar">
@@ -169,7 +164,6 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<script src="../../js/js-user.js"></script>
 
 </body>
 </html>

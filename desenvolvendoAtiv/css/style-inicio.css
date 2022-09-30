@@ -2,7 +2,6 @@
 
 *{
 	padding: 0;
-	margin: 0;
 	font-family: 'DM Sans', sans-serif;
 	font-size: 16px;
 }
@@ -137,6 +136,9 @@ button:hover a{
 /*Fecha Inicio*/
 
 /*Abre Cards Convencimento*/
+.cards-inicio-sm{
+	display: none;
+}
 .cards-inicio{
 	display: flex;
 	justify-content: center;
@@ -281,6 +283,12 @@ button:hover a{
 	font-size: 45px;
 	color: #5BC2A3;
 }
+.cards-exercicios-md{
+	display: none;
+}
+.cards-exercicios-sm{
+	display: none;
+}
 
 .cards-exercicios{
 	display: flex;
@@ -313,7 +321,7 @@ button:hover a{
 }
 
 .desc-exercicios{
-	width: 350px;
+	width: 100%;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -326,8 +334,17 @@ button:hover a{
 	display: flex;
 	justify-content: center;
 }
+.descricao-exercicio div{
+	display: flex;
+	justify-content: center;
+}
 .descricao-exercicio button:hover{
 	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+}
+.descricao-exercicio button:hover a{
+	color: #fff;
 }
 
 .desc-exercicios h2 {
@@ -344,7 +361,6 @@ button:hover a{
 .card-exercicios .descricao-exercicio{
 	background-color: #E599F7;
 	padding: 15px;
-	border-bottom-left-radius: 20px;
 
 	width: 1px;
 	height: 1px;
@@ -368,14 +384,11 @@ button:hover a{
     animation: cardAnimation .5s;
 	width: auto;
 	height: auto;
-	margin: 0;
     white-space: normal;
     position: initial;
 
 	overflow: hidden;
     pointer-events: auto;
-
-
 }
 
 @keyframes cardAnimation {
@@ -415,6 +428,12 @@ button:hover a{
 #depoimentos{
 	margin-top: 120px;
 	position: relative;
+}
+.carrosel-depoimentos-md{
+	display: none;
+}
+.carrosel-depoimentos-sm{
+	display: flex;
 }
 .container-depoimentos{
 	background-color: #E599F7;

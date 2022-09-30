@@ -1,6 +1,6 @@
 <?php 
 	
-	require ('../../conexao.php');
+	require ('../../conexao/conexao.php');
     session_start();
 
     $idUsuario = $_SESSION['ID'];
@@ -20,7 +20,8 @@
 
 		$sql = "INSERT INTO `autoavaliacao`(`id_exercicio`, `id_usuario`, `rendimento_autoavaliacao`, `cansasso_autoavaliacao`, `dor_autoavaliacao`, `dornopeito_autoavaliacao`)
         VALUES ('$idExercicio', '$idUsuario', '$rendimento', '$cansaco', '$dores', '$dornopeito')";
-        print_r($sql)
+        // print_r($sql);
+        echo json_encode($sql);
 		// $incluir = mysqli_query($cn, $sql);
         
 

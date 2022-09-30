@@ -16,10 +16,11 @@
         include ('../../conexao/conexao.php');
         include ('../menu.php');
         // include menu
-        session_start();
-		$id_usuario = $_SESSION['ID'];
+
+        // session_start();
+		// $id_usuario = $_SESSION['ID'];
         // Acessar Dados
-        $consulta = mysqli_query($cn, "SELECT * from exercicio");
+        $consulta = mysqli_query($cn, "SELECT * from adm");
         $exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
     ?>
 
@@ -40,26 +41,14 @@
 
 			<div class="card-tabela">
 				<section>
-					<div class="img-card-tabela">
-						<img src="<?php echo $exibe[$i]['imagem_exercicio']; ?>">
-					</div>
 					<div class="titulo-card-tabela">
-						<h3><?php echo $exibe[$i]['nome_exercicio']; ?></h3>
-						<p><?php echo $exibe[$i]['desc_exercicio']; ?></p>
+						<h3><?php echo $exibe[$i]['nome_adm']; ?></h3>
 					</div>
 					<div class="desc-card-tabela">
-						<p><?php echo $exibe[$i]['duracao_exercicio']; ?></p>
-						<p><?php echo $exibe[$i]['equipamentos_exercicio']; ?></p>
-						<p><?php echo $exibe[$i]['contra_indicacoes_exercicio']; ?></p>
+						<p><?php echo $exibe[$i]['email_adm']; ?></p>
 					</div>
 				</section>
-
-				<section>
-					<div class="btns-card-tabela">
-						<button><a href="../formsUpdate/altaexercicio.php?cd=<?php echo $exibe[$i]['id_exercicio']; ?>">Alterar</a></button>
-						<button><a href="#">Deletar</a></button>
-					</div>
-				</section>
+				
 			</div>
 			<?php
 				};

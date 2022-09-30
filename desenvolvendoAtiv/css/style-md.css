@@ -109,8 +109,8 @@
         gap: 15px;
     }
     .card-exercicios {
-        width: 280px;
-        height: 430px;
+        width: 350px;
+        height: 480px;
     }
     .desc-exercicios{
         width: 280px;
@@ -158,7 +158,6 @@
     }
     .txt-inicio{
         width: 510px;
-        background-color: blue;
     }
     .btn-logon{
         display: flex;
@@ -174,7 +173,7 @@
         gap: 10px;
     }
     .card-inicio{
-        width: 
+        width: 160px;
         min-height: 240px;
         padding: 15px;
     }
@@ -182,7 +181,7 @@
         width: 140px;
     }
 
-        /* Propósito */
+    /* Propósito */
     #proposito{
         margin-top: 0px;
     }
@@ -195,7 +194,7 @@
 
     /* Beneficios */
     .txt-beneficios{
-        width: 875px;
+        width: 795px;
     }
     .card-beneficios{
         width: 180px;
@@ -208,38 +207,61 @@
 
     /* Alongamentos */
     #alongamentos{
-        width: 875px;
+        width: 795px;
         margin: auto;
     }
     .cards-exercicios{
-        gap: 15px;
+        display: none;
+    }
+    .cards-exercicios-sm{
+        display: none;
+    }
+    .cards-exercicios-md{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .btn-carrosel{
+        background-color: #fff;
+        width: 40px;
+        color: red;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .card-exercicios {
-        width: 280px;
-        height: 430px;
+        width: 342px;
+        height: 470px;
     }
     .desc-exercicios{
-        width: 280px;
+        width: 342px;
     }
 
     /* Depoimentos */
     .container-depoimentos{
-        width: 875px;
+        width: 795px;
         margin: auto;
     }
     .carrosel-depoimentos{
+        display: none;
+    }
+    .carrosel-depoimentos-md{
         position: relative;
         display: flex;
-        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
     }
     .card-depoimentos{
-        width: 280px;
+        width: 382px;
         height: 300px;
     }
 
     /* Perguntas */
     #duvidas{
-        width: 875px;
+        width: 795px;
     }
 
     /* Fecha Page Index */

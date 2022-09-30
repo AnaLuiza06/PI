@@ -25,10 +25,13 @@
 					<li><a href="../pagesMenu/mais-alongamentos.php">Alongamentos</a></li>
 					<li><a href="../pagesMenu/favoritos.php">Favoritos</a></li>
 					<li><a href="../pagesMenu/ajuda.php">Ajuda</a></li>
+					<li><a href="../pagesMenu/sair.php">Sair</a></li>
 				</ul>
 			</div>
-			<div class="menu-identificacao">
-				<h5><?php echo $exibe[0]['nome_usuario'];?></h5>
-				<img src="https://essaseoutras.com.br/wp-content/uploads/2011/01/gatinhos-fofinhos-3.jpg">
+			<div>
+				<a href="./meusdados.php" class="menu-identificacao">
+					<h5><?php echo $exibe[0]['nome_usuario'];?></h5>
+					<img src="https://essaseoutras.com.br/wp-content/uploads/2011/01/gatinhos-fofinhos-3.jpg">
+				</a>
 			</div>
 	</div>

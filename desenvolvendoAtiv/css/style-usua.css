@@ -20,6 +20,12 @@ body p{
 	display: flex;
 	gap: 10px;
 	align-items: center;
+	text-decoration: none;
+	color: #000;
+}
+.menu-identificacao:hover{
+	text-decoration: none;
+	color: #000;
 }
 .menu-identificacao img{
 	width: 40px;
@@ -264,7 +270,9 @@ body p{
 	margin-top: 60px;
 	margin-left: 130px;
 }
-
+.favoritar{
+	width: 100%;
+}
 .favoritar button {
  background-color: transparent;
  outline: none;
@@ -525,10 +533,10 @@ iframe{
 /*Abre Meus Dados*/
 .form-dadospessoais{
 	width: 800px;
-	border: 2px solid #B9CDCB;
+	border: 2px solid #5BC2A3;
 	border-radius: 10px;
+	margin: auto;
 	margin-top: 50px;
-	margin-left: 275px;
 	padding: 30px;
 }
 .form-row{
@@ -542,8 +550,9 @@ iframe{
 .form-row input{
 	width: 350px;
 	height: 30px;
-	border: 1.5px solid #B9CDCB;
+	border: 1.5px solid #5BC2A3;
 	border-radius: 10px;
+	padding: 5px;
 }
 .form-row label{
 	margin-bottom: 0px;
@@ -556,5 +565,8 @@ iframe{
 .btn-alterar button{
 	color: #fff;
 	margin-top: 20px;
+}
+.btn-alterar button:hover{
+	color: #5BC2A3;
 }
 /*Fechar Meus Dados*/

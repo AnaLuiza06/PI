@@ -155,6 +155,12 @@
 									</label>
 							</div>
 						</div>
+
+						<div class="campos_escondidos">
+							<input type="text" name="id_video" value="">
+							<input type="text" name="id_desafio" value="<?= $id_desafio ?>">
+
+						</div>
 						<div class="btn-alterar">
 							<button type="submit">Enviar</button>
 						</div>
@@ -206,7 +212,7 @@
 
 		async function pegaVideo(id) {
 			const response = await fetch(`./api/pegaVideo.php?id=${id}`);
-			console.log(response)
+			// console.log(response)
 			const data = await response.json();
 			return data
 		}
@@ -214,7 +220,7 @@
 		function escrevaVideoNoHtml(pos = 0) {
 			posicaoVideo = pos
 			const data = videoNaPagina[pos];
-			console.log(pos)
+			// console.log(pos)
 			escreverTreinoDeHoje(data);
 			const video =  data.video_exercicio
 			telaVideo.innerHTML = video
@@ -226,7 +232,7 @@
 			const data = await response.json();
 
 			data.forEach(async (el) => {
-				console.log(el)
+				// console.log(el)
 				const id_video = el.id_video;
 				const res = await pegaVideo(id_video);
 				videoNaPagina.push(res[0]);
@@ -241,9 +247,14 @@
 		// logica de envio do form
 		async function handleSubmit(event) {
 			event.preventDefault();
-			const formData = new FormData(event.target);
 			const {id_exercicio} = videoNaPagina[posicaoVideo];
-			const id_desafio = <?= $id_desafio ?>;
+
+			const campos_escondidos = document.querySelector('.campos_escondidos');
+			const campo_id_exercicio = campos_escondidos.querySelector("input[name='id_video']");
+			campo_id_exercicio.value = id_exercicio;
+
+
+			const formData = new FormData(event.target);
 			const response = await fetch('./api/registraDesafio.php', {
 				body: formData,
 				method: 'post'

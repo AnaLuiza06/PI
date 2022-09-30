@@ -5,6 +5,7 @@
 			<div class="menu-links">
 				<ul>
 					<li><a href="#">Minha Área</a></li>
+					<li><a href="#">Adiministradores</a></li>
 					<li><a href="#">Desafios</a></li>
 					<li><a href="#">Alongamentos</a></li>
 					<li><a href="#">Ajuda</a></li>

@@ -3,6 +3,14 @@ drop database if exists bd_ativ;
 create database if not exists `bd_ativ`;
 use bd_ativ;
 
+create table adm(
+    id_adm int not null AUTO_INCREMENT PRIMARY KEY,
+    nome_adm varchar(40), 
+    email_adm varchar(70), 
+    nascimento_adm date,
+    senha_adm varchar(40)
+)   DEFAULT charset = utf8;
+
 create table usuario(
     id_usuario int not null AUTO_INCREMENT PRIMARY KEY,
     nome_usuario varchar(40), 
@@ -11,7 +19,8 @@ create table usuario(
     altura_usuario float(4,2), 
     peso_usuario float(5,2),
     senha_usuario varchar(40)
-)
+)   DEFAULT charset = utf8;
+
 create table anamnese(
     id_anamnese int not null AUTO_INCREMENT PRIMARY KEY,
     id_usuario int,

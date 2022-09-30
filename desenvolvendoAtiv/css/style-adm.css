@@ -7,10 +7,9 @@
         border-radius: 20px;
         margin: auto;   
         margin-top: 30px;
+        margin-bottom: 30px;
     }
     .form-add-exercicio form{
-        height: 510px;  
-        overflow: auto;
         display: flex;
         flex-direction: column; 
         justify-content: center; 
@@ -126,11 +125,9 @@
     }
     .titulo-card-tabela{
         width: 450px;
-        border: 1px solid red;
     }
     .desc-card-tabela{
         width: 250px;
-        border: 1px solid red;
     }
     .btns-card-tabela button{
         margin-top: 10px;

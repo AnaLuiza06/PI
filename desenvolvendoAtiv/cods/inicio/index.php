@@ -70,6 +70,30 @@
 			</div>
 		</section>
 
+		<section class="cards-inicio-sm">
+			<button class="btn-carrosel"><</button>
+			<div class="card-inicio ">
+				<span class="material-symbols-outlined">cottage</span>
+				<p>Faça seus exercícios onde quiser, até mesmo em sua casa.</p>
+			</div>
+
+			<div class="card-inicio active">
+				<span class="material-symbols-outlined">sports_gymnastics</span>
+				<p>Tenha acesso a desafios que ajudam a criar uma rotina de exercícios.</p>
+			</div>
+
+			<div class="card-inicio">
+				<span class="material-symbols-outlined">elderly</span>
+				<p>Faça exercícios desenvolvidos por uma profissional diretamente para o público mais idoso.</p>
+			</div>
+
+			<div class="card-inicio">
+				<span class="material-symbols-outlined">health_and_safety</span>
+				<p>Melhore sua saúde com os vários benefícios que a atividade física nos proporciona.</p>
+			</div>
+			<button class="btn-carrosel">></button>
+		</section>
+
 		<section id="proposito">
 			<div class="img-proposito">
 				<img src="../../imgs/img-beneficios.png">
@@ -197,6 +221,81 @@
 					<img src="../../imgs/img-inicio.png">
 				</div>
 			</div>
+
+			<div class="cards-exercicios-md">
+				<button class="btn-carrosel" id="btnAnterior-md"><</button>
+				<div class="card-exercicios">
+					<div class="desc-exercicios">
+						<div class="topo-desc-exercicios">
+							<h2>Articulações Nível 1</h2>
+						</div>
+						<div class="descricao-exercicio">
+							<p>O movimentar das articulações é muito importante para estimular a memória corporal e fazer com que não atrofiem.</p>
+							<p>Aqui temos exercícios muito fáceis de serem feitos, sendo indicados principalmente para aquelas pessoas que estão começando agora o hábito de se alongar todos os dias.</p>
+							<p>Duração: 11 min</p>
+							<p>Equipamentos: ...</p>
+						</div>
+						<div class="favoritar">
+							<div class="tipo-maisteinos">
+								<p>Articulações</p>
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+	  							<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+							</svg>
+						</div>
+					</div>
+					<img src="../../imgs/img-inicio.png">
+				</div>
+
+				<div class="card-exercicios">
+					<div class="desc-exercicios">
+						<h2>Articulações Nível 1</h2>
+						<div class="descricao-exercicio">
+							<p>O movimentar das articulações é muito importante para estimular a memória corporal e fazer com que não atrofiem.</p>
+							<p>Aqui temos exercícios muito fáceis de serem feitos, sendo indicados principalmente para aquelas pessoas que estão começando agora o hábito de se alongar todos os dias.</p>
+							<p>Duração: 11 min</p>
+							<p>Equipamentos: ...</p>
+						</div>
+						<div class="favoritar">
+							<div class="tipo-maisteinos">
+								<p>Articulações</p>
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+	  							<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+							</svg>
+						</div>
+					</div>
+					<img src="../../imgs/img-inicio.png">
+				</div>
+				<button class="btn-carrosel" id="btnProximo-md">></button>
+
+			<div class="cards-exercicios-sm">
+				<button class="btnAnterior"><</button>
+				<div class="card-exercicios">
+					<div class="desc-exercicios">
+						<div class="topo-desc-exercicios">
+							<h2>Articulações Nível 1</h2>
+						</div>
+						<div class="descricao-exercicio">
+							<p>O movimentar das articulações é muito importante para estimular a memória corporal e fazer com que não atrofiem.</p>
+							<p>Aqui temos exercícios muito fáceis de serem feitos, sendo indicados principalmente para aquelas pessoas que estão começando agora o hábito de se alongar todos os dias.</p>
+							<p>Duração: 11 min</p>
+							<p>Equipamentos: ...</p>
+						</div>
+						<div class="favoritar">
+							<div class="tipo-maisteinos">
+								<p>Articulações</p>
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+	  							<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+							</svg>
+						</div>
+					</div>
+					<img src="../../imgs/img-inicio.png">
+				</div>
+				<button class="btnProximo">></button>
+			</div>
+			</div>
 		</section>
 
 		<section id="depoimentos">
@@ -216,6 +315,34 @@
 						</section>
 					</div>
 
+					<div class="card-depoimentos">
+						<section class="identificacao">
+							<img src="https://essaseoutras.com.br/wp-content/uploads/2011/01/gatinhos-fofinhos-3.jpg">
+							<div class="email">
+								<h3>Nome Usuário</h3>
+								<p>usuario@gmail.com</p>
+							</div>
+						</section>
+						<section class="text-card-depoimentos">
+							<p>Depoimento .... Depoimento .... Depoimento ....</p>
+						</section>
+					</div>
+
+					<div class="card-depoimentos">
+						<section class="identificacao">
+							<img src="https://essaseoutras.com.br/wp-content/uploads/2011/01/gatinhos-fofinhos-3.jpg">
+							<div class="email">
+								<h3>Nome Usuário</h3>
+								<p>usuario@gmail.com</p>
+							</div>
+						</section>
+						<section class="text-card-depoimentos">
+							<p>Depoimento .... Depoimento .... Depoimento ....</p>
+						</section>
+					</div>
+				</div>
+
+				<div class="carrosel-depoimentos-md">
 					<div class="card-depoimentos">
 						<section class="identificacao">
 							<img src="https://essaseoutras.com.br/wp-content/uploads/2011/01/gatinhos-fofinhos-3.jpg">
