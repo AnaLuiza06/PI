@@ -1,0 +1,1 @@
+const idExercicio = document.querySelectorAll(".dias-treinodehoje ul #")
