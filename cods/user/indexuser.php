@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" type="text/css" href="../../css/style-inicio.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style-usua.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style-md.css">
 </head>
 <body>
 
@@ -29,7 +30,7 @@
 	<section class="minhaarea-usua">
 
 		<div class="desafio-atual">
-			<h2>Desafio Atual</h2>
+			<h2 class="titulo-sections">Desafio Atual</h2>
 
 			<div class="card-desafioatual">
 				<div class="expo-geral">
@@ -49,7 +50,7 @@
 		</div>
 
 		<div class="minha-evolucao">
-			<h2>Minha Evolução</h2>
+			<h2 class="titulo-sections">Minha Evolução</h2>
 
 			<?php
 				$sql = "SELECT * FROM autoavaliacao where id_usuario = '$id'";
@@ -60,18 +61,59 @@
 
 			?>
 
+			<?php
+				$consulta_dados = mysqli_query($cn, "SELECT * FROM usuario WHERE id_usuario = '$id'");
+				$exibe_dados = mysqli_fetch_all($consulta_dados, MYSQLI_ASSOC);
+
+				$peso = $exibe_dados[0]['peso_usuario'];
+				$altura = $exibe_dados[0]['altura_usuario'];
+
+				$imc = $peso / ($altura * $altura);
+
+				$msg_imc = "";
+
+				if($imc < 18.5){
+					$msg_imc = "Seu Indice de Massa Corporal está baixo, por isso, busque ajuda profissonal para aumenta-lo um pouco.";
+				} else
+				if($imc > 18.5 && $imc < 24.9){
+					$msg_imc = "Seu Indice de Massa Corporal está normal.";
+				} else
+				if($imc > 25 && $imc < 29.9){
+					$msg_imc = "Seu Indice de Massa Corporal está alto, indicando sobrepeso. Busque ajuda profissonal para abaixa-lo.";
+				} else
+				if($imc > 30 && $imc < 34.9){
+					$msg_imc = "Seu Indice de Massa Corporal está muito alto, inicando Obesidade I. Busque ajuda profissonal para abaixa-lo.";
+				} else
+				if($imc > 35 && $imc < 39.9){
+					$msg_imc = "Seu Indice de Massa Corporal está muito alto, inicando Obesidade II. Busque ajuda profissonal para abaixa-lo.";
+				} else
+				if($imc > 40){
+					$msg_imc = "Seu Indice de Massa Corporal está muito alto, inicando Obesidade III. Busque ajuda profissonal para abaixa-lo.";
+				}
+			?>
 			<div class="cards-evolucao">
+				<?php
+					$consulta_anamnese = mysqli_query($cn, "SELECT * FROM anamnese WHERE id_usuario = '$id'");
+					$exibe_anamnese = mysqli_fetch_all($consulta_anamnese, MYSQLI_ASSOC);
+				?>
 				<section class="aproveitamento-evolucao">
-					<div class="grafico-evolucao" id="evolucao">
-						<div class="graficopizza"></div>
-						<h5>Aproveitamento</h5>
-					</div>
-				</section>
-				<section class="calendario-evolucao">
-					<p>Março/2022</p> <!-- mes que está sendo realizado o treino -->
-					<div class="container-calendario">
-						<!-- calendario -->
-					</div>
+					<h3>Informações Atuais</h3>
+					<p class="p-atencao"><?php echo $msg_imc;?></p>
+
+					<?php
+						if($exibe_anamnese[0]['pressao_anamnese'] == 'alta' || $exibe_anamnese[0]['pressao_anamnese'] == 'baixa'){
+							echo "<p>Meda sempre sua pressão e não deixe de ir em consultas para ver se está tudo bem.</p>";
+						}
+						if($exibe_anamnese[0]['lesao_anamnese'] == 'sim'){
+							echo "<p>Tenha mais precalção ao realizar os alongamentos, mas nunca deixe de se movimentar.</p>";
+						}
+						if($exibe_anamnese[0]['diabetes_anamnese'] == 'sim'){
+							echo "<p>Fique sempre atento para alterações na sua diabetes.</p>";
+						}
+						if($exibe_anamnese[0]['dorpeito_anamnese'] == 'sim'){
+							echo "<p>Fique atento as dores no peito. Caso persistam avise seu médico.</p>";
+						}
+					?>
 				</section>
 
 				<section class="numeros-evolucaouser">
@@ -103,7 +145,7 @@
 		</div>
 
 		<div class="maistreinos">
-			<h2 class="titulo-maistreinos">Meus Favoritos</h2>
+			<h2 class="titulo-sections">Meus Favoritos</h2>
 			<div class="cards-exercicios">
 				<div class="card-exercicios">
 					<div class="desc-exercicios">

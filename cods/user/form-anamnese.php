@@ -10,7 +10,7 @@
                             <label>Sim</label>
                         </div>
                         <div class="input-anamnese">
-                            <input type="radio" name="fumante" value="não">
+                            <input type="radio" name="fumante" value="nao">
                             <label>Não</label>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                             <label>Sim</label>
                         </div>
                         <div class="input-anamnese">
-                            <input type="radio" name="diabetes"value="não">
+                            <input type="radio" name="diabetes"value="nao">
                             <label>Não</label>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                             <label>Sim</label>
                         </div>
                         <div class="input-anamnese">
-                            <input type="radio" name="problemas-cardiacos"value="não">
+                            <input type="radio" name="problemas-cardiacos"value="nao">
                             <label>Não</label>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                             <label>Sim</label>
                         </div>
                         <div class="input-anamnese">
-                            <input type="radio" name="lesao"value="não">
+                            <input type="radio" name="lesao"value="nao">
                             <label>Não</label>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                             <label>Sim</label>
                         </div>
                         <div class="input-anamnese">
-                            <input type="radio" name="praticaatividade"value="não">
+                            <input type="radio" name="praticaatividade"value="nao">
                             <label>Não</label>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                             <label>Sim</label>
                         </div>
                         <div class="input-anamnese">
-                            <input type="radio" name="dornopeito"value="não">
+                            <input type="radio" name="dornopeito"value="nao">
                             <label>Não</label>
                         </div>
                     </div>

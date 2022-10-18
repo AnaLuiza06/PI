@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" type="text/css" href="../../../css/style-inicio.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/style-usua.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/style-md.css">
 </head>
 <body>
 
@@ -112,13 +113,13 @@
 	                            <label>Sim</label>
 	                        </div>
 	                        <div class="input-anamnese">
-	                            <input type="radio" name="fumante" value="não">
+	                            <input type="radio" name="fumante" value="nao">
 	                            <label>Não</label>
 	                        </div>
                     	</div>
                     
                     <?php
-                    	} else if($ex_anamnese[0]['fumante_anamnese'] == 'não'){
+                    	} else if($ex_anamnese[0]['fumante_anamnese'] == 'nao'){
                     ?>
                     	<div class="inputs-anamnese">
 	                        <div class="input-anamnese">
@@ -126,7 +127,7 @@
 	                            <label>Sim</label>
 	                        </div>
 	                        <div class="input-anamnese">
-	                            <input type="radio" name="fumante" value="não" checked>
+	                            <input type="radio" name="fumante" value="nao" checked>
 	                            <label>Não</label>
 	                        </div>
                     	</div>
@@ -206,12 +207,12 @@
 	                            <label>Sim</label>
 	                        </div>
 	                        <div class="input-anamnese">
-	                            <input type="radio" name="diabetes"value="não">
+	                            <input type="radio" name="diabetes"value="nao">
 	                            <label>Não</label>
 	                        </div>
 	                    </div>
 	                <?php
-                    	} else if($ex_anamnese[0]['diabetes_anamnese'] == 'não'){
+                    	} else if($ex_anamnese[0]['diabetes_anamnese'] == 'nao'){
                     ?>
                     	<div class="inputs-anamnese">
 	                        <div class="input-anamnese">
@@ -219,7 +220,7 @@
 	                            <label>Sim</label>
 	                        </div>
 	                        <div class="input-anamnese">
-	                            <input type="radio" name="diabetes"value="não" checked>
+	                            <input type="radio" name="diabetes"value="nao" checked>
 	                            <label>Não</label>
 	                        </div>
 	                    </div>
@@ -239,12 +240,12 @@
 	                            <label>Sim</label>
 	                        </div>
 	                        <div class="input-anamnese">
-	                            <input type="radio" name="problemas-cardiacos"value="não">
+	                            <input type="radio" name="problemas-cardiacos"value="nao">
 	                            <label>Não</label>
 	                        </div>
 	                    </div>
 	                <?php
-                    	} else if($ex_anamnese[0]['pcardiaco_anamnese'] == 'não'){
+                    	} else if($ex_anamnese[0]['pcardiaco_anamnese'] == 'nao'){
                     ?>
                     	<div class="inputs-anamnese">
 	                        <div class="input-anamnese">
@@ -252,7 +253,7 @@
 	                            <label>Sim</label>
 	                        </div>
 	                        <div class="input-anamnese">
-	                            <input type="radio" name="problemas-cardiacos"value="não" checked>
+	                            <input type="radio" name="problemas-cardiacos"value="nao" checked>
 	                            <label>Não</label>
 	                        </div>
 	                    </div>
@@ -272,12 +273,12 @@
 	                            <label>Sim</label>
 	                        </div>
 	                        <div class="input-anamnese">
-	                            <input type="radio" name="lesao"value="não">
+	                            <input type="radio" name="lesao"value="nao">
 	                            <label>Não</label>
 	                        </div>
 	                    </div>
                     <?php
-                    	} else if($ex_anamnese[0]['lesao_anamnese'] == 'não'){
+                    	} else if($ex_anamnese[0]['lesao_anamnese'] == 'nao'){
                     ?>
                     	<div class="inputs-anamnese">
 	                        <div class="input-anamnese">
@@ -285,7 +286,7 @@
 	                            <label>Sim</label>
 	                        </div>
 	                        <div class="input-anamnese">
-	                            <input type="radio" name="lesao"value="não" checked>
+	                            <input type="radio" name="lesao"value="nao" checked>
 	                            <label>Não</label>
 	                        </div>
 	                    </div>
@@ -305,12 +306,12 @@
 	                            <label>Sim</label>
 	                        </div>
 	                        <div class="input-anamnese">
-	                            <input type="radio" name="praticaatividade"value="não">
+	                            <input type="radio" name="praticaatividade"value="nao">
 	                            <label>Não</label>
 	                        </div>
 	                    </div>
 	                <?php
-                    	} else if($ex_anamnese[0]['ativo_anamnese'] == 'não'){
+                    	} else if($ex_anamnese[0]['ativo_anamnese'] == 'nao'){
                     ?>
                     	<div class="inputs-anamnese">
 	                        <div class="input-anamnese">
@@ -318,7 +319,7 @@
 	                            <label>Sim</label>
 	                        </div>
 	                        <div class="input-anamnese">
-	                            <input type="radio" name="praticaatividade"value="não" checked>
+	                            <input type="radio" name="praticaatividade"value="nao" checked>
 	                            <label>Não</label>
 	                        </div>
 	                    </div>
@@ -338,12 +339,12 @@
 	                            <label>Sim</label>
 	                        </div>
 	                        <div class="input-anamnese">
-	                            <input type="radio" name="dornopeito"value="não">
+	                            <input type="radio" name="dornopeito"value="nao">
 	                            <label>Não</label>
 	                        </div>
 	                    </div>
 	                <?php
-                    	} else if($ex_anamnese[0]['dorpeito_anamnese'] == 'não'){
+                    	} else if($ex_anamnese[0]['dorpeito_anamnese'] == 'nao'){
                     ?>
                     	<div class="inputs-anamnese">
 	                        <div class="input-anamnese">
@@ -351,7 +352,7 @@
 	                            <label>Sim</label>
 	                        </div>
 	                        <div class="input-anamnese">
-	                            <input type="radio" name="dornopeito"value="não" checked>
+	                            <input type="radio" name="dornopeito"value="nao" checked>
 	                            <label>Não</label>
 	                        </div>
 	                    </div>

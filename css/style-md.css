@@ -113,7 +113,7 @@
         height: 480px;
     }
     .desc-exercicios{
-        width: 280px;
+        width: 100%;
     }
 
     /* Depoimentos */
@@ -137,6 +137,42 @@
     }
 
     /* Fecha Page Index */
+
+
+    /* Abre Pages Usuario */
+    
+    /* Home */
+    .menu-pageuser{
+        background-color: red;
+    }
+    .titulo-sections{
+        width: 850px;
+    }
+    .card-desafioatual{
+        width: 850px;
+    }
+    .cards-evolucao{
+        width: 850px;
+    }
+
+    /* Page Ajuda */
+    .card-ajuda{
+        width: 850px;
+    }
+    .desc-ajuda div img{
+        width: 350px;
+    }
+    .card-form-ajuda{
+        width: 850px;
+    }
+    .card-form-ajuda form{
+        width: 450px;
+    }
+    .card-form-ajuda textarea{
+        width: 410px;
+        height: 200px;
+    }
+    /* Fecha Pages Usuario */
   }
 
 

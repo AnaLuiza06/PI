@@ -76,8 +76,9 @@ body p{
 	margin-top: 20px;
 }
 .btn-anamnese button{
-	background-color: #00453A;
+	background-color:transparent;
 	color: #fff;
+	border: 2px solid #fff;
 }
 /*Fecha Form Anamnese*/
 
@@ -127,9 +128,6 @@ body p{
 } /*Fecha Minha Área*/
 
 /*Abre Desafio Atual*/
-.desafio-atual h2{
-	margin-left: 130px;
-}
 .card-desafioatual{
 	width: 1100px;
 	height: 300px;
@@ -139,6 +137,7 @@ body p{
 	padding: 20px;
 	position: relative;
 	color: #fff;
+	margin: auto;
 }
 .card-desafioatual img{
 	width: 690px;
@@ -195,6 +194,10 @@ body p{
 /*Fecha Desafio Atual*/
 
 /*Abre Evolução*/
+.titulo-sections{
+	width: 1100px;
+	margin: auto;
+}
 .cards-evolucao{
 	display: flex;
 	margin-left: 125px;
@@ -202,14 +205,19 @@ body p{
 	width: 1100px;
 	height: 300px;
 	border-radius: 10px;
+	margin: auto;
 }
 .aproveitamento-evolucao{
-	width: 250px;
-	padding: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	width: 665px;
+	padding: 30px;
+	border-right: 2px solid #5BC2A3;
+}
+.p-atencao{
+	background-color: #EEA7FF;
+	border-radius: 20px;
+	padding: 10px 15px;
+	color: #fff;
+	margin-bottom: 10px;
 }
 .calendario-evolucao{
 	text-align: center;
@@ -231,7 +239,6 @@ body p{
 	background-color: #EEA7FF;
 } 
 .minha-evolucao h2{
-	margin-left: 135px;
 	margin-top: 50px;
 	margin-bottom: 5px;
 }
@@ -266,9 +273,8 @@ body p{
 /*Fechar Numeros de Evolução*/
 
 /*Abrir Favoritos*/
-.titulo-maistreinos{
+.maistreinos h2{
 	margin-top: 60px;
-	margin-left: 130px;
 }
 .favoritar{
 	width: 100%;
