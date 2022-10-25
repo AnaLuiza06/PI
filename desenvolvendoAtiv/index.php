@@ -11,7 +11,7 @@
 </head>
 <body>
 
-	<header>
+	<header class="header-lg">
 		<div class="img-logo">
 			<h2>A T I V</h2>
 		</div>
@@ -31,6 +31,37 @@
 				<a href="./cods/inicio/login.php">Entrar</a>
 			</button>
 		</div>
+	</header>
+
+	<header class="header-md">
+		<section>
+			<div class="img-logo">
+				<h2>A T I V</h2>
+			</div>
+			<div class="icon-menu">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+				  <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+				</svg>
+			</div>
+		</section>
+		<section>
+			<div class="nav-links-md">
+				<nav>
+					<ul>
+						<li><a href="#proposito">Propósito</a></li>
+						<li><a href="#beneficios">Benefícios</a></li>
+						<li><a href="#alongamentos">Favoritos</a></li>
+						<li><a href="#depoimentos">Depoimentos</a></li>
+						<li><a href="#duvidas">Dúvidas</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="btn-login-md">
+				<button>
+					<a href="./cods/inicio/login.php">Entrar</a>
+				</button>
+			</div>
+		</section>
 	</header>
 
 	<main>
@@ -67,6 +98,23 @@
 			<div class="card-inicio">
 				<span class="material-symbols-outlined">health_and_safety</span>
 				<p>Melhore sua saúde com os vários benefícios que a atividade física nos proporciona.</p>
+			</div>
+		</section>
+
+		<section class="cards-inicio-md">
+			<div class="card-inicio-md">
+				<span class="material-symbols-outlined">cottage</span>
+				<p>Faça seus exercícios onde quiser, até mesmo em sua casa.</p>
+			</div>
+
+			<div class="card-inicio-md">
+				<span class="material-symbols-outlined">sports_gymnastics</span>
+				<p>Tenha acesso a desafios que ajudam a criar uma rotina de exercícios.</p>
+			</div>
+
+			<div class="card-inicio-md">
+				<span class="material-symbols-outlined">elderly</span>
+				<p>Faça exercícios desenvolvidos por uma profissional diretamente para o público mais idoso.</p>
 			</div>
 		</section>
 
@@ -119,7 +167,7 @@
 						<span class="material-symbols-outlined">volunteer_activism</span>
 						<p>Prevenção de problemas cardiovasculares</p>
 					</div>
-					<div class="card-beneficios">
+					<div class="card-beneficios active">
 						<span class="material-symbols-outlined">humerus_alt</span>
 						<p>Ajuda no funcionamento das articulações</p>
 					</div>
@@ -134,7 +182,7 @@
 						<span class="material-symbols-outlined">accessibility_new</span>
 						<p>Melhora da coordenação motora e do equilíbrio</p>
 					</div>
-					<div class="card-beneficios">
+					<div class="card-beneficios active">
 						<span class="material-symbols-outlined">star</span>
 						<p>Diminui a gordura corporal</p>
 					</div>
@@ -343,6 +391,10 @@
 				</div>
 
 				<div class="carrosel-depoimentos-md">
+
+					<div>
+						<button><</button>
+					</div>
 					<div class="card-depoimentos">
 						<section class="identificacao">
 							<img src="https://essaseoutras.com.br/wp-content/uploads/2011/01/gatinhos-fofinhos-3.jpg">
@@ -356,17 +408,8 @@
 						</section>
 					</div>
 
-					<div class="card-depoimentos">
-						<section class="identificacao">
-							<img src="https://essaseoutras.com.br/wp-content/uploads/2011/01/gatinhos-fofinhos-3.jpg">
-							<div class="email">
-								<h3>Nome Usuário</h3>
-								<p>usuario@gmail.com</p>
-							</div>
-						</section>
-						<section class="text-card-depoimentos">
-							<p>Depoimento .... Depoimento .... Depoimento ....</p>
-						</section>
+					<div>
+						<button><</button>
 					</div>
 				</div>
 			</div>

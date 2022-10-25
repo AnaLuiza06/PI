@@ -79,6 +79,9 @@
 				};
 			?>
 
+			<?php
+			include ("./footer.php");
+		?>
 
 	</section>
 

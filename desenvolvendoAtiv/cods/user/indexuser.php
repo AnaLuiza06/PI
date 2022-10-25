@@ -121,7 +121,14 @@
 							<h5>Alongamentos Feitos</h5>
 						</div>
 						<div class="numero-desafios">
-							<h1>00</h1>
+							<?php
+								if($count_evolucao < 10){
+									echo "<h1>0".$count_evolucao."</h1>";
+								}
+								else{
+									echo "<h1>".$count_evolucao."</h1>";
+								}
+							?>
 							<h5>Desafios Feitos</h5>
 						</div>
 					</div>
@@ -202,6 +209,10 @@
 				</div>
 			</div>
 		</div>
+
+		<?php
+			include ("./pagesMenu/footer.php");
+		?>
 	</section>
 
 	<!-- <section class="primeiro-acesso">
