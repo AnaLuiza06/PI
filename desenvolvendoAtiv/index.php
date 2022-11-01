@@ -35,16 +35,18 @@
 
 	<header class="header-md">
 		<section>
-			<div class="img-logo">
-				<h2>A T I V</h2>
-			</div>
-			<div class="icon-menu">
-				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
-				  <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-				</svg>
+			<div class="titulo-menu">
+				<div class="img-logo">
+					<h2>A T I V</h2>
+				</div>
+				<div class="icon-menu">
+					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+					  <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+					</svg>
+				</div>
 			</div>
 		</section>
-		<section>
+		<section class="links-menu-md">
 			<div class="nav-links-md">
 				<nav>
 					<ul>
@@ -271,7 +273,6 @@
 			</div>
 
 			<div class="cards-exercicios-md">
-				<button class="btn-carrosel" id="btnAnterior-md"><</button>
 				<div class="card-exercicios">
 					<div class="desc-exercicios">
 						<div class="topo-desc-exercicios">
@@ -315,7 +316,6 @@
 					</div>
 					<img src="../../imgs/img-inicio.png">
 				</div>
-				<button class="btn-carrosel" id="btnProximo-md">></button>
 
 			<div class="cards-exercicios-sm">
 				<button class="btnAnterior"><</button>
@@ -393,7 +393,7 @@
 				<div class="carrosel-depoimentos-md">
 
 					<div>
-						<button><</button>
+						<button class="btn-carrosel"><</button>
 					</div>
 					<div class="card-depoimentos">
 						<section class="identificacao">
@@ -409,7 +409,7 @@
 					</div>
 
 					<div>
-						<button><</button>
+						<button class="btn-carrosel">></button>
 					</div>
 				</div>
 			</div>
@@ -479,6 +479,7 @@
 	</footer>
 
 	<script src="./js/js-inicio.js"></script>
+	<script src="./js/js-menu.js"></script>
 	
 </body>
 </html>

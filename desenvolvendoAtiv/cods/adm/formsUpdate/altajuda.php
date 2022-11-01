@@ -17,78 +17,67 @@
             include ('../../conexao/conexao.php');
             include ('./menu.php');
             // include menu
+
+            $id = $_GET['cd'];
+            $consulta_ajuda = mysqli_query($cn, "SELECT * FROM ajuda WHERE `id_ajuda` = '$id'");
+        	$exibe_ajuda = mysqli_fetch_all($consulta_ajuda, MYSQLI_ASSOC); 
         ?>
         <section class="form-add-exercicio">
-        		<?php
-
-        			$msg = $_GET['adcionado'];
-
-        			if($msg == 'true'){
-        		?>
-        			<div class="msg-add"><p>Card Ajuda Cadastrado</p></div>
-        		<?php
-        			}
-        			else if($msg == 'false'){
-        		?>
-        			<div class="msg-add"><p>Card Ajuda Já Exixtente</p></div>
-        		<?php
-        			}
-        		?>
-				<form method="post" action="../../conexao/inserts/iajuda-card.php">
+				<form method="post" action="../../conexao/updates/upajuda.php?cd=<?php echo $exibe_ajuda[0]['id_ajuda'];?>">
                     <h2>Adicionar</h2>
 					<div class="input-form-cadastro">
 						<label for="inputnome" id="labelnome">Pergunta</label>
-						<input type="text" name="pergunta" id="inputnome">
+						<input type="text" name="pergunta" id="inputnome" value="<?php echo $exibe_ajuda[0]['perguta_ajuda'];?>">
 					</div>
 
                     <div class="input-form-cadastro">
 						<label for="inputequipamentos">P1</label>
-						<input type="text" name="p1" id="inputequipamentos">
+						<input type="text" name="p1" id="inputequipamentos" value="<?php echo $exibe_ajuda[0]['p1_ajuda'];?>">
 					</div>
 
                     <div class="input-form-cadastro">
 						<label for="inputcontraindicacoes">Img1</label>
-						<input type="text" name="img1" id="inputcontraindicacoes">
+						<input type="text" name="img1" id="inputcontraindicacoes" value="<?php echo $exibe_ajuda[0]['img1_ajuda'];?>">
 					</div>
 
 					<div class="input-form-cadastro">
 						<label for="inputequipamentos">P2</label>
-						<input type="text" name="p2" id="inputequipamentos">
+						<input type="text" name="p2" id="inputequipamentos" value="<?php echo $exibe_ajuda[0]['p2_ajuda'];?>">
 					</div>
 
                     <div class="input-form-cadastro">
 						<label for="inputcontraindicacoes">Img2</label>
-						<input type="text" name="img2" id="inputcontraindicacoes">
+						<input type="text" name="img2" id="inputcontraindicacoes" value="<?php echo $exibe_ajuda[0]['img2_ajuda'];?>">
 					</div>
 
 					<div class="input-form-cadastro">
 						<label for="inputequipamentos">P3</label>
-						<input type="text" name="p3" id="inputequipamentos">
+						<input type="text" name="p3" id="inputequipamentos" value="<?php echo $exibe_ajuda[0]['p3_ajuda'];?>">
 					</div>
 
                     <div class="input-form-cadastro">
 						<label for="inputcontraindicacoes">Img3</label>
-						<input type="text" name="img3" id="inputcontraindicacoes">
+						<input type="text" name="img3" id="inputcontraindicacoes" value="<?php echo $exibe_ajuda[0]['img3_ajuda'];?>">
 					</div>
 
 					<div class="input-form-cadastro">
 						<label for="inputequipamentos">P4</label>
-						<input type="text" name="p4" id="inputequipamentos">
+						<input type="text" name="p4" id="inputequipamentos" value="<?php echo $exibe_ajuda[0]['p4_ajuda'];?>">
 					</div>
 
                     <div class="input-form-cadastro">
 						<label for="inputcontraindicacoes">Img4</label>
-						<input type="text" name="img4" id="inputcontraindicacoes">
+						<input type="text" name="img4" id="inputcontraindicacoes" value="<?php echo $exibe_ajuda[0]['img4_ajuda'];?>">
 					</div>
 
 					<div class="input-form-cadastro">
 						<label for="inputequipamentos">P5</label>
-						<input type="text" name="p5" id="inputequipamentos">
+						<input type="text" name="p5" id="inputequipamentos" value="<?php echo $exibe_ajuda[0]['p5_ajuda'];?>">
 					</div>
 
                     <div class="input-form-cadastro">
 						<label for="inputcontraindicacoes">Img5</label>
-						<input type="text" name="img5" id="inputcontraindicacoes">
+						<input type="text" name="img5" id="inputcontraindicacoes" value="<?php echo $exibe_ajuda[0]['img5_ajuda'];?>">
 					</div>
 
 					<button onclick="" type="submit">Enviar</button>

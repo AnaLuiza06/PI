@@ -3,11 +3,19 @@
         margin: auto;
         margin-top: 30px;;
         width: 1100px;
-	    height: 100px;
-        padding: 30px;
+        padding: 20px 30px;
         border: #5BC2A3 2px solid;
         border-radius: 20px;
         position: relative;
+    }
+    .desc-ajuda-md{
+        display: none;
+    }
+    .button-lg{
+        display: block;
+    }
+    .button-md{
+        display: none;
     }
     .card-ajuda.active{
         height: auto;
@@ -23,6 +31,10 @@
     .titulo-ajuda button:hover{
         color: #5BC2A3;
         border: 1px solid #5BC2A3;
+    }
+    .btns-ajuda{
+        display: flex;
+        gap: 20px;
     }
     .desc-ajuda div{
         display: flex;

@@ -16,7 +16,7 @@
 	<?php
 
 
-		require ("./menu.php");
+		include ("./menu.php");
 	?>
 
 	<section class="imguser">
@@ -141,22 +141,31 @@
 		</div>
 
 		<div class="maistreinos">
-			<h2 class="titulo-sections">Meus Favoritos</h2>
+			<h2 class="titulo-sections">Lançamentos</h2>
 			<div class="cards-exercicios">
+			<?php
+
+				$ultimos_exercicios = mysqli_query($cn, "SELECT * FROM `exercicio`");
+				$exibe_ultimos = mysqli_fetch_all($ultimos_exercicios, MYSQLI_ASSOC);
+
+				$quantidade_ultima =  count($exibe_ultimos);
+				for ($i= 1; $i <= 3; $i++) { 
+					$posicao = $quantidade_ultima - $i;
+			?>
+				<a href="./videoexercicio.php?cd=<?php echo $exibe_ultimos[$posicao]['id_exercicio'];?>">
 				<div class="card-exercicios">
 					<div class="desc-exercicios">
 						<div class="topo-desc-exercicios">
-							<h2>Articulações Nível 1</h2>
+							<h2><?php echo $exibe_ultimos[$posicao]['nome_exercicio']; ?></h2>
 						</div>
 						<div class="descricao-exercicio">
-							<p>O movimentar das articulações é muito importante para estimular a memória corporal e fazer com que não atrofiem.</p>
-							<p>Aqui temos exercícios muito fáceis de serem feitos, sendo indicados principalmente para aquelas pessoas que estão começando agora o hábito de se alongar todos os dias.</p>
-							<p>Duração: 11 min</p>
-							<p>Equipamentos: ...</p>
+							<p><?php echo $exibe_ultimos[$posicao]['desc_exercicio']; ?></p>
+							<p><?php echo $exibe_ultimos[$posicao]['duracao_exercicio']; ?></p>
+							<p><?php echo $exibe_ultimos[$posicao]['equipamentos_exercicio']; ?></p>
 						</div>
 						<div class="favoritar">
 							<div class="tipo-maisteinos">
-								<p>Articulações</p>
+								<p><?php echo $exibe_ultimos[$posicao]['foco_exercicio']; ?></p>
 							</div>
 							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
 	  							<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
@@ -165,48 +174,10 @@
 					</div>
 					<img src="../../imgs/img-inicio.png">
 				</div>
-
-				<div class="card-exercicios">
-					<div class="desc-exercicios">
-						<h2>Articulações Nível 1</h2>
-						<div class="descricao-exercicio">
-							<p>O movimentar das articulações é muito importante para estimular a memória corporal e fazer com que não atrofiem.</p>
-							<p>Aqui temos exercícios muito fáceis de serem feitos, sendo indicados principalmente para aquelas pessoas que estão começando agora o hábito de se alongar todos os dias.</p>
-							<p>Duração: 11 min</p>
-							<p>Equipamentos: ...</p>
-						</div>
-						<div class="favoritar">
-							<div class="tipo-maisteinos">
-								<p>Articulações</p>
-							</div>
-							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-	  							<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-							</svg>
-						</div>
-					</div>
-					<img src="../../imgs/img-inicio.png">
-				</div>
-
-				<div class="card-exercicios">
-					<div class="desc-exercicios">
-						<h2>Articulações Nível 1</h2>
-						<div class="descricao-exercicio">
-							<p>O movimentar das articulações é muito importante para estimular a memória corporal e fazer com que não atrofiem.</p>
-							<p>Aqui temos exercícios muito fáceis de serem feitos, sendo indicados principalmente para aquelas pessoas que estão começando agora o hábito de se alongar todos os dias.</p>
-							<p>Duração: 11 min</p>
-							<p>Equipamentos: ...</p>
-						</div>
-						<div class="favoritar">
-							<div class="tipo-maisteinos">
-								<p>Articulações</p>
-							</div>
-							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-	  							<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-							</svg>
-						</div>
-					</div>
-					<img src="../../imgs/img-inicio.png">
-				</div>
+				</a>
+			<?php
+				}
+			?>
 			</div>
 		</div>
 
@@ -214,112 +185,6 @@
 			include ("./pagesMenu/footer.php");
 		?>
 	</section>
-
-	<!-- <section class="primeiro-acesso">
-		<form>
-			<div class="container-form-anamnese">
-				<h2>Anamnese</h2>
-				<div class="perguntas-anamnese">
-					<p>Você fuma?</p>
-					<div class="inputs-anamnese">
-						<div class="input-anamnese">
-							<input type="radio" name="fumante" value="sim">
-							<label>Sim</label>
-						</div>
-						<div class="input-anamnese">
-							<input type="radio" name="fumante" value="não">
-							<label>Não</label>
-						</div>
-					</div>
-				</div>
-				<div class="perguntas-anamnese">
-					<p>Como está a pressão alta?</p>
-					<div class="inputs-anamnese">
-						<div class="input-anamnese">
-							<input type="radio" name="pressao" value="alta">
-							<label>Pressão Alta</label>
-						</div>
-						<div class="input-anamnese">
-							<input type="radio" name="pressao"value="baixa">
-							<label>Pressão Baixa</label>
-						</div>
-						<div class="input-anamnese">
-							<input type="radio" name="pressao"value="normal">
-							<label>Normal</label>
-						</div>
-					</div>
-				</div>
-				<div class="perguntas-anamnese">
-					<p>Possuí diabéticos na família?</p>
-					<div class="inputs-anamnese">
-						<div class="input-anamnese">
-							<input type="radio" name="diabetes" value="sim">
-							<label>Sim</label>
-						</div>
-						<div class="input-anamnese">
-							<input type="radio" name="diabetes"value="não">
-							<label>Não</label>
-						</div>
-					</div>
-				</div>
-				<div class="perguntas-anamnese">
-					<p>Possuí algum problema cardíaco?</p>
-					<div class="inputs-anamnese">
-						<div class="input-anamnese">
-							<input type="radio" name="problemas-cardiacos" value="sim">
-							<label>Sim</label>
-						</div>
-						<div class="input-anamnese">
-							<input type="radio" name="problemas-cardiacos"value="não">
-							<label>Não</label>
-						</div>
-					</div>
-				</div>
-				<div class="perguntas-anamnese">
-					<p>Possuí alguma lesão ou problema ortopédico?</p>
-					<div class="inputs-anamnese">
-						<div class="input-anamnese">
-							<input type="radio" name="lesao" value="sim">
-							<label>Sim</label>
-						</div>
-						<div class="input-anamnese">
-							<input type="radio" name="lesao"value="não">
-							<label>Não</label>
-						</div>
-					</div>
-				</div>
-				<div class="perguntas-anamnese">
-					<p>Pratica alguma atividade física regularmente?</p>
-					<div class="inputs-anamnese">
-						<div class="input-anamnese">
-							<input type="radio" name="praticaatividade" value="sim">
-							<label>Sim</label>
-						</div>
-						<div class="input-anamnese">
-							<input type="radio" name="praticaatividade"value="não">
-							<label>Não</label>
-						</div>
-					</div>
-				</div>
-				<div class="perguntas-anamnese">
-					<p>Sente dores no peito ao praticar alguma atividade?</p>
-					<div class="inputs-anamnese">
-						<div class="input-anamnese">
-							<input type="radio" name="dornopeito" value="sim">
-							<label>Sim</label>
-						</div>
-						<div class="input-anamnese">
-							<input type="radio" name="dornopeito"value="não">
-							<label>Não</label>
-						</div>
-					</div>
-				</div>
-				<div class="btn-anamnese">
-					<button type="submit">Enviar</button>
-				</div>
-			</div>
-		</form>
-	</section> -->
 
 	<?php
 		include ("./form-anamnese.php");
@@ -330,6 +195,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
 	<script src="../../js/js-user.js"></script>
+	<script src="./js/js-menu.js"></script>
 
 	<script>
 		addEventListener('DOMContentLoaded', () => {

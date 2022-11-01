@@ -25,6 +25,21 @@ create table evolucaoDesafio(
     finalisa_desafio int
 )   DEFAULT charset = utf8;
 
+create table ajuda(
+    id_ajuda int not null AUTO_INCREMENT PRIMARY KEY,
+    perguta_ajuda text,
+    p1_ajuda text,
+    img1_ajuda text,
+    p2_ajuda text,
+    img2_ajuda text,
+    p3_ajuda text,
+    img3_ajuda text,
+    p4_ajuda text,
+    img4_ajuda text,
+    p5_ajuda text,
+    img5_ajuda text
+)   DEFAULT charset = utf8;
+
 create table registraDesafio(
     id_registro int not null AUTO_INCREMENT PRIMARY KEY,
     id_usuario int,

@@ -35,7 +35,7 @@
                         <p><?=  $porcentagem?>%</p>
                     </div>
                 </div>
-                <button><a href="#">Continuar</a></button>
+                <button><a href="./desafiododia.php?cd=<?php echo $exibe_desafio[0]['id_desafios'];?>">Continuar</a></button>
                 <img src="<?=  $exibe_desafio[0]['imagem_desafio']?>">
             </div>
 <?php

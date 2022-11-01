@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="../../../css/style-inicio.css">
         <link rel="stylesheet" type="text/css" href="../../../css/style-usua.css">
 	    <link rel="stylesheet" type="text/css" href="../../../css/style-adm.css">
+	    <link rel="stylesheet" type="text/css" href="../../../css/style-md.css">
 
     </head>
 
@@ -24,7 +25,7 @@
         ?>
         <section class="form-add-exercicio">
 				<form method="post" action="../../conexao/updates/upexercicio.php?cd=<?php echo $id_exercicio;?>">
-                    <h2>Aletrar</h2>
+                    <h2>Alterar</h2>
 					<div class="input-form-cadastro">
 						<label for="inputnome" id="labelnome">Nome</label>
 						<input type="text" name="nome" id="inputnome" value="<?php echo $exibe[0]['nome_exercicio'];?>">

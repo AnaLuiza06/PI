@@ -1,5 +1,5 @@
-const menu = document.querySelector(".icon-menu")
+const menu = document.querySelector(".icon-menu svg")
 menu.addEventListener("click", () => {
-	const header = document.querySelector(".menu-usua")
+	const header = document.querySelector(".links-menu-md")
 	header.classList.toggle("active")
 })

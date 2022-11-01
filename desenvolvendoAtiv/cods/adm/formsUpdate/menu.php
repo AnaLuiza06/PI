@@ -28,7 +28,7 @@
 					<li><a href="../pagesMenu/sair.php">Sair</a></li>
 				</ul>
 			</div>
-			<a href="./meusdados.php" class="menu-identificacao">
+			<a href="../pagesMenu/meusdados.php" class="menu-identificacao">
 				<h5><?php echo $exibe[0]['nome_adm'];?></h5>
 				<img src="https://essaseoutras.com.br/wp-content/uploads/2011/01/gatinhos-fofinhos-3.jpg">
 			</a>

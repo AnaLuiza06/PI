@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="../../../css/style-inicio.css">
         <link rel="stylesheet" type="text/css" href="../../../css/style-usua.css">
 	    <link rel="stylesheet" type="text/css" href="../../../css/style-adm.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/style-md.css">
 
     </head>
 
@@ -34,7 +35,7 @@
             $consulta_exercicio = mysqli_query($cn, "SELECT * FROM exercicio");
             $exibe_exercicio = mysqli_fetch_all($consulta_exercicio, MYSQLI_ASSOC);
       ?>
-        <section class="form-add">
+        <section class="form-add-exercicio">
                 <h2>Adicionar</h2>
 				<form class="form-desafio" method="post" action="../../conexao/updates/updesafio.php?cd<?php echo $id_desafio;?>">
                     <div>

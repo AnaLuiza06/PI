@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="../../../css/style-inicio.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/style-usua.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/style-adm.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/style-md.css">
 </head>
 <body>
 
@@ -26,9 +27,10 @@
 		<div class="txt-imguser">
 			<h1>Administradores</h1>
 			<h4>O hábito de se alongar todos os dias trás muitos beneficios ao corpo. O como você irá se alongar hoje?</h4>
-			<button><a href="../formsAdd/addadministrador.php">Adicionar Alongamento</a></button>
+			<button><a href="../formsAdd/addadministrador.php?adcionado=entrada">Adicionar Alongamento</a></button>
 		</div>
 		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
+		<div class="background-user"></div>
 	</section>
 
 	<section class="minhaarea-usua">

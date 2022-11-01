@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="../../../css/style-inicio.css">
         <link rel="stylesheet" type="text/css" href="../../../css/style-usua.css">
 	    <link rel="stylesheet" type="text/css" href="../../../css/style-adm.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/style-md.css">
 
     </head>
 
@@ -40,7 +41,7 @@
         <section class="form-add">
                 <h2>Adicionar</h2>
 				<form class="form-desafio" method="post" action="../../conexao/inserts/idesafios.php">
-                    <div>
+                    <div class="container-form">
                         <section>
                             <div class="input-form-cadastro">
                                 <label for="inputnome" id="labelnome">Nome</label>

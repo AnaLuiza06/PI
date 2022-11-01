@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="../../../css/style-inicio.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/style-usua.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/style-usua-pagesmenu.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/style-md.css">
 </head>
 <body>
 
@@ -33,7 +34,16 @@
 		<div class="card-ajuda">
 			<div class="titulo-ajuda">
 				<h2>Como eu começo um Alongamento?</h2>
-				<button onclick="mostrarmais()">Ver Mais</button>
+				<button onclick="mostrarmais()" class="button-lg">
+					<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+					  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+					</svg>
+				</button>
+				<button onclick="mostrarmaisMD()" class="button-md">
+					<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+					  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+					</svg>
+				</button>
 			</div>
 			
 			<div class="desc-ajuda">
@@ -46,6 +56,21 @@
 					<p>Depois, quando já tiver na página, é só escolher o alongamento que deseja fazer e clicar no botão começar.</p>
 				</div>
 				<div>
+					<p>Nisso, aparecerá a página do exercício, tendo o vídeo e toda a descrição sobre o alongamento. Para concluir é preciso preencher o formulário de autoavaluação. Caso não preenchido, não irá constar como feito.</p>
+					<img src="../../../imgs/img-page-alongamentos.png"> 
+				</div>
+			</div>
+
+			<div class="desc-ajuda-md">
+				<div class="mostrar-div">
+					<p>Primeiramente é pecisso acessar o página de Alongamenos. Para isso, basta ir a barra de menu e clicar no link "Alongamentos".</p>
+					<img src="../../../imgs/img-menu-alongamentos.png"> 
+				</div>
+				<div class="mostrar-div">
+					<p>Depois, quando já tiver na página, é só escolher o alongamento que deseja fazer e clicar no botão começar.</p>
+					<img src="../../../imgs/img-cards-alongamentos.png"> 
+				</div>
+				<div class="mostrar-div">
 					<p>Nisso, aparecerá a página do exercício, tendo o vídeo e toda a descrição sobre o alongamento. Para concluir é preciso preencher o formulário de autoavaluação. Caso não preenchido, não irá constar como feito.</p>
 					<img src="../../../imgs/img-page-alongamentos.png"> 
 				</div>
@@ -86,6 +111,15 @@
 
 			const descAjuda = document.querySelector(".desc-ajuda")
 			descAjuda.classList.toggle("active")
+
+			const descAjudamd = document.querySelector(".desc-ajuda-md")
+			descAjudamd.classList.toggle("active")
+		}
+
+		function mostrarmaisMD(){
+
+			const descAjudamd = document.querySelector(".desc-ajuda-md")
+			descAjudamd.classList.toggle("active")
 		}
 
 	</script>
