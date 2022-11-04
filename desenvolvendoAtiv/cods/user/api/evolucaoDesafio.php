@@ -5,7 +5,7 @@
     $exibe_evolucao = mysqli_fetch_all($consulta_evolucao, MYSQLI_ASSOC);
     $count_evolucao = count($exibe_evolucao);
     if($count_evolucao <= 0) {
-        echo "Não tem desafios iniciados";
+        echo "<p class='msg-desafios'>Não tem desafios iniciados.</p>";
     } else {
         for ($i=0; $i < count($exibe_evolucao); $i++) {
             $id_desafio = $exibe_evolucao[$i]['id_desafio'];

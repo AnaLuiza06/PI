@@ -20,7 +20,6 @@
 
             // Pegando Dados do Desafio
             $id_desafio = $_GET['cd'];
-            print_r($id_desafio);
             $consulta_desafio = mysqli_query($cn, "SELECT * FROM desafios WHERE id_desafios = '$id_desafio'");
             $exibe_desafio = mysqli_fetch_all($consulta_desafio, MYSQLI_ASSOC);
             $duracao_desafio = $exibe_desafio[0]['duracao_desafios'];
@@ -37,7 +36,7 @@
       ?>
         <section class="form-add-exercicio">
                 <h2>Adicionar</h2>
-				<form class="form-desafio" method="post" action="../../conexao/updates/updesafio.php?cd<?php echo $id_desafio;?>">
+				<form class="form-desafio" method="post" action="../../conexao/updates/updesafio.php?cd=<?php echo $id_desafio;?>">
                     <div>
                         <section>
                             <div class="input-form-cadastro">
@@ -73,23 +72,19 @@
                                 <section>
                                     <?php
                                         foreach($exibe_exercicio as &$exercicio):
-                                    ?>
-                                        <div class='card-videos 
-                                            <?php 
-                                                $res = '';
-                                                foreach ($exibe_videos as $video) {
-                                                    if($video['id_video'] === $exercicio['id_exercicio'] ) {
-                                                        $res = 'active';
-                                                        break;
-                                                    }
+                                            $res = '';
+                                            foreach ($exibe_videos as $video) {
+                                                if($video['id_video'] === $exercicio['id_exercicio'] ) {
+                                                    $res = 'active';
+                                                    break;
                                                 }
-                                                echo $res;
-                                            ?>
-                                        '>
+                                            }
+                                    ?>
+                                        <div class='card-videos <?= $res?>'>
                                             <input 
                                                 class='card-videos-checkbox' 
                                                 type='checkbox' 
-                                                name="videos" 
+                                                name="videos[]" 
                                                 value='<?= $exercicio['id_exercicio'] ?>' 
                                                 checked=<?= $res === 'active'?>
                                             >

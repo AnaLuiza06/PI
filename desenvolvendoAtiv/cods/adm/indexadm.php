@@ -68,11 +68,11 @@
 				<div class="numero-desafios">
 					<?php
 
-						if(count($consulta_adm) < 10){
-							echo "<h1>0".count($consulta_adm)."</h1>";
+						if(count($exibe_adm) < 10){
+							echo "<h1>0".count($exibe_adm)."</h1>";
 						}
 						else{
-							echo "<h1>".count($consulta_adm)."</h1>";
+							echo "<h1>".count($exibe_adm)."</h1>";
 						}
 
 					?>

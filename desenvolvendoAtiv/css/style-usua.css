@@ -129,6 +129,9 @@ body p{
 } /*Fecha Minha Área*/
 
 /*Abre Desafio Atual*/
+.msg-desafios{
+	text-align: center;
+}
 .desafio-atual {
 	display: flex;
 	flex-direction: column;
@@ -192,6 +195,12 @@ body p{
 	right: 0;
 	position: absolute;
 	transform: translate(-40px, -20px);
+}
+.pegarJS button{
+	color: #fff;
+}
+.pegarJS button: hover{
+	color: #5BC2A3;
 }
 .card-desafioatual button a{
 	color: #fff;
@@ -287,6 +296,9 @@ body p{
  background-color: transparent;
  outline: none;
  border: none;
+}
+.cards-exercicios{
+	margin-bottom: 70px;
 }
 /*Fechar Favoritos*/
 
@@ -504,10 +516,8 @@ body p{
 	color: #fff;
 	list-style: none;
 }
-.dias-treinodehoje li a:hover{
-	color: #fff;
-	list-style: none;
-	border: none;
+.dias-treinodehoje li button:hover{
+	color: #5BC2A3;
 }
 iframe{
 	width: 730px;
@@ -549,7 +559,8 @@ iframe{
 	border: 2px solid #5BC2A3;
 	border-radius: 10px;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 20px;
+	margin-bottom: 70px;
 	padding: 30px;
 }
 .form-row{

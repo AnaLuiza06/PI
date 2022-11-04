@@ -134,9 +134,6 @@
     /* Abre Pages Usuario */
     
     /* Home */
-    .menu-pageuser{
-        background-color: red;
-    }
     .titulo-sections{
         width: 850px;
     }
@@ -165,6 +162,36 @@
         height: 200px;
     }
     /* Fecha Pages Usuario */
+
+    .minhaarea-usua{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0px, 350px);
+    }
+
+    /*Page Vídeo Exercício*/
+    .container-treinodehoje{
+        padding: 30px;
+    }
+    .descricao-treinodehoje{
+        border: 2px solid #5BC2A3;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 15px;
+        width: 430px;
+        height: 520px;
+        overflow: auto;
+        margin: auto;
+    }
+    .video-treinodehoje{
+        width: 550px;
+        height: 520px;
+    }
+    iframe{
+        width: 550px;
+        height: 520px;
+    }
   }
 
 
@@ -190,7 +217,7 @@
         display: flex;
         justify-content: center;   
         align-items: center;
-        gap: 200px;
+        /*gap: 200px;*/
     }
     .titulo-menu{
         width: 80%;
@@ -220,13 +247,26 @@
         display: flex;
         justify-content: center;   
         align-items: center;
-        gap: 200px; 
+        
+    }
+    .links-menu-md{
+        display: flex;
+        flex-direction: column;
+    }
+    .links-menu-md .menu-links ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    
+    .menu-pageuser{
+        display: none;
     }
     /* Abre Page Index */
 
     /* Inicio */
     main{
-        margin-top: 80px;
+        margin-top: 50px;
     }
     #inicio{
         width: 100%;
@@ -390,13 +430,41 @@
     /* Fecha Page Index */
 
     /*Abre Page Home User*/
+    .background-user{
+        width: 100%;
+        height: 410px;
+        background: rgba(229, 153, 247, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0px, 50px);
+        z-index: -1;
+        background-image: linear-gradient(2deg, #fff 33%, transparent 15%);
+    }
+    .imguser img{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -3;
+        transform: translate(0px, 50px);
+        background-image: linear-gradient(-20deg, #EEA7FF 33%, transparent 15%);
+    }
     .txt-imguser{
         width: 650px;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 120px;
+    }
+    .menu-identificacao{
+        border: 2px solid #fff;
+        padding: 10px;
+        border-radius: 20px;
     }
     .titulo-sections{
         width: 650px;
+    }
+    .maistreinos{
+        display: none;
     }
     .card-desafioatual{
         width: 650px;
@@ -433,6 +501,7 @@
         flex-direction: column;
         width: 650px;
         height: 550px;
+        margin-bottom: 70px;
     }
     .aproveitamento-evolucao{
         width: 640px;
@@ -551,6 +620,41 @@
         margin-bottom: 15px;
         color: #fff;
     }
+
+    /*Page Vídeo Exercício*/
+    .container-treinodehoje{
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(130deg, #EEA7FF 65%, transparent 15%);
+        gap: 30px;
+        padding: 80px 0px;
+    }
+    .video-treinodehoje{
+        width: 650px;
+        height: 420px;
+        margin: auto;
+    }
+    iframe{
+        width: 650px;
+        height: 420px;
+    }
+    .descricao-treinodehoje{
+        border: 2px solid #5BC2A3;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 15px;
+        width: 650px;
+        height: 520px;
+        overflow: auto;
+        margin: auto;
+    }
+
+    .form-add-exercicio{
+        margin-top: 110px;
+    }
+    .form-add{
+        margin-top: 110px;
+    }
   }
 
    @media (max-width: 700px) {
@@ -575,7 +679,7 @@
     .txt-imguser{
         width: 430px;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 110px;
     }
     .titulo-sections{
         width: 430px;
@@ -721,6 +825,7 @@
     }
     .form-add-exercicio{
         width: 430px;
+        margin-top: 110px;
     }
 
     .form-add-exercicio form{
@@ -752,5 +857,32 @@
         margin-top: 15px;
         margin-bottom: 15px;
         color: #fff;
+    }
+    /*Page Vídeo Exercício*/
+    .container-treinodehoje{
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(130deg, #EEA7FF 65%, transparent 15%);
+        gap: 30px;
+        padding: 80px 0px;
+    }
+    .video-treinodehoje{
+        width: 430px;
+        height: 320px;
+        margin: auto;
+    }
+    iframe{
+        width: 430px;
+        height: 320px;
+    }
+    .descricao-treinodehoje{
+        border: 2px solid #5BC2A3;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 15px;
+        width: 430px;
+        height: 520px;
+        overflow: auto;
+        margin: auto;
     }
    }

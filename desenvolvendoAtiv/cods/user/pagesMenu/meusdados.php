@@ -43,10 +43,9 @@
 
 			$consulta_resposta = mysqli_query($cn, "SELECT * FROM `duvidausuario` WHERE `id_usuario` = '$id'");
 			$exibe_respostas = mysqli_fetch_all($consulta_resposta, MYSQLI_ASSOC);
-
-			if (count($exibe_respostas) > 0) {
-				for ($i = 0; $i < count($exibe_respostas); $i++){
-					if ($exibe_respostas[$i]['id_adm'] > 0 and $exibe_respostas[$i]['status_duvida'] == 0) {
+			if (count($exibe_respostas) > 0) :
+				for ($i = 0; $i < count($exibe_respostas); $i++):
+					if ($exibe_respostas[$i]['id_adm'] > 0 and $exibe_respostas[$i]['status_duvida'] == 0) :
 		?>
 			<div class="card-respostas">
 				<h3>Olá, <?php echo $exibe[0]['nome_usuario'];?>!</h3>
@@ -54,9 +53,9 @@
 				<button><a href="../../conexao/updates/respostavista.php?cd=<?php echo $exibe_respostas[$i]['id_duvida'];?>">Ok</a></button>
 			</div>
 		<?php
-					}
-				}
-			}
+					endif;
+				endfor;
+			endif;
 		?>
 		
 
@@ -375,6 +374,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script src="../../js/js-user.js"></script>
+	<script src="../../../js/js-menu.js"></script>
 
 </body>
 </html>

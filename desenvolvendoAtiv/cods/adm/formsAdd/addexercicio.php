@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="../../../css/style-inicio.css">
         <link rel="stylesheet" type="text/css" href="../../../css/style-usua.css">
 	    <link rel="stylesheet" type="text/css" href="../../../css/style-adm.css">
+	    <link rel="stylesheet" type="text/css" href="../../../css/style-md.css">
 
     </head>
 
@@ -54,7 +55,7 @@
 
                     <div class="input-form-cadastro">
 						<label for="inputduracao">Duração</label>
-						<input type="number" name="duracao" id="inputduracao">
+						<input type="time" step="1" name="duracao" id="inputduracao">
 					</div>
 
                     <div class="input-form-cadastro">

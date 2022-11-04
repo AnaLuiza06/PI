@@ -18,9 +18,7 @@
         include ('../../conexao/conexao.php');
         include ('./menu.php');
         // include menu
-
-        // session_start();
-		// $id_adm = $_SESSION['ID'];
+		$id_adm = $_SESSION['ID'];
         // Acessar Dados
         $consulta = mysqli_query($cn, "SELECT * from duvidaUsuario WHERE id_adm = '0'");
         $exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
@@ -83,7 +81,7 @@
 								</div>
 								<div>
 									<label>ID Administrador</label>
-									<input type="text" name="id_adm">
+									<input type="text" name="id_adm" value="<?=$id_adm?>">
 								</div>
 								<div>
 									<label>Resposta</label>

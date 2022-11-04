@@ -44,7 +44,7 @@
 
                     <div class="input-form-cadastro">
 						<label for="inputduracao">Duração</label>
-						<input type="time" name="duracao" id="inputduracao" value="<?php echo $exibe[0]['duracao_exercicio'];?>">
+						<input type="time" name="duracao" id="inputduracao" value="<?php echo $exibe[0]['duracao_exercicio'];?>" step='2'>
 					</div>
 
                     <div class="input-form-cadastro">
