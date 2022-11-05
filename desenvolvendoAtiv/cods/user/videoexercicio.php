@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>ATIV</title>
 	<meta charset="utf-8">
@@ -12,21 +13,21 @@
 
 <body>
 
-		<?php
-            include ('../conexao/conexao.php');
-            include ('./menu.php');
-            // include menu
-            $cd = $_GET['cd'];
-        	$consulta = mysqli_query($cn, "select * from exercicio where id_exercicio = '$cd'");
-	 		$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
-			
-        ?>
+	<?php
+	include('../conexao/conexao.php');
+	include('./menu.php');
+	// include menu
+	$cd = $_GET['cd'];
+	$consulta = mysqli_query($cn, "select * from exercicio where id_exercicio = '$cd'");
+	$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
+
+	?>
 
 	<div class="container-treinodehoje">
 		<section class="video-treinodehoje">
 
 			<div class="tela-video">
-				<?php echo $exibe[0]['video_exercicio']; ?>
+				<iframe width="560" height="315" src="<?php echo $exibe[0]['video_exercicio']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 
 			<!-- <div class="outros-video">
@@ -43,11 +44,11 @@
 		</section>
 
 		<section class="descricao-treinodehoje">
-			<h2><?php echo $exibe[0]['nome_exercicio'];?></h2>
+			<h2><?php echo $exibe[0]['nome_exercicio']; ?></h2>
 			<div class="txt-treinodehoje">
-				<p><?php echo $exibe[0]['desc_exercicio'];?></p>
-				<p><?php echo $exibe[0]['duracao_exercicio'];?></p>
-				<p><?php echo $exibe[0]['equipamentos_exercicio'];?></p>
+				<p><?php echo $exibe[0]['desc_exercicio']; ?></p>
+				<p><?php echo $exibe[0]['duracao_exercicio']; ?></p>
+				<p><?php echo $exibe[0]['equipamentos_exercicio']; ?></p>
 			</div>
 			<!-- <div class="btns-treinodehoje">
 				<button class="btn-treinodehoje active">Autoavaliação</button>
@@ -56,81 +57,81 @@
 			</div> -->
 
 			<div class="cards-btns-treinodehoje">
-				
+
 				<section class="card-btns active" id="autoavaliacao">
 					<form class="depoimento-treinodehoje" method="post" action="../conexao/inserts/iautoavaliacao.php">
 						<h5>Autoavaliação</h5>
 						<p>Como você acha que foi seu rendimento hoje?</p>
 						<div class="redios-rendimento">
 							<div class="redio-form">
-  								<input type="radio" name="radio-rendimento" value="bom" checked>
-  								<label>
-    								Bom
-  								</label>
+								<input type="radio" name="radio-rendimento" value="bom" checked>
+								<label>
+									Bom
+								</label>
 							</div>
 							<div class="redio-form">
-  								<input type="radio" name="radio-rendimento" value="mau">
-  								<label>
-    								Mau
-  								</label>
+								<input type="radio" name="radio-rendimento" value="mau">
+								<label>
+									Mau
+								</label>
 							</div>
 							<div class="redio-form">
-  								<input type="radio" name="radio-rendimento" value="melhorqueontem">
-  								<label>
-    								Melhor que ontem
-  								</label>
+								<input type="radio" name="radio-rendimento" value="melhorqueontem">
+								<label>
+									Melhor que ontem
+								</label>
 							</div>
 						</div>
 
 						<p>Se sente cansado(a)?</p>
 						<div class="redios-rendimento">
 							<div class="radio-form">
-  								<input type="radio" name="radio-cansaco" value="sim" checked>
-  								<label>
-    								Sim
-  								</label>
+								<input type="radio" name="radio-cansaco" value="sim" checked>
+								<label>
+									Sim
+								</label>
 							</div>
 							<div class="radio-form">
-  								<input type="radio" name="radio-cansaco" value="nao">
-  								<label>
-    								Não
-  								</label>
+								<input type="radio" name="radio-cansaco" value="nao">
+								<label>
+									Não
+								</label>
 							</div>
 						</div>
 
 						<p>Sentil alguma dor por conta do exercício anterior?</p>
 						<div class="redios-rendimento">
 							<div class="radio-form">
-  								<input type="radio" name="radio-dores" value="sim" checked>
-  								<label>
-    								Sim
-  								</label>
+								<input type="radio" name="radio-dores" value="sim" checked>
+								<label>
+									Sim
+								</label>
 							</div>
 							<div class="radio-form">
-  								<input type="radio" name="radio-dores" value="nao">
-  								<label>
-    								Não
-  								</label>
+								<input type="radio" name="radio-dores" value="nao">
+								<label>
+									Não
+								</label>
 							</div>
 						</div>
 
 						<p>Ao terminar o exercício, tem dor no peito?</p>
 						<div class="redios-rendimento">
 							<div class="radio-form">
-  								<input type="radio" name="radio-dornopeito" value="sim" checked>
-  								<label>
-    								Sim
-  								</label>
+								<input type="radio" name="radio-dornopeito" value="sim" checked>
+								<label>
+									Sim
+								</label>
 							</div>
 							<div class="radio-form">
-  								<input type="radio" name="radio-dornopeito" value="nao">
-  								<label>
-    								Não
-  								</label>
+								<input type="radio" name="radio-dornopeito" value="nao">
+								<label>
+									Não
+								</label>
 							</div>
 						</div>
 						<div class="campos_escondidos">
-							<input type="text" name="id_video" value="<?= $exibe[0]['id_exercicio']?>">
+							<input type="text" name="id_video" value="<?= $exibe[0]['id_exercicio'] ?>">
 						</div>
 						<div class="btn-alterar">
 							<button type="submit">Enviar</button>
@@ -147,4 +148,5 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script src="../../js/js-menu.js"></script>
 </body>
+
 </html>

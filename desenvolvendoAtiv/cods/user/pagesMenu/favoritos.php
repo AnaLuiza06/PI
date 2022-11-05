@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>ATIV</title>
 
@@ -10,16 +11,17 @@
 	<link rel="stylesheet" type="text/css" href="../../../css/style-usua.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/style-md.css">
 </head>
+
 <body>
 
 	<?php
-        include ('../../conexao/conexao.php');
-        include ('./menu.php');
-        // include menu
-		$id_usuario = $_SESSION['ID'];
-        // Acessar Dados
-		// print_r($favoritos)
-    ?>
+	include('../../conexao/conexao.php');
+	include('./menu.php');
+	// include menu
+	$id_usuario = $_SESSION['ID'];
+	// Acessar Dados
+	// print_r($favoritos)
+	?>
 
 	<section class="imguser">
 		<div class="txt-imguser">
@@ -32,67 +34,67 @@
 
 	<section class="minhaarea-usua">
 		<div class="cards-exercicios">
-        <?php
-            $favoritos_consulta =  mysqli_query($cn, "SELECT * FROM `favoritos` WHERE `id_usuario` = '$id_usuario'");
-		    $favoritos = mysqli_fetch_all($favoritos_consulta, MYSQLI_ASSOC);
+			<?php
+			$favoritos_consulta =  mysqli_query($cn, "SELECT * FROM `favoritos` WHERE `id_usuario` = '$id_usuario'");
+			$favoritos = mysqli_fetch_all($favoritos_consulta, MYSQLI_ASSOC);
 			// print_r($favoritos);
 
-            if(count($favoritos) > 0){
-                // Mostrar cards
-               for($i = 0; $i < count($favoritos); $i++ ){
+			if (count($favoritos) > 0) {
+				// Mostrar cards
+				for ($i = 0; $i < count($favoritos); $i++) {
 					$id_exercicio = $favoritos[$i]['id_exercicio'];
 					$consulta_exercicio = mysqli_query($cn, "SELECT * FROM `exercicio` WHERE `id_exercicio` = '$id_exercicio'");
 					$exibe_exercicio = mysqli_fetch_all($consulta_exercicio, MYSQLI_ASSOC);
-		?>
-				<div class="card-exercicios">
-					<div class="desc-exercicios">
-						<div class="topo-desc-exercicios">
-							<h2><?php echo $exibe_exercicio[0]['nome_exercicio']; ?></h2>
-						</div>
-						<div class="descricao-exercicio">
-							<p><?php echo $exibe_exercicio[0]['desc_exercicio']; ?></p>
-							<p><?php echo $exibe_exercicio[0]['duracao_exercicio']; ?></p>
-							<p><?php echo $exibe_exercicio[0]['equipamentos_exercicio']; ?></p>
-							<div>
-								<button><a href="../videoexercicio.php?cd=<?php echo $exibe_exercicio[0]['id_exercicio'];?>">Começar</a></button>
+			?>
+					<div class="card-exercicios">
+						<div class="desc-exercicios">
+							<div class="topo-desc-exercicios">
+								<h2><?= $exibe_exercicio[0]['nome_exercicio']; ?></h2>
 							</div>
-						</div>
-						<div class="favoritar">
-							<div class="tipo-maisteinos">
-								<p>Articulações</p>
+							<div class="descricao-exercicio">
+								<p><?= $exibe_exercicio[0]['desc_exercicio']; ?></p>
+								<p><?= $exibe_exercicio[0]['duracao_exercicio']; ?></p>
+								<p><?= $exibe_exercicio[0]['equipamentos_exercicio']; ?></p>
+								<div>
+									<button><a href="../videoexercicio.php?cd=<?= $exibe_exercicio[0]['id_exercicio']; ?>">Começar</a></button>
+								</div>
 							</div>
-							<button id="<?php echo $exibe[$i]['id_exercicio']; ?>">
-								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"  viewBox="0 0 16 16" class="bi bi-heart-fill <?php
+							<div class="favoritar">
+								<div class="tipo-maisteinos">
+									<p>Articulações</p>
+								</div>
+								<button id="<?= $exibe_exercicio[0]['id_exercicio']; ?>">
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16" class="bi bi-heart-fill
+									<?php
 									$id_exercicio = $exibe_exercicio[0]['id_exercicio'];
-									
-									for($favorito = 0; $favorito < count($favoritos); $favorito++) {
-										if($id_exercicio == $favoritos[$favorito]['id_exercicio']) {
+
+									for ($favorito = 0; $favorito < count($favoritos); $favorito++) {
+										if ($id_exercicio == $favoritos[$favorito]['id_exercicio']) {
 											$classe = "active";
 											break;
 										}
 									}
 									echo $classe;
-								?>">
-	  								<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-								</svg>
-							</button>
+									?>">
+										<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+									</svg>
+								</button>
+							</div>
 						</div>
+						<img src="<?= $exibe_exercicio[0]['imagem_exercicio']; ?>">
 					</div>
-					<img src="<?php echo $exibe_exercicio[0]['imagem_exercicio']; ?>">
-				</div>
-		<?php
-			   }
-            }
-			else{
+			<?php
+				}
+			} else {
 				// Mostrar msg
-                echo "<h2>Não há exercícios favoritados</h2>";
+				echo "<h2>Não há exercícios favoritados</h2>";
 			}
-        ?>
+			?>
 
 		</div>
 
 		<?php
-			include ("./footer.php");
+		include("./footer.php");
 		?>
 	</section>
 
@@ -103,4 +105,5 @@
 	<script src="../../../js/js-user.js"></script>
 	<script src="../../../js/js-menu.js"></script>
 </body>
+
 </html>

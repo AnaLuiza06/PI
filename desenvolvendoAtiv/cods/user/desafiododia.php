@@ -23,9 +23,6 @@
 	$consultaDesafio = mysqli_query($cn, $sql);
 	$exibeDesafio = mysqli_fetch_all($consultaDesafio, MYSQLI_ASSOC);
 
-	// $nome = $exibe['nome_desafios'];
-
-	//print_r( $exibe[0]['nome_desafios']);
 	$id_desafio = $exibeDesafio[0]['id_desafios'];
 	$nome = $exibeDesafio[0]['nome_desafios'];
 	$duracao = $exibeDesafio[0]['duracao_desafios'];
@@ -33,7 +30,6 @@
 
 	<div class="container-treinodehoje">
 		<section class="video-treinodehoje">
-
 			<div class="tela-video">
 			</div>
 		</section>
@@ -51,15 +47,15 @@
 					for ($i = 0; $i < $duracao; $i++) :
 					?>
 						<li class="pegarJS">
-							<button data-desafio="<?= $i ?>" >
-								<?php 
-									$number = $i + 1;
-									if($number < 10) {
-										echo "0$number";
-									} else {
-										echo $number;
-									}
-								?>	
+							<button data-desafio="<?= $i ?>">
+								<?php
+								$number = $i + 1;
+								if ($number < 10) {
+									echo "0$number";
+								} else {
+									echo $number;
+								}
+								?>
 							</button>
 						</li>
 					<?php endfor; ?>
@@ -80,85 +76,86 @@
 				<section class="card-btns active" id="autoavaliacao">
 
 					<?php
-						$sql = "SELECT * FROM `videosDesafio` WHERE `id_video` = '$cd'";
-						$consultaDesafio = mysqli_query($cn, $sql);
-						$exibeDesafio = mysqli_fetch_all($consultaDesafio, MYSQLI_ASSOC);
+					$sql = "SELECT * FROM `videosDesafio` WHERE `id_desafio` = '$cd'";
+					$consultaDesafio = mysqli_query($cn, $sql);
+					$exibeDesafio = mysqli_fetch_all($consultaDesafio, MYSQLI_ASSOC);
+					$id_video = $exibeDesafio[0]['id_video'];
 					?>
 					<form class="depoimento-treinodehoje" method="post" action="./api/registrarDesafio.php" onsubmit="">
 						<h5>Autoavaliação</h5>
 						<p>Como você acha que foi seu rendimento hoje?</p>
 						<div class="redios-rendimento">
 							<div class="redio-form">
+								<label>
 									<input type="radio" name="radio-rendimento" value="bom" checked>
-									<label>
 									Bom
-									</label>
+								</label>
 							</div>
 							<div class="redio-form">
+								<label>
 									<input type="radio" name="radio-rendimento" value="mau">
-									<label>
 									Mau
-									</label>
+								</label>
 							</div>
 							<div class="redio-form">
+								<label>
 									<input type="radio" name="radio-rendimento" value="melhorqueontem">
-									<label>
 									Melhor que ontem
-									</label>
+								</label>
 							</div>
 						</div>
 
 						<p>Se sente cansado(a)?</p>
 						<div class="redios-rendimento">
 							<div class="radio-form">
+								<label>
 									<input type="radio" name="radio-cansaco" value="sim" checked>
-									<label>
 									Sim
-									</label>
+								</label>
 							</div>
 							<div class="radio-form">
+								<label>
 									<input type="radio" name="radio-cansaco" value="nao">
-									<label>
 									Não
-									</label>
+								</label>
 							</div>
 						</div>
 
 						<p>Sentil alguma dor por conta do exercício anterior?</p>
 						<div class="redios-rendimento">
 							<div class="radio-form">
+								<label>
 									<input type="radio" name="radio-dores" value="sim" checked>
-									<label>
 									Sim
-									</label>
+								</label>
 							</div>
 							<div class="radio-form">
+								<label>
 									<input type="radio" name="radio-dores" value="nao">
-									<label>
 									Não
-									</label>
+								</label>
 							</div>
 						</div>
 
 						<p>Ao terminar o exercício, tem dor no peito?</p>
 						<div class="redios-rendimento">
 							<div class="radio-form">
+								<label>
 									<input type="radio" name="radio-dornopeito" value="sim" checked>
-									<label>
 									Sim
-									</label>
+								</label>
 							</div>
 							<div class="radio-form">
+								<label>
 									<input type="radio" name="radio-dornopeito" value="nao">
-									<label>
 									Não
-									</label>
+								</label>
 							</div>
 						</div>
 
 						<div class="campos_escondidos">
-							<input type="text" name="id_video" value="">
 							<input type="text" name="id_desafio" value="<?= $id_desafio ?>">
+							<input type="text" name="id_video" value="<?= $id_video ?>">
 							<input type="text" name="duracao" value="<?= $duracao ?>">
 
 						</div>
@@ -189,21 +186,20 @@
 		let idDesafioAtual = 1;
 		let posicaoVideo = 0;
 
-		function trocarInformacoesDoDesafio(li){
+		function trocarInformacoesDoDesafio(li) {
 			const button = li.querySelector('button');
 			const dataset = button.dataset;
 			const idDesafio = dataset.desafio;
-			if(idDesafio !== idDesafioAtual) escrevaVideoNoHtml(idDesafio);
+			if (idDesafio !== idDesafioAtual) escrevaVideoNoHtml(idDesafio);
 		}
 
 		function escreverTreinoDeHoje(informacoes = {
-			    foco_exercicio: "",
-			    desc_exercicio: "",
-			    duracao_exercicio: "00:00:00",
-			    equipamentos_exercicio: "",
-			    contra_indicacoes_exercicio: ""
-			}
-		) {
+			foco_exercicio: "",
+			desc_exercicio: "",
+			duracao_exercicio: "00:00:00",
+			equipamentos_exercicio: "",
+			contra_indicacoes_exercicio: ""
+		}) {
 			treinoDeHoje.innerHTML = `
 				<p>${informacoes.desc_exercicio}</p>
 				<p>Duração: ${informacoes.duracao_exercicio}</p>
@@ -224,25 +220,32 @@
 			const data = videoNaPagina[pos];
 			// console.log(pos)
 			escreverTreinoDeHoje(data);
-			const video =  data.video_exercicio
-			telaVideo.innerHTML = video
+			const linkDoVideo = data.video_exercicio
+			telaVideo.innerHTML = `
+			<iframe width="560" height="315" src="${linkDoVideo}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			`
 		}
 
-		async function pegarExercicio(idDesafio = 1) {
+		async function pegarExercicio(idDesafio = <?= $id_desafio ?>) {
 			idDesafioAtual = idDesafio;
-			const response = await fetch(`./api/pegaExercicio.php?id=${idDesafio}`);
-			const data = await response.json();
+			try {
+				const response = await fetch(`./api/pegaExercicio.php?id=${idDesafio}`);
+				const data = await response.json();
+				console.log(data)
 
-			data.forEach(async (el) => {
-				// console.log(el)
-				const id_video = el.id_video;
-				const res = await pegaVideo(id_video);
-				
-				if(!res.length) return;
-				videoNaPagina.push(res[0]);
-				escrevaVideoNoHtml();
-			})
+				data.forEach(async (el) => {
+					const id_video = el.id_video;
+					const res = await pegaVideo(id_video);
+					console.log(res)
+					if (!res.length) return;
+					videoNaPagina.push(res[0]);
+					escrevaVideoNoHtml();
+				})
+			} catch (error) {
+				console.log(error)
+			}
 		}
+
 		pegarExercicio();
 
 		const form = document.querySelector(".depoimento-treinodehoje");
@@ -251,7 +254,11 @@
 		// logica de envio do form
 		async function handleSubmit(event) {
 			event.preventDefault();
-			const {id_exercicio} = videoNaPagina[posicaoVideo];
+			const {
+				id_exercicio
+			} = videoNaPagina[posicaoVideo];
+			console.clear();
+			console.log(id_exercicio)
 
 			const campos_escondidos = document.querySelector('.campos_escondidos');
 			const campo_id_exercicio = campos_escondidos.querySelector("input[name='id_video']");

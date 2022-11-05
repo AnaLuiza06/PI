@@ -1,47 +1,71 @@
-<?php 
-	
-	require ('../conexao.php');
+<?php
 
-    $id = $_GET['cd'];
-	$nome = $_POST['nome'];
-	$descricao = $_POST['descricao'];
-	$duracao = $_POST['duracao'];
-	$contraindocacoes = $_POST['contraindocacoes'];
-    $imagem = $_POST['imagem'];
+require('../conexao.php');
 
-    $videos = $_POST['videos']; // somente os vídeos selecionados
+$id = $_GET['cd'];
+$nome = $_POST['nome'];
+$descricao = $_POST['descricao'];
+// $duracao = $_POST['duracao'];
+$contraindocacoes = $_POST['contraindocacoes'];
+$imagem = $_POST['imagem'];
 
-    $alterar = mysqli_query($cn, "UPDATE `desafios` SET `nome_desafios`='$nome',`desc_desafios`='$descricao',`duracao_desafios`='$duracao',`contra_indicacoes_desafio`='$contraindocacoes',`imagem_desafio`='$imagem' WHERE `id_desafios` = '$id'");
+$videos = isset($_POST['videos']) ? $_POST['videos']  : array(); // somente os vídeos selecionados
 
-    $consultaDesafio = mysqli_query($cn, "SELECT * FROM `videosdesafio` WHERE id_desafio = '$id'");
-    $exibeDesafio = mysqli_fetch_all($consultaDesafio, MYSQLI_ASSOC);
+$duracao = count($videos);
 
-    for($i = 0; $i < count($videos); $i++){
-        $exibeDesafioArray = $exibeDesafio[0];
-        // print_r($exibeDesafioArray);
-        $exibeDesafioId = $exibeDesafioArray['id_desafio'];
+$sql_atualiza_desafios = "UPDATE `desafios` SET `nome_desafios`='$nome',`desc_desafios`='$descricao',`duracao_desafios`='$duracao',`contra_indicacoes_desafio`='$contraindocacoes',`imagem_desafio`='$imagem' WHERE `id_desafios` = '$id'";
 
-        $sql = "INSERT INTO `videosdesafio`(`id_desafio`, `id_video`) 
-        VALUES ($exibeDesafioId, $videos[$i]);";
-        $incluir = mysqli_query($cn, $sql);
-        // print_r($sql);
-    }
+mysqli_query($cn, $sql_atualiza_desafios);
 
-    for ($i = 0; $i < count($exibeDesafio); $i++ ) {
-        $id_video_desafio = $exibeDesafio[$i]['id_video'];
+if (count($videos) <= 0) {
+	$sql_deleta_videos = "DELETE FROM `videosDesafio` WHERE `id_desafio` = '$id'";
+	mysqli_query($cn, $sql_deleta_videos);
+	echo "<script>window.location='../../adm/formsAdd/adddesafio.php?adcionado=true'</script>";
+}
 
-        if(!in_array($id_video_desafio, $videos)) {
-            $sql_delete = "DELETE FROM `videosdesafio` where id_video = '$id_video_desafio' and id_desafio = '$id'";
-            mysqli_query($cn, $sql_delete);
-        }
-    }
+$sql_selectiona_videos_desafios = "SELECT * FROM `videosdesafio` WHERE id_desafio = '$id'";
 
 
-    $sql = "SELECT * FROM `desafios` WHERE `nome_desafios` = '$nome'";
+$consulta_videos_desafios = mysqli_query($cn, $sql_selectiona_videos_desafios);
+$exibe_videos = mysqli_fetch_all($consulta_videos_desafios, MYSQLI_ASSOC);
 
-    $consulta = mysqli_query($cn, $sql);
-	$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
+$videos_existentes = array();
 
-	echo "<script>window.location='../../adm/formsAdd/adddesafio.php?adcionado=true'</script>";	
+foreach ($exibe_videos as $video) {
+	$videos_existentes[] = intval($video['id_video']);
+}
 
-	//  print_r($videos[][1]);
+$videos_inteiros = array();
+foreach ($videos as $video) {
+	$videos_inteiros[] = intval($video);
+}
+
+
+$videos_a_remover = array_diff($videos_existentes, $videos_inteiros);
+$videos_a_adicionar = array_diff($videos_inteiros, $videos_existentes);
+
+
+$sql_remove_videos = "DELETE FROM `videosDesafio` WHERE `id_desafio` = '$id' AND `id_video` IN (" . implode(',', $videos_a_remover) . ")";
+$sql_adiciona_videos = "INSERT INTO `videosDesafio` (`id_desafio`, `id_video`) VALUES ";
+
+foreach ($videos_a_adicionar as $video) {
+	$sql_adiciona_videos .= "('$id', '$video'),";
+}
+$sql_adiciona_videos = substr($sql_adiciona_videos, 0, -1);
+
+if (count($videos_a_remover) > 0) {
+	mysqli_query($cn, $sql_remove_videos);
+}
+
+if (count($videos_a_adicionar) > 0) {
+	mysqli_query($cn, $sql_adiciona_videos);
+}
+
+echo json_encode([
+	"remover" => $videos_a_remover,
+	"adicionar" => $videos_a_adicionar,
+	"sql_remove_videos" => $sql_remove_videos,
+	"sql_adiciona_videos" => $sql_adiciona_videos
+]);
+
+echo "<script>window.location='../../adm/formsAdd/adddesafio.php?adcionado=true'</script>";
