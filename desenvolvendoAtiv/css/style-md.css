@@ -1,888 +1,876 @@
 @media (max-width: 1100px) {
-
-    /* Abre Page Index */
-    #inicio{
-        background-image: linear-gradient(-7deg, #EEA7FF 33%, transparent 15%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 30px;
-        margin-bottom: 40px;
-        gap: 30px;
-        color: #000;
-        width: 100%;
-        min-height: 450px;
-        border: 2px solid red;
-    }
-    .txt-inicio{
-        width: 510px;
-    }
-    .btn-logon{
-        display: flex;
-        justify-content: center;
-        padding: 20px 0px;
-    }
-    .img-inicio{
-        position: relative;
-        width: 380px;
-        height: 280px;
-        border-radius: 20px;
-    }
-    .img-inicio img{
-        position: absolute;
-        width: 380px;
-        height: 250px;
-        border-radius: 20px;
-        z-index: 2;
-        object-fit: cover;
-    }
-    .sombra-inicio{
-        width: 380px;
-        height: 250px;
-        background-color: transparent;
-        border-radius: 20px;
-        border: 2px solid #5BC2A3;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        transform: translate(10px, 15px);
-    }
-
-    /* Cards */
-    .cards-inicio{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 0px;
-    }
-    .card-inicio{
-        width: 180px;
-        min-height: 180px;
-        padding: 15px;
-    }
-    .card-inicio p{
-        width: 150px;
-    }
-
-        /* Propósito */
-    #proposito{
-        margin-top: 0px;
-    }
-    .img-proposito{
-        width: 350px;
-        height: 330px;
-    }
-    .img-proposito img{
-        width: 350px;
-        height: 330px;
-    }
-    .sombra-proposito{
-        width: 350px;
-        height: 330px;
-    }
-    .txt-proposito{
-        width: 550px;
-    }
-
-    /* Beneficios */
-    .txt-beneficios{
-        width: 875px;
-    }
-
-    /* Alongamentos */
-    #alongamentos{
-        width: 875px;
-        margin: auto;
-    }
-    .cards-exercicios{
-        gap: 15px;
-    }
-    .card-exercicios {
-        width: 350px;
-        height: 480px;
-    }
-    .desc-exercicios{
-        width: 100%;
-    }
-
-    /* Depoimentos */
-    .container-depoimentos{
-        width: 875px;
-        margin: auto;
-    }
-    .carrosel-depoimentos{
-        position: relative;
-        display: flex;
-        gap: 15px;
-    }
-    .card-depoimentos{
-        width: 280px;
-        height: 300px;
-    }
-
-    /* Perguntas */
-    #duvidas{
-        width: 875px;
-    }
-
-    /* Fecha Page Index */
-
-
-    /* Abre Pages Usuario */
-    
-    /* Home */
-    .titulo-sections{
-        width: 850px;
-    }
-    .card-desafioatual{
-        width: 850px;
-    }
-    .cards-evolucao{
-        width: 850px;
-    }
-
-    /* Page Ajuda */
-    .card-ajuda{
-        width: 850px;
-    }
-    .desc-ajuda div img{
-        width: 350px;
-    }
-    .card-form-ajuda{
-        width: 850px;
-    }
-    .card-form-ajuda form{
-        width: 450px;
-    }
-    .card-form-ajuda textarea{
-        width: 410px;
-        height: 200px;
-    }
-    /* Fecha Pages Usuario */
-
-    .minhaarea-usua{
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(0px, 350px);
-    }
-
-    /*Page Vídeo Exercício*/
-    .container-treinodehoje{
-        padding: 30px;
-    }
-    .descricao-treinodehoje{
-        border: 2px solid #5BC2A3;
-        background-color: #fff;
-        border-radius: 20px;
-        padding: 15px;
-        width: 430px;
-        height: 520px;
-        overflow: auto;
-        margin: auto;
-    }
-    .video-treinodehoje{
-        width: 550px;
-        height: 520px;
-    }
-    iframe{
-        width: 550px;
-        height: 520px;
-    }
+  /* Abre Page Index */
+  #inicio {
+    background-image: linear-gradient(-7deg, #eea7ff 33%, transparent 15%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    gap: 30px;
+    color: #000;
+    width: 100%;
+    min-height: 450px;
+    border: 2px solid red;
+  }
+  .txt-inicio {
+    width: 510px;
+  }
+  .btn-logon {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+  .img-inicio {
+    position: relative;
+    width: 380px;
+    height: 280px;
+    border-radius: 20px;
+  }
+  .img-inicio img {
+    position: absolute;
+    width: 380px;
+    height: 250px;
+    border-radius: 20px;
+    z-index: 2;
+    object-fit: cover;
+  }
+  .sombra-inicio {
+    width: 380px;
+    height: 250px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #5bc2a3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translate(10px, 15px);
   }
 
+  /* Cards */
+  .cards-inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+  }
+  .card-inicio {
+    width: 180px;
+    min-height: 180px;
+    padding: 15px;
+  }
+  .card-inicio p {
+    width: 150px;
+  }
 
+  /* Propósito */
+  #proposito {
+    margin-top: 0px;
+  }
+  .img-proposito {
+    width: 350px;
+    height: 330px;
+  }
+  .img-proposito img {
+    width: 350px;
+    height: 330px;
+  }
+  .sombra-proposito {
+    width: 350px;
+    height: 330px;
+  }
+  .txt-proposito {
+    width: 550px;
+  }
 
-  @media (max-width: 900px) {
+  /* Beneficios */
+  .txt-beneficios {
+    width: 875px;
+  }
 
-    /* Modificar Menu */
-    .header-lg{
-        display: none;
-    }
-    .header-md{
-        display: block;
-        width: 100%;
-        background-color: #5BC2A3;
-        color: #fff;
-        position: fixed;
-        top: 0;
-        padding: 0;
-        z-index: 2;
-    }
-    .header-md section{
-        width: 100%;
-        display: flex;
-        justify-content: center;   
-        align-items: center;
-        /*gap: 200px;*/
-    }
-    .titulo-menu{
-        width: 80%;
-        height: 50px;
-        display: flex;
-        justify-content: space-between; 
-        align-items: center;    
-    }
-    .icon-menu svg{
-        color: #fff
-    }
-    .header-md a{
-        color: #fff;
-    }
-    .header-md ul li{
-        margin-bottom: 15px;
-    }
-    .header-md button{
-        border: 2px solid #fff;
-    }
-    .header-md .links-menu-md{
-        display: none;
-    }
-    .header-md .links-menu-md.active{
-        display: block;
-        width: 100%;
-        display: flex;
-        justify-content: center;   
-        align-items: center;
-        
-    }
-    .links-menu-md{
-        display: flex;
-        flex-direction: column;
-    }
-    .links-menu-md .menu-links ul{
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
-    }
-    
-    .menu-pageuser{
-        display: none;
-    }
-    /* Abre Page Index */
+  /* Alongamentos */
+  #alongamentos {
+    width: 875px;
+    margin: auto;
+  }
+  .cards-exercicios {
+    gap: 15px;
+  }
+  .card-exercicios {
+    width: 350px;
+    height: 480px;
+  }
+  .desc-exercicios {
+    width: 100%;
+  }
 
-    /* Inicio */
-    main{
-        margin-top: 50px;
-    }
-    #inicio{
-        width: 100%;
-        min-height: 400px;
-        border: 2px solid yellow;
-    }
-    .img-inicio{
-        display: none;
-    }
-    .txt-inicio{
-        width: 510px;
-    }
-    .btn-logon{
-        display: flex;
-        justify-content: center;
-        padding: 20px 0px;
-    }
+  /* Depoimentos */
+  .container-depoimentos {
+    width: 875px;
+    margin: auto;
+  }
+  .carrosel-depoimentos {
+    position: relative;
+    display: flex;
+    gap: 15px;
+  }
+  .card-depoimentos {
+    width: 280px;
+    height: 300px;
+  }
 
-    /* Cards */
-    .cards-inicio{
-        display: none;
-    }
-    .cards-inicio-md{
-        display: block;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-    }
-    
+  /* Perguntas */
+  #duvidas {
+    width: 875px;
+  }
 
-    /* Propósito */
-    #proposito{
-        margin-top: 0px;
-    }
-    .img-proposito{
-        display: none;
-    }
-    .txt-proposito{
-        width: 550px;
-    }
+  /* Fecha Page Index */
 
-    /* Beneficios */
-    .txt-beneficios{
-        width: 100%;
-    }
-    .txt-beneficios h1{
-        text-align: center;
-    }
-    .card-beneficios{
-        width: 180px;
-        min-height: 180px;
-    
-    }
-    .card-beneficios p{
-        width: 150px;
-    }
-    .card-beneficios.active{
-        display: none;
-    }
-    .card-beneficios p{
-        width: 160px;
-    }
+  /* Abre Pages Usuario */
 
-    /* Alongamentos */
-    #alongamentos{
-        width: 680px;
-        margin: auto;
-    }
-    #alongamentos h1{
-        text-align: center;
-    }
-    /*.cards-exercicios{
+  /* Home */
+  .titulo-sections {
+    width: 850px;
+  }
+  .card-desafioatual {
+    width: 850px;
+  }
+  .cards-evolucao {
+    width: 850px;
+  }
+
+  /* Page Ajuda */
+  .card-ajuda {
+    width: 850px;
+  }
+  .desc-ajuda div img {
+    width: 350px;
+  }
+  .card-form-ajuda {
+    width: 850px;
+  }
+  .card-form-ajuda form {
+    width: 450px;
+  }
+  .card-form-ajuda textarea {
+    width: 410px;
+    height: 200px;
+  }
+  /* Fecha Pages Usuario */
+
+  .minhaarea-usua {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0px, 350px);
+  }
+
+  /*Page Vídeo Exercício*/
+  .container-treinodehoje {
+    padding: 30px;
+  }
+  .descricao-treinodehoje {
+    border: 2px solid #5bc2a3;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    width: 430px;
+    height: 520px;
+    overflow: auto;
+    margin: auto;
+  }
+  .video-treinodehoje {
+    width: 550px;
+    height: 520px;
+  }
+  iframe {
+    width: 550px;
+    height: 520px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* Modificar Menu */
+  .header-lg {
+    display: none;
+  }
+  .header-md {
+    display: block;
+    width: 100%;
+    background-color: #5bc2a3;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    z-index: 2;
+  }
+  .header-md section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*gap: 200px;*/
+  }
+  .titulo-menu {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon-menu svg {
+    color: #fff;
+  }
+  .header-md a {
+    color: #fff;
+  }
+  .header-md ul li {
+    margin-bottom: 15px;
+  }
+  .header-md button {
+    border: 2px solid #fff;
+  }
+  .header-md .links-menu-md {
+    display: none;
+  }
+  .header-md .links-menu-md.active {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .links-menu-md {
+    display: flex;
+    flex-direction: column;
+  }
+  .links-menu-md .menu-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .menu-pageuser {
+    display: none;
+  }
+  /* Abre Page Index */
+
+  /* Inicio */
+  main {
+    margin-top: 50px;
+  }
+  #inicio {
+    width: 100%;
+    min-height: 400px;
+    border: 2px solid yellow;
+  }
+  .img-inicio {
+    display: none;
+  }
+  .txt-inicio {
+    width: 510px;
+  }
+  .btn-logon {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+
+  /* Cards */
+  .cards-inicio {
+    display: none;
+  }
+  .cards-inicio-md {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  /* Propósito */
+  #proposito {
+    margin-top: 0px;
+  }
+  .img-proposito {
+    display: none;
+  }
+  .txt-proposito {
+    width: 550px;
+  }
+
+  /* Beneficios */
+  .txt-beneficios {
+    width: 100%;
+  }
+  .txt-beneficios h1 {
+    text-align: center;
+  }
+  .card-beneficios {
+    width: 180px;
+    min-height: 180px;
+  }
+  .card-beneficios p {
+    width: 150px;
+  }
+  .card-beneficios.active {
+    display: none;
+  }
+  .card-beneficios p {
+    width: 160px;
+  }
+
+  /* Alongamentos */
+  #alongamentos {
+    width: 680px;
+    margin: auto;
+  }
+  #alongamentos h1 {
+    text-align: center;
+  }
+  /*.cards-exercicios{
         display: none;
     }*/
-    .cards-exercicios-sm{
-        display: none;
-    }
-    .cards-exercicios-md{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    .btn-carrosel{
-        background-color: transparent;
-        width: 40px;
-        color: red;
-        font-size: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .card-exercicios {
-        width: 330px;
-        height: 470px;
-    }
-    .desc-exercicios{
-        width: 330px;
-    }
-
-    /* Depoimentos */
-    .container-depoimentos h1{
-        text-align: center;
-    }
-    .container-depoimentos{
-        width: 100%;
-        margin: auto;
-    }
-    .carrosel-depoimentos{
-        display: none;
-    }
-    .carrosel-depoimentos-md{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-    .carrosel-depoimentos-md .btn-carrosel{
-        background-color: transparent;
-        width: 40px;
-        color: #fff;
-        font-size: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .carrosel-depoimentos-md .btn-carrosel:hover{
-        border: 1px solid #fff;
-    }
-    .card-depoimentos{
-        width: 382px;
-        height: 300px;
-    }
-
-    /* Perguntas */
-    #duvidas{
-        width: 100%;
-    }
-    #duvidas h1{
-        text-align: center;
-    }
-    .container-pergunta{
-        width: 620px;
-        margin: auto;
-    }
-    .card-resposta{
-        margin: 0;
-        margin-bottom: 15px;
-        margin-left: 20px;
-    }
-
-    /*Page Login*/
-    .txt-login{
-        display: none;
-    }
-    .container-cadastro{
-        background-color: #fff;
-    }
-    /* Fecha Page Index */
-
-    /*Abre Page Home User*/
-    .background-user{
-        width: 100%;
-        height: 410px;
-        background: rgba(229, 153, 247, 0.4);
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(0px, 50px);
-        z-index: -1;
-        background-image: linear-gradient(2deg, #fff 33%, transparent 15%);
-    }
-    .imguser img{
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -3;
-        transform: translate(0px, 50px);
-        background-image: linear-gradient(-20deg, #EEA7FF 33%, transparent 15%);
-    }
-    .txt-imguser{
-        width: 650px;
-        margin: auto;
-        margin-top: 120px;
-    }
-    .menu-identificacao{
-        border: 2px solid #fff;
-        padding: 10px;
-        border-radius: 20px;
-    }
-    .titulo-sections{
-        width: 650px;
-    }
-    .maistreinos{
-        display: none;
-    }
-    .card-desafioatual{
-        width: 650px;
-        height: 300px;
-        background-image: linear-gradient(110deg, #EEA7FF 65%, transparent 15%);
-        margin-left: 125px;
-        border-radius: 10px;
-        padding: 20px;
-        position: relative;
-        color: #fff;
-        margin: auto;
-    }
-    .card-desafioatual img{
-        width: 650px;
-        height: 300px;
-        z-index: -2;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(0px, 0px);
-        border-radius: 10px;
-    }
-    .container-evolucao{
-        width: 400px;
-        height: 12px;
-        border: 2px solid #5BC2A3;
-        border-radius: 20px;
-        margin-top: 5px;
-        margin-bottom: 15px;
-    }
-
-    .cards-evolucao{
-        display: flex;
-        flex-direction: column;
-        width: 650px;
-        height: 550px;
-        margin-bottom: 70px;
-    }
-    .aproveitamento-evolucao{
-        width: 640px;
-        padding: 30px;
-        border-right: none;
-        border-bottom: 2px solid #5BC2A3;
-    }
-    .numeros-evolucaouser{
-        margin: auto;
-    }
-    .button-lg{
-        display: none;
-    }
-    .button-md{
-        display: block;
-    }
-    .card-ajuda{
-        width: 650px;
-    }
-    .desc-ajuda{
-        display: none;
-    }
-    .desc-ajuda-md{
-        display: none;
-    }
-    .desc-ajuda-md.active{
-        display: block;
-        width: 500px;
-        margin: auto;
-    }
-    .desc-ajuda div img{
-        width: 270px;
-    }
-    .desc-ajuda-md div img{
-        width: 470px;
-    }
-    .desc-ajuda{
-        display: none;
-    }
-    .mostrar-div{
-        border-bottom: 1px solid #5BC2A3;
-        width: 100%;
-        padding: 15px;
-    }
-    .mostrar-div p{
-        margin-bottom: 5px;
-    }
-    .card-form-ajuda{
-        width: 650px;
-        display: flex;
-        flex-direction: column;
-    }
-    .desc-card-form-ajuda{
-        width: 650px;
-        height: 150px;
-        background-color: #EEA7FF;
-        color: #fff;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px;
-    }
-    .card-form-ajuda form{
-        width: 650px;
-        height: 300px;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
-        padding: 20px 50px;
-    }
-    .card-form-ajuda textarea{
-        width: 550px;
-        height: 200px;
-        padding: 7px 15px;
-        border-radius: 15px;
-        border: 2px solid #5BC2A3;
-        margin-bottom: 15px;
-    }
-
-    .form-dadospessoais{
-        width: 650px;
-    }
-    .form-row input{
-        width: 100%;
-    }
-    .form-row{
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
-    }
-    /*Fecha Page Home User*/
-
-    /*Page ADM*/
-    .card-tabela{
-        width: 650px;
-    }
-
-    .form-add{
-        width: 550px;
-        min-height: 400px; 
-        margin-bottom: 50px;   
-    }
-    .form-add div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .card-videos{
-        width: 410px;
-    }
-    .form-desafio button{
-        margin-left: 230px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        color: #fff;
-    }
-
-    /*Page Vídeo Exercício*/
-    .container-treinodehoje{
-        display: flex;
-        flex-direction: column;
-        background-image: linear-gradient(130deg, #EEA7FF 65%, transparent 15%);
-        gap: 30px;
-        padding: 80px 0px;
-    }
-    .video-treinodehoje{
-        width: 650px;
-        height: 420px;
-        margin: auto;
-    }
-    iframe{
-        width: 650px;
-        height: 420px;
-    }
-    .descricao-treinodehoje{
-        border: 2px solid #5BC2A3;
-        background-color: #fff;
-        border-radius: 20px;
-        padding: 15px;
-        width: 650px;
-        height: 520px;
-        overflow: auto;
-        margin: auto;
-    }
-
-    .form-add-exercicio{
-        margin-top: 110px;
-    }
-    .form-add{
-        margin-top: 110px;
-    }
+  .cards-exercicios-sm {
+    display: none;
+  }
+  .cards-exercicios-md {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-carrosel {
+    background-color: transparent;
+    width: 40px;
+    color: red;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-exercicios {
+    width: 330px;
+    height: 470px;
+  }
+  .desc-exercicios {
+    width: 330px;
   }
 
-   @media (max-width: 700px) {
-    
-    .card-tabela{
-        width: 430px;
-    }
-    .card-tabela section{
-        display: flex;
-        justify-content: space-between;
-        gap: 0;
-    }
-    .duracao-tabela{
-        display: none;
-    }
-    .img-card-tabela{
-        display: none;
-    }
-    .desc-card-tabela{
-        display: none;
-    }
-    .txt-imguser{
-        width: 430px;
-        margin: auto;
-        margin-top: 110px;
-    }
-    .titulo-sections{
-        width: 430px;
-    }
+  /* Depoimentos */
+  .container-depoimentos h1 {
+    text-align: center;
+  }
+  .container-depoimentos {
+    width: 100%;
+    margin: auto;
+  }
+  .carrosel-depoimentos {
+    display: none;
+  }
+  .carrosel-depoimentos-md {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .carrosel-depoimentos-md .btn-carrosel {
+    background-color: transparent;
+    width: 40px;
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carrosel-depoimentos-md .btn-carrosel:hover {
+    border: 1px solid #fff;
+  }
+  .card-depoimentos {
+    width: 382px;
+    height: 300px;
+  }
 
-    .form-dadospessoais{
-        width: 430px;
-    }
+  /* Perguntas */
+  #duvidas {
+    width: 100%;
+  }
+  #duvidas h1 {
+    text-align: center;
+  }
+  .container-pergunta {
+    width: 620px;
+    margin: auto;
+  }
+  .card-resposta {
+    margin: 0;
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
 
-    .card-ajuda{
-        width: 430px;
-    }
-    .desc-ajuda-md.active{
-        display: block;
-        width: 370px;
-        margin: auto;
-    }
-    .desc-ajuda-md div img{
-        width: 340px;
-    }
-    .mostrar-div{
-        border-bottom: 1px solid #5BC2A3;
-        width: 100%;
-        padding: 15px;
-    }
-    .mostrar-div p{
-        margin-bottom: 5px;
-    }
-    .card-form-ajuda{
-        width: 430px;
-        display: flex;
-        flex-direction: column;
-    }
-    .desc-card-form-ajuda{
-        width: 430px;
-        height: 220px;
-        background-color: #EEA7FF;
-        color: #fff;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px;
-    }
-    .card-form-ajuda form{
-        width: 430px;
-        height: 300px;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
-        padding: 15px 25px;
-    }
-    .card-form-ajuda textarea{
-        width: 350px;
-        height: 200px;
-        padding: 7px 15px;
-        border-radius: 15px;
-        border: 2px solid #5BC2A3;
-        margin-bottom: 15px;
-    }
+  /*Page Login*/
+  .txt-login {
+    display: none;
+  }
+  .container-cadastro {
+    background-color: #fff;
+  }
+  /* Fecha Page Index */
 
-    .card-desafioatual{
-        width: 430px;
-        height: 450px;
-        background-image: linear-gradient(110deg, #EEA7FF 45%, transparent 15%);
-        margin-left: 125px;
-        border-radius: 10px;
-        padding: 20px;
-        position: relative;
-        color: #fff;
-        margin: auto;
-    }
-    .card-desafioatual img{
-        width: 430px;
-        height: 450px;
-        z-index: -2;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(0px, 0px);
-        border-radius: 10px;
-    }
-    .container-evolucao{
-        width: 320px;
-        height: 12px;
-        border: 2px solid #5BC2A3;
-        border-radius: 20px;
-        margin-top: 5px;
-        margin-bottom: 15px;
-    }
+  /*Abre Page Home User*/
+  .background-user {
+    width: 100%;
+    height: 410px;
+    background: rgba(229, 153, 247, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0px, 50px);
+    z-index: -1;
+    background-image: linear-gradient(2deg, #fff 33%, transparent 15%);
+  }
+  .imguser img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    transform: translate(0px, 50px);
+    background-image: linear-gradient(-20deg, #eea7ff 33%, transparent 15%);
+  }
+  .txt-imguser {
+    width: 650px;
+    margin: auto;
+    margin-top: 120px;
+  }
+  .menu-identificacao {
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .titulo-sections {
+    width: 650px;
+  }
+  .maistreinos {
+    display: none;
+  }
+  .card-desafioatual {
+    width: 650px;
+    height: 300px;
+    background-image: linear-gradient(110deg, #eea7ff 65%, transparent 15%);
+    margin-left: 125px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+    margin: auto;
+  }
+  .card-desafioatual img {
+    width: 650px;
+    height: 300px;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0px, 0px);
+    border-radius: 10px;
+  }
+  .container-evolucao {
+    width: 400px;
+    height: 12px;
+    border: 2px solid #5bc2a3;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
 
-    .cards-evolucao{
-        display: flex;
-        flex-direction: column;
-        width: 440px;
-        height: 550px;
-    }
-    .aproveitamento-evolucao{
-        width: 428px;
-        padding: 30px;
-        border-right: none;
-        border-bottom: 2px solid #5BC2A3;
-    }
-    .numeros-evolucaouser{
-        margin: auto;
-    }
-    .maistreinos{
-        display: none;
-    }
+  .cards-evolucao {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 550px;
+    margin-bottom: 70px;
+  }
+  .aproveitamento-evolucao {
+    width: 640px;
+    padding: 30px;
+    border-right: none;
+    border-bottom: 2px solid #5bc2a3;
+  }
+  .numeros-evolucaouser {
+    margin: auto;
+  }
+  .button-lg {
+    display: none;
+  }
+  .button-md {
+    display: block;
+  }
+  .card-ajuda {
+    width: 650px;
+  }
+  .desc-ajuda {
+    display: none;
+  }
+  .desc-ajuda-md {
+    display: none;
+  }
+  .desc-ajuda-md.active {
+    display: block;
+    width: 500px;
+    margin: auto;
+  }
+  .desc-ajuda div img {
+    width: 270px;
+  }
+  .desc-ajuda-md div img {
+    width: 470px;
+  }
+  .desc-ajuda {
+    display: none;
+  }
+  .mostrar-div {
+    border-bottom: 1px solid #5bc2a3;
+    width: 100%;
+    padding: 15px;
+  }
+  .mostrar-div p {
+    margin-bottom: 5px;
+  }
+  .card-form-ajuda {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+  }
+  .desc-card-form-ajuda {
+    width: 650px;
+    height: 150px;
+    background-color: #eea7ff;
+    color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .card-form-ajuda form {
+    width: 650px;
+    height: 300px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px 50px;
+  }
+  .card-form-ajuda textarea {
+    width: 550px;
+    height: 200px;
+    padding: 7px 15px;
+    border-radius: 15px;
+    border: 2px solid #5bc2a3;
+    margin-bottom: 15px;
+  }
 
-    /*Cadastro*/
-    .container-cadastro{
-        width: 100vw;
-        height: 120vh;
-    }
-    .card-cadastro{
-        width: 430px;
-        min-height: 400px;
-    }
-    .input-form-cadastro{
-        width: 390px;
-    }
-    .container-inputduplo{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    .inputduplo-cadastro input{
-        width: 390px;
-    }
+  .form-dadospessoais {
+    width: 650px;
+  }
+  .form-row input {
+    width: 100%;
+  }
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  /*Fecha Page Home User*/
 
-    .mgs-grande{
-        display: flex;
-        flex-direction: column;
-    }
-    .mgs-duvida{
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    .form-resposta{
-        width: 100%;
-    }
-    .form-add-exercicio{
-        width: 430px;
-        margin-top: 110px;
-    }
+  /*Page ADM*/
+  .card-tabela {
+    width: 650px;
+  }
 
-    .form-add-exercicio form{
-        width: 430px;
-        margin: auto;
-    }
+  .form-add {
+    width: 550px;
+    min-height: 400px;
+    margin-bottom: 50px;
+  }
+  .container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-videos {
+    width: 410px;
+  }
+  .form-desafio button {
+    margin-left: 230px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
 
-    .form-add{
-        width: 430px;
-        min-height: 400px; 
-        margin-bottom: 50px;   
-    }
-    .form-add div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .card-videos{
-        width: 370px;
-    }
-    .input-form-cadastro section{
-        overflow: auto;
-        width: 390px;
-        height: 325px;
-        margin-bottom: 15px;
-    }
-    .form-desafio button{
-        margin-left: 170px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        color: #fff;
-    }
-    /*Page Vídeo Exercício*/
-    .container-treinodehoje{
-        display: flex;
-        flex-direction: column;
-        background-image: linear-gradient(130deg, #EEA7FF 65%, transparent 15%);
-        gap: 30px;
-        padding: 80px 0px;
-    }
-    .video-treinodehoje{
-        width: 430px;
-        height: 320px;
-        margin: auto;
-    }
-    iframe{
-        width: 430px;
-        height: 320px;
-    }
-    .descricao-treinodehoje{
-        border: 2px solid #5BC2A3;
-        background-color: #fff;
-        border-radius: 20px;
-        padding: 15px;
-        width: 430px;
-        height: 520px;
-        overflow: auto;
-        margin: auto;
-    }
-   }
+  /*Page Vídeo Exercício*/
+  .container-treinodehoje {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(130deg, #eea7ff 65%, transparent 15%);
+    gap: 30px;
+    padding: 80px 0px;
+  }
+  .video-treinodehoje {
+    width: 650px;
+    height: 420px;
+    margin: auto;
+  }
+  iframe {
+    width: 650px;
+    height: 420px;
+  }
+  .descricao-treinodehoje {
+    border: 2px solid #5bc2a3;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    width: 650px;
+    height: 520px;
+    overflow: auto;
+    margin: auto;
+  }
+
+  .form-add-exercicio {
+    margin: 0 auto;
+    margin-top: 110px;
+  }
+  .form-add {
+    margin-top: 110px;
+  }
+}
+
+@media (max-width: 700px) {
+  .card-tabela {
+    width: 430px;
+  }
+  .card-tabela section {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .duracao-tabela {
+    display: none;
+  }
+  .img-card-tabela {
+    display: none;
+  }
+  .desc-card-tabela {
+    display: none;
+  }
+  .txt-imguser {
+    width: 430px;
+    margin: auto;
+    margin-top: 110px;
+  }
+  .titulo-sections {
+    width: 430px;
+  }
+
+  .form-dadospessoais {
+    width: 430px;
+  }
+
+  .card-ajuda {
+    width: 430px;
+  }
+  .desc-ajuda-md.active {
+    display: block;
+    width: 370px;
+    margin: auto;
+  }
+  .desc-ajuda-md div img {
+    width: 340px;
+  }
+  .mostrar-div {
+    border-bottom: 1px solid #5bc2a3;
+    width: 100%;
+    padding: 15px;
+  }
+  .mostrar-div p {
+    margin-bottom: 5px;
+  }
+  .card-form-ajuda {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+  }
+  .desc-card-form-ajuda {
+    width: 430px;
+    height: 220px;
+    background-color: #eea7ff;
+    color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .card-form-ajuda form {
+    width: 430px;
+    height: 300px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 15px 25px;
+  }
+  .card-form-ajuda textarea {
+    width: 350px;
+    height: 200px;
+    padding: 7px 15px;
+    border-radius: 15px;
+    border: 2px solid #5bc2a3;
+    margin-bottom: 15px;
+  }
+
+  .card-desafioatual {
+    width: 430px;
+    height: 450px;
+    background-image: linear-gradient(110deg, #eea7ff 45%, transparent 15%);
+    margin-left: 125px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+    margin: auto;
+  }
+  .card-desafioatual img {
+    width: 430px;
+    height: 450px;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0px, 0px);
+    border-radius: 10px;
+  }
+  .container-evolucao {
+    width: 320px;
+    height: 12px;
+    border: 2px solid #5bc2a3;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .cards-evolucao {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    height: 550px;
+  }
+  .aproveitamento-evolucao {
+    width: 428px;
+    padding: 30px;
+    border-right: none;
+    border-bottom: 2px solid #5bc2a3;
+  }
+  .numeros-evolucaouser {
+    margin: auto;
+  }
+  .maistreinos {
+    display: none;
+  }
+
+  /*Cadastro*/
+  .container-cadastro {
+    width: 100vw;
+    height: 120vh;
+  }
+  .card-cadastro {
+    width: 430px;
+    min-height: 400px;
+  }
+  .input-form-cadastro {
+    width: 390px;
+  }
+  .container-inputduplo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .inputduplo-cadastro input {
+    width: 390px;
+  }
+
+  .mgs-grande {
+    display: flex;
+    flex-direction: column;
+  }
+  .mgs-duvida {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .form-resposta {
+    width: 100%;
+  }
+  .form-add-exercicio {
+    width: 430px;
+    margin-top: 110px;
+  }
+
+  .form-add-exercicio form {
+    width: 430px;
+    margin: auto;
+  }
+
+  .form-add {
+    width: 430px;
+    min-height: 400px;
+    margin-bottom: 50px;
+  }
+
+  .card-videos {
+    width: 370px;
+  }
+  .input-form-cadastro section {
+    overflow: auto;
+    width: 390px;
+    height: 325px;
+    margin-bottom: 15px;
+  }
+  .form-desafio button {
+    margin-left: 170px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  /*Page Vídeo Exercício*/
+  .container-treinodehoje {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(130deg, #eea7ff 65%, transparent 15%);
+    gap: 30px;
+    padding: 80px 0px;
+  }
+  .video-treinodehoje {
+    width: 430px;
+    height: 320px;
+    margin: auto;
+  }
+  iframe {
+    width: 430px;
+    height: 320px;
+  }
+  .descricao-treinodehoje {
+    border: 2px solid #5bc2a3;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    width: 430px;
+    height: 520px;
+    overflow: auto;
+    margin: auto;
+  }
+}

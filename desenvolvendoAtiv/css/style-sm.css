@@ -1,138 +1,274 @@
 @media (max-width: 600px) {
-    /* Modificar Menu */
+  /* Modificar Menu */
 
-    /* Abre Page Index */
+  /* Abre Page Index */
 
-    /* Inicio */
-    #inicio{
-        margin-top: 10px;
-        width: 100%;
-        min-height: 400px;
-    }
-    .img-inicio{
-        display: none;
-    }
-    .txt-inicio{
-        width: 430px;
-        border: red 1px solid;
-    }
-    .btn-logon{
-        display: flex;
-        justify-content: center;
-    }
+  /* Inicio */
+  #inicio {
+    margin-top: 10px;
+    width: 100%;
+    min-height: 400px;
+  }
+  .img-inicio {
+    display: none;
+  }
+  .txt-inicio {
+    width: 430px;
+    border: red 1px solid;
+  }
+  .btn-logon {
+    display: flex;
+    justify-content: center;
+  }
 
-    /* Cards */
-    .cards-inicio{
-    	display: none;
-    }
-    .cards-inicio-sm{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    .card-inicio{
-    	display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-        width: 250px;
-		height: 190px;
-        padding: 30px;
-        display: none;
-    }
-    .card-inicio.active{
-    	display: block;
-    }
-    .card-inicio.active p{
-    	width: 190px;
-        text-align: center;
-        border: 1px solid red;
-    }
+  /* Cards */
+  .cards-inicio {
+    display: none;
+  }
+  .cards-inicio-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .card-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    height: 190px;
+    padding: 30px;
+    display: none;
+  }
+  .card-inicio.active {
+    display: block;
+  }
+  .card-inicio.active p {
+    width: 190px;
+    text-align: center;
+    border: 1px solid red;
+  }
 
-    /* Propósito */
-    #proposito{
-        margin-top: 0px;
-    }
-    .img-proposito{
-        display: none;
-    }
-    .txt-proposito{
-        width: 550px;
-    }
+  /* Propósito */
+  #proposito {
+    margin-top: 0px;
+  }
+  .img-proposito {
+    display: none;
+  }
+  .txt-proposito {
+    width: 550px;
+  }
 
-    /* Beneficios */
-    .txt-beneficios{
-        width: 795px;
-    }
-    .card-beneficios{
-        width: 180px;
-        height: 180px;
-    
-    }
-    .card-beneficios p{
-        width: 160px;
-    }
+  /* Beneficios */
+  .txt-beneficios {
+    width: 795px;
+  }
+  .card-beneficios {
+    width: 180px;
+    height: 180px;
+  }
+  .card-beneficios p {
+    width: 160px;
+  }
 
-    /* Alongamentos */
-    #alongamentos{
-        width: 795px;
-        margin: auto;
-    }
-    .cards-exercicios{
-        display: none;
-    }
-    .cards-exercicios-sm{
-        display: none;
-    }
-    .cards-exercicios-md{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    .btn-carrosel{
-        background-color: #fff;
-        width: 40px;
-        color: red;
-        font-size: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .card-exercicios {
-        width: 342px;
-        height: 470px;
-    }
-    .desc-exercicios{
-        width: 342px;
-    }
+  /* Alongamentos */
+  #alongamentos {
+    width: 795px;
+    margin: auto;
+  }
+  .cards-exercicios {
+    display: none;
+  }
+  .cards-exercicios-sm {
+    display: none;
+  }
+  .cards-exercicios-md {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-carrosel {
+    background-color: #fff;
+    width: 40px;
+    color: red;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-exercicios {
+    width: 342px;
+    height: 470px;
+  }
+  .desc-exercicios {
+    width: 342px;
+  }
 
-    /* Depoimentos */
-    .container-depoimentos{
-        width: 795px;
-        margin: auto;
-    }
-    .carrosel-depoimentos{
-        display: none;
-    }
-    .carrosel-depoimentos-md{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-    .card-depoimentos{
-        width: 382px;
-        height: 300px;
-    }
+  /* Depoimentos */
+  .container-depoimentos {
+    width: 795px;
+    margin: auto;
+  }
+  .carrosel-depoimentos {
+    display: none;
+  }
+  .carrosel-depoimentos-md {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .card-depoimentos {
+    width: 382px;
+    height: 300px;
+  }
 
-    /* Perguntas */
-    #duvidas{
-        width: 795px;
-    }
+  /* Perguntas */
+  #duvidas {
+    width: 795px;
+  }
 
-    /* Fecha Page Index */
+  /* Fecha Page Index */
+}
+@media (max-width: 600px) {
+  /* Modificar Menu */
+
+  /* Abre Page Index */
+
+  /* Inicio */
+  #inicio {
+    margin-top: 10px;
+    width: 100%;
+    min-height: 400px;
+  }
+  .img-inicio {
+    display: none;
+  }
+  .txt-inicio {
+    width: 430px;
+    border: red 1px solid;
+  }
+  .btn-logon {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Cards */
+  .cards-inicio {
+    display: none;
+  }
+  .cards-inicio-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .card-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    height: 190px;
+    padding: 30px;
+    display: none;
+  }
+  .card-inicio.active {
+    display: block;
+  }
+  .card-inicio.active p {
+    width: 190px;
+    text-align: center;
+    border: 1px solid red;
+  }
+
+  /* Propósito */
+  #proposito {
+    margin-top: 0px;
+  }
+  .img-proposito {
+    display: none;
+  }
+  .txt-proposito {
+    width: 550px;
+  }
+
+  /* Beneficios */
+  .txt-beneficios {
+    width: 795px;
+  }
+  .card-beneficios {
+    width: 180px;
+    height: 180px;
+  }
+  .card-beneficios p {
+    width: 160px;
+  }
+
+  /* Alongamentos */
+  #alongamentos {
+    width: 795px;
+    margin: auto;
+  }
+  .cards-exercicios {
+    display: none;
+  }
+  .cards-exercicios-sm {
+    display: none;
+  }
+  .cards-exercicios-md {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-carrosel {
+    background-color: #fff;
+    width: 40px;
+    color: red;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-exercicios {
+    width: 342px;
+    height: 470px;
+  }
+  .desc-exercicios {
+    width: 342px;
+  }
+
+  /* Depoimentos */
+  .container-depoimentos {
+    width: 795px;
+    margin: auto;
+  }
+  .carrosel-depoimentos {
+    display: none;
+  }
+  .carrosel-depoimentos-md {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .card-depoimentos {
+    width: 382px;
+    height: 300px;
+  }
+
+  /* Perguntas */
+  #duvidas {
+    width: 795px;
+  }
+
+  /* Fecha Page Index */
 }
