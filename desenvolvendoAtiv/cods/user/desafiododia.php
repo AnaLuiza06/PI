@@ -194,6 +194,7 @@
       console.log("Eh o mesmo vídeo", video)
       if (posicaoVideo == -1) return false;
       const videoAtual = videoNaPagina[posicaoVideo]
+      if (!videoAtual.id_video) return false;
       const ehMesmoVideo = videoAtual.id_video === video.id_video
       return ehMesmoVideo
     }
