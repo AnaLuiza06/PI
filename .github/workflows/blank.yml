@@ -34,5 +34,5 @@ jobs:
           password: ${{ secrets.password }}
           local-dir: ./desenvolvendoAtiv/
           server-dir: /htdocs/
-          dangerous-clean-slate: true
+          dangerous-clean-slate: false
 
