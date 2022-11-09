@@ -225,6 +225,8 @@
 
     async function pegaVideo(id) {
       console.log("Pega video", id)
+      const exists = videoNaPagina.find(video => video.id_video === id)
+      if (exists) return exists;
       const response = await fetch(`./api/pegaVideo.php?id=${id}`);
       const data = await response.json();
       return data
@@ -259,6 +261,9 @@
 
         data.forEach(async (el) => {
           const id_video = el.id_video;
+          const existe = videoNaPagina.find(video => video.id_video === id_video)
+          if (existe) return;
+
           const res = await pegaVideo(id_video);
           console.log("Resultado do vídeo", res)
           if (!res.length) return;
