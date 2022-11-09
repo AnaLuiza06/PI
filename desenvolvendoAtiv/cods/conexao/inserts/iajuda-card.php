@@ -28,5 +28,3 @@
 		$incluir = mysqli_query($cn, $sql);
 		 echo "<script>window.location='../../adm/formsAdd/addajuda.php?adcionado=true'</script>";
 	}
-
-?>

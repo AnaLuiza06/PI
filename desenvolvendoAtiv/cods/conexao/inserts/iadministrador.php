@@ -26,5 +26,3 @@
 		$incluir = mysqli_query($cn, $sql);
 		 echo "<script>window.location='../../adm/formsAdd/addadministrador.php?adcionado=true'</script>";
 	}
-
-?>

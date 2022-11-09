@@ -18,5 +18,3 @@
 	$atualizar = mysqli_query($cn, "UPDATE `ajuda` SET `perguta_ajuda`='$pergunta',`p1_ajuda`='$p1',`img1_ajuda`='$img1',`p2_ajuda`='$p2',`img2_ajuda`='$img2',`p3_ajuda`='$p3',`img3_ajuda`='$img3',`p4_ajuda`='$p4',`img4_ajuda`='$img4',`p5_ajuda`='$p5',`img5_ajuda`='$img5' WHERE `id_ajuda` = '$id'");
 
 	header("Location: ../../adm/formsUpdate/altajuda.php?cd=".$id."");
-
-?>

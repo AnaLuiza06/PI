@@ -1,42 +1,42 @@
-<?php 
-	
-	require ('../conexao.php');
+<?php
 
-	$nome = $_POST['nome'];
-	$descricao = $_POST['descricao'];
-	$duracao = $_POST['duracao'];
-	$contraindocacoes = $_POST['contraindocacoes'];
-    $imagem = $_POST['imagem'];
+require('../conexao.php');
 
-    $videos = $_POST['videos'];
+$nome = $_POST['nome'];
+$descricao = $_POST['descricao'];
+$duracao = $_POST['duracao'];
+$contraindocacoes = $_POST['contraindocacoes'];
+$imagem = $_POST['imagem'];
 
-    $sql = "SELECT * FROM `desafios` WHERE `nome_desafios` = '$nome'";
+$videos = $_POST['videos'];
 
-    $consulta = mysqli_query($cn, $sql);
-	$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
+$sql = "SELECT * FROM `desafios` WHERE `nome_desafios` = '$nome'";
 
-    if(!!$exibe){
-        echo "<script>window.location='../../adm/formsAdd/adddesafio.php?adcionado=false'</script>";
-        
-    } else {
-		// echo "Usuário NÃO cadastrado";
-		$sql = "INSERT INTO `desafios`(`nome_desafios`, `desc_desafios`, `duracao_desafios`, `contra_indicacoes_desafio`, `imagem_desafio`) VALUES ('$nome','$descricao','$duracao', '$contraindocacoes','$imagem')";
-		$incluir = mysqli_query($cn, $sql);
+$consulta = mysqli_query($cn, $sql);
+$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
 
-        $sql = "SELECT * FROM `desafios` WHERE nome_desafios = '$nome'";
-        $consultaDesafio = mysqli_query($cn, $sql);
-        $exibeDesafio = mysqli_fetch_all($consultaDesafio, MYSQLI_ASSOC);
-        
-        for($i = 0; $i < count($videos); $i++){
-            //print_r($videos[$i]);
-            $exibeDesafioArray = $exibeDesafio[0];
-            $exibeDesafioId = $exibeDesafioArray['id_desafios'];
+if (!!$exibe) {
+  echo "<script>window.location='../../adm/formsAdd/adddesafio.php?adcionado=false'</script>";
+} else {
+  // echo "Usuário NÃO cadastrado";
+  $sql = "INSERT INTO `desafios`(`nome_desafios`, `desc_desafios`, `duracao_desafios`, `contra_indicacoes_desafio`, `imagem_desafio`) VALUES ('$nome','$descricao','$duracao', '$contraindocacoes','$imagem')";
+  $incluir = mysqli_query($cn, $sql);
 
-            $sql = "INSERT INTO `videosdesafio`(`id_desafio`, `id_video`) VALUES ($exibeDesafioId, $videos[$i]);";
-            $incluir = mysqli_query($cn, $sql);
-            print_r($sql);
-         }
+  $sql = "SELECT * FROM `desafios` WHERE nome_desafios = '$nome'";
+  $consultaDesafio = mysqli_query($cn, $sql);
+  $exibeDesafio = mysqli_fetch_all($consultaDesafio, MYSQLI_ASSOC);
 
-		echo "<script>window.location='../../adm/formsAdd/adddesafio.php?adcionado=true'</script>";	}
+  for ($i = 0; $i < count($videos); $i++) {
+    //print_r($videos[$i]);
+    $exibeDesafioArray = $exibeDesafio[0];
+    $exibeDesafioId = $exibeDesafioArray['id_desafios'];
+
+    $sql = "INSERT INTO `videosDesafio`(`id_desafio`, `id_video`) VALUES ($exibeDesafioId, $videos[$i]);";
+    $incluir = mysqli_query($cn, $sql);
+    print_r($sql);
+  }
+
+  echo "<script>window.location='../../adm/formsAdd/adddesafio.php?adcionado=true'</script>";
+}
 
 	//  print_r($videos[][1]);

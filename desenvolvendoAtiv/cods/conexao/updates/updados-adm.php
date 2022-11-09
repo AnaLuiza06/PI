@@ -18,5 +18,3 @@
 		echo "<script>window.location='../../adm/pagesMenu/meusdados.php?'</script>";
 
     // Verificando alteração
-
-?>

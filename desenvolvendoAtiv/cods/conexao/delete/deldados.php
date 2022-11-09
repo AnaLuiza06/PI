@@ -8,5 +8,3 @@
 	$sql = "DELETE FROM `adm` WHERE `id_adm` = '$id'";
 	$incluir = mysqli_query($cn, $sql);
 		 echo "<script>window.location='../../../index.php'</script>";
-
-?>

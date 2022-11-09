@@ -1,14 +1,13 @@
-<?php 
-	
-	require ('../conexao.php');
+<?php
 
-    $id_usuario = $_GET['cd'];
+require('../conexao.php');
 
-    $mensagem = $_POST['mensagem'];
-    // $date = date()
+$id_usuario = $_GET['cd'];
 
-	$sql = "INSERT INTO `duvidausuario`(`id_usuario`, `id_adm`, `mensagem_duvida`, `resposta_divida`, `data_duvida`, `status_duvida`) VALUES ('$id_usuario','','$mensagem','','01/10/2022','0')";
-	$salvar = mysqli_query($cn, $sql);
-    
-    header("Location: ../../user/pagesMenu/ajuda.php");
-?>
+$mensagem = $_POST['mensagem'];
+// $date = date()
+
+$sql = "INSERT INTO `duvidaUsuario`(`id_usuario`, `id_adm`, `mensagem_duvida`, `resposta_divida`, `data_duvida`, `status_duvida`) VALUES ('$id_usuario','','$mensagem','','01/10/2022','0')";
+$salvar = mysqli_query($cn, $sql);
+
+header("Location: ../../user/pagesMenu/ajuda.php");

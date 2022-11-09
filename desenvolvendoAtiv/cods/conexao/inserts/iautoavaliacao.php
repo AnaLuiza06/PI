@@ -17,6 +17,3 @@
 	$incluir = mysqli_query($cn, $sql);
 
 	header('location: ../../user/videoexercicio.php?cd='.$idExercicio.'');
-        
-
-?>

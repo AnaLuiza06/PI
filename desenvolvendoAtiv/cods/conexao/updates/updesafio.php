@@ -23,7 +23,7 @@ if (count($videos) <= 0) {
 	echo "<script>window.location='../../adm/formsAdd/adddesafio.php?adcionado=true'</script>";
 }
 
-$sql_selectiona_videos_desafios = "SELECT * FROM `videosdesafio` WHERE id_desafio = '$id'";
+$sql_selectiona_videos_desafios = "SELECT * FROM `videosDesafio` WHERE id_desafio = '$id'";
 
 
 $consulta_videos_desafios = mysqli_query($cn, $sql_selectiona_videos_desafios);
