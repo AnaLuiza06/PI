@@ -18,9 +18,9 @@ $sql_atualiza_desafios = "UPDATE `desafios` SET `nome_desafios`='$nome',`desc_de
 mysqli_query($cn, $sql_atualiza_desafios);
 
 if (count($videos) <= 0) {
-	$sql_deleta_videos = "DELETE FROM `videosDesafio` WHERE `id_desafio` = '$id'";
-	mysqli_query($cn, $sql_deleta_videos);
-	echo "<script>window.location='../../adm/formsAdd/adddesafio.php?adcionado=true'</script>";
+  $sql_deleta_videos = "DELETE FROM `videosDesafio` WHERE `id_desafio` = '$id'";
+  mysqli_query($cn, $sql_deleta_videos);
+  echo "<script>window.location='../../adm/formsAdd/adddesafio.php?adcionado=true'</script>";
 }
 
 $sql_selectiona_videos_desafios = "SELECT * FROM `videosDesafio` WHERE id_desafio = '$id'";
@@ -32,12 +32,12 @@ $exibe_videos = mysqli_fetch_all($consulta_videos_desafios, MYSQLI_ASSOC);
 $videos_existentes = array();
 
 foreach ($exibe_videos as $video) {
-	$videos_existentes[] = intval($video['id_video']);
+  $videos_existentes[] = intval($video['id_video']);
 }
 
 $videos_inteiros = array();
 foreach ($videos as $video) {
-	$videos_inteiros[] = intval($video);
+  $videos_inteiros[] = intval($video);
 }
 
 
@@ -49,23 +49,23 @@ $sql_remove_videos = "DELETE FROM `videosDesafio` WHERE `id_desafio` = '$id' AND
 $sql_adiciona_videos = "INSERT INTO `videosDesafio` (`id_desafio`, `id_video`) VALUES ";
 
 foreach ($videos_a_adicionar as $video) {
-	$sql_adiciona_videos .= "('$id', '$video'),";
+  $sql_adiciona_videos .= "('$id', '$video'),";
 }
 $sql_adiciona_videos = substr($sql_adiciona_videos, 0, -1);
 
 if (count($videos_a_remover) > 0) {
-	mysqli_query($cn, $sql_remove_videos);
+  mysqli_query($cn, $sql_remove_videos);
 }
 
 if (count($videos_a_adicionar) > 0) {
-	mysqli_query($cn, $sql_adiciona_videos);
+  mysqli_query($cn, $sql_adiciona_videos);
 }
 
 echo json_encode([
-	"remover" => $videos_a_remover,
-	"adicionar" => $videos_a_adicionar,
-	"sql_remove_videos" => $sql_remove_videos,
-	"sql_adiciona_videos" => $sql_adiciona_videos
+  "remover" => $videos_a_remover,
+  "adicionar" => $videos_a_adicionar,
+  "sql_remove_videos" => $sql_remove_videos,
+  "sql_adiciona_videos" => $sql_adiciona_videos
 ]);
 
-echo "<script>window.location='../../adm/formsAdd/adddesafio.php?adcionado=true'</script>";
+// echo "<script>window.location='../../adm/formsAdd/adddesafio.php?adcionado=true'</script>";
