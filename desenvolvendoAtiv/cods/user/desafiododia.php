@@ -176,17 +176,29 @@
 
   <script>
     const diaEscolhido = document.querySelectorAll(".pegarJS")
+    const form = document.querySelector(".depoimento-treinodehoje");
+    form.addEventListener('submit', handleSubmit);
+
     diaEscolhido.forEach(li => {
       li.addEventListener("click", () => trocarInformacoesDoDesafio(li))
     })
+
     const videoNaPagina = []
 
     const telaVideo = document.querySelector(".tela-video");
     const treinoDeHoje = document.querySelector(".txt-treinodehoje");
-    let idDesafioAtual = 1;
-    let posicaoVideo = 0;
+    let idDesafioAtual = -1;
+    let posicaoVideo = -1;
+
+    function ehMesmoVideo(video) {
+      if (posicaoVideo == -1) return false;
+      const videoAtual = videoNaPagina[posicaoVideo]
+      const ehMesmoVideo = videoAtual.id_video === video.id_video
+      return ehMesmoVideo
+    }
 
     function trocarInformacoesDoDesafio(li) {
+      // if (ehMesmoVideo(videoNaPagina[posicaoVideo])) return;
       const button = li.querySelector('button');
       const dataset = button.dataset;
       const idDesafio = dataset.desafio;
@@ -201,7 +213,7 @@
       contra_indicacoes_exercicio: ""
     }) {
       treinoDeHoje.innerHTML = `
-				<p>${informacoes.desc_exercicio}</p>
+				<p>Descrição: ${informacoes.desc_exercicio}</p>
 				<p>Duração: ${informacoes.duracao_exercicio}</p>
 				<p>Equipamentos: ${informacoes.equipamentos_exercicio}.</p>
 				<p>Contra indicações: ${informacoes.contra_indicacoes_exercicio}.</p>
@@ -210,19 +222,26 @@
 
     async function pegaVideo(id) {
       const response = await fetch(`./api/pegaVideo.php?id=${id}`);
-      // console.log(response)
       const data = await response.json();
       return data
     }
 
     function escrevaVideoNoHtml(pos = 0) {
+      console.clear()
+      const video = videoNaPagina[pos];
+      const isVideo = ehMesmoVideo(video);
+      if (isVideo) return;
+      if (video === undefined) {
+        console.warn("Não tem video")
+        return;
+      }
+
       posicaoVideo = pos
-      const data = videoNaPagina[pos];
-      // console.log(pos)
-      escreverTreinoDeHoje(data);
-      const linkDoVideo = data.video_exercicio
+      escreverTreinoDeHoje(video);
+      const linkDoVideo = video.video_exercicio
       telaVideo.innerHTML = `
-			<iframe width="560" height="315" src="${linkDoVideo}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="${linkDoVideo}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+      ></iframe>
 			`
     }
 
@@ -231,25 +250,29 @@
       try {
         const response = await fetch(`./api/pegaExercicio.php?id=${idDesafio}`);
         const data = await response.json();
-        console.log(data)
+        // console.log("Dados do exercicio", data)
 
         data.forEach(async (el) => {
           const id_video = el.id_video;
           const res = await pegaVideo(id_video);
-          console.log(res)
+          // console.log("Resultado do vídeo", res)
           if (!res.length) return;
-          videoNaPagina.push(res[0]);
+          const video = {
+            ...res[0],
+            id_video
+          };
+          videoNaPagina.push(video);
+          // console.log("Video na pagina", videoNaPagina)
+
           escrevaVideoNoHtml();
+
         })
       } catch (error) {
         console.log(error)
       }
     }
 
-    pegarExercicio();
-
-    const form = document.querySelector(".depoimento-treinodehoje");
-    form.addEventListener('submit', handleSubmit);
+    addEventListener("DOMContentLoaded", pegarExercicio());
 
     // logica de envio do form
     async function handleSubmit(event) {
@@ -271,8 +294,7 @@
         method: 'post'
       });
       const json = await response.text();
-      console.log(json);
-
+      console.log(json)
     }
   </script>
 </body>
