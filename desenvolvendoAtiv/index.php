@@ -120,30 +120,6 @@
 			</div>
 		</section>
 
-		<section class="cards-inicio-sm">
-			<button class="btn-carrosel"><</button>
-			<div class="card-inicio ">
-				<span class="material-symbols-outlined">cottage</span>
-				<p>Faça seus exercícios onde quiser, até mesmo em sua casa.</p>
-			</div>
-
-			<div class="card-inicio active">
-				<span class="material-symbols-outlined">sports_gymnastics</span>
-				<p>Tenha acesso a desafios que ajudam a criar uma rotina de exercícios.</p>
-			</div>
-
-			<div class="card-inicio">
-				<span class="material-symbols-outlined">elderly</span>
-				<p>Faça exercícios desenvolvidos por uma profissional diretamente para o público mais idoso.</p>
-			</div>
-
-			<div class="card-inicio">
-				<span class="material-symbols-outlined">health_and_safety</span>
-				<p>Melhore sua saúde com os vários benefícios que a atividade física nos proporciona.</p>
-			</div>
-			<button class="btn-carrosel">></button>
-		</section>
-
 		<section id="proposito">
 			<div class="img-proposito">
 				<img src="../../imgs/img-beneficios.png">
@@ -161,11 +137,11 @@
 			<div class="txt-beneficios">
 				<h1>Benefícios da Atividade Física</h1>
 				<div class="row-cards-beneficios">
-					<div class="card-beneficios">
+					<div class="card-beneficios sm">
 						<span class="material-symbols-outlined">star</span>
 						<p>Fortalecimento Muscular</p>
 					</div>
-					<div class="card-beneficios">
+					<div class="card-beneficios sm">
 						<span class="material-symbols-outlined">volunteer_activism</span>
 						<p>Prevenção de problemas cardiovasculares</p>
 					</div>
@@ -180,7 +156,7 @@
 				</div>
 
 				<div class="row-cards-beneficios">
-					<div class="card-beneficios">
+					<div class="card-beneficios sm">
 						<span class="material-symbols-outlined">accessibility_new</span>
 						<p>Melhora da coordenação motora e do equilíbrio</p>
 					</div>
@@ -193,7 +169,7 @@
 						<p>Evita depressão</p>
 					</div>
 					<div class="card-beneficios">
-						<span class="material-symbols-outlined">sick</span>
+						<span class="material-symbols-outlined sm">sick</span>
 						<p>Auxilio no controle da de várias doenças</p>
 					</div>
 				</div>
