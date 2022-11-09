@@ -191,6 +191,7 @@
     let posicaoVideo = -1;
 
     function ehMesmoVideo(video) {
+      console.log("Eh o mesmo vídeo", video)
       if (posicaoVideo == -1) return false;
       const videoAtual = videoNaPagina[posicaoVideo]
       const ehMesmoVideo = videoAtual.id_video === video.id_video
@@ -199,6 +200,7 @@
 
     function trocarInformacoesDoDesafio(li) {
       // if (ehMesmoVideo(videoNaPagina[posicaoVideo])) return;
+      console.log("Trocar informações do desafio", li)
       const button = li.querySelector('button');
       const dataset = button.dataset;
       const idDesafio = dataset.desafio;
@@ -212,6 +214,7 @@
       equipamentos_exercicio: "",
       contra_indicacoes_exercicio: ""
     }) {
+      console.log("Escrever treino de hoje", informacoes)
       treinoDeHoje.innerHTML = `
 				<p>Descrição: ${informacoes.desc_exercicio}</p>
 				<p>Duração: ${informacoes.duracao_exercicio}</p>
@@ -221,13 +224,14 @@
     }
 
     async function pegaVideo(id) {
+      console.log("Pega video", id)
       const response = await fetch(`./api/pegaVideo.php?id=${id}`);
       const data = await response.json();
       return data
     }
 
     function escrevaVideoNoHtml(pos = 0) {
-      console.clear()
+      console.log("Escreva video no html", pos)
       const video = videoNaPagina[pos];
       const isVideo = ehMesmoVideo(video);
       if (isVideo) return;
@@ -247,22 +251,23 @@
 
     async function pegarExercicio(idDesafio = <?= $id_desafio ?>) {
       idDesafioAtual = idDesafio;
+      console.log("Pegar exercicio", idDesafio)
       try {
         const response = await fetch(`./api/pegaExercicio.php?id=${idDesafio}`);
         const data = await response.json();
-        // console.log("Dados do exercicio", data)
+        console.log("Dados do exercicio", data)
 
         data.forEach(async (el) => {
           const id_video = el.id_video;
           const res = await pegaVideo(id_video);
-          // console.log("Resultado do vídeo", res)
+          console.log("Resultado do vídeo", res)
           if (!res.length) return;
           const video = {
             ...res[0],
             id_video
           };
           videoNaPagina.push(video);
-          // console.log("Video na pagina", videoNaPagina)
+          console.log("Video na pagina", videoNaPagina)
 
           escrevaVideoNoHtml();
 
@@ -280,7 +285,6 @@
       const {
         id_exercicio
       } = videoNaPagina[posicaoVideo];
-      console.clear();
       console.log(id_exercicio)
 
       const campos_escondidos = document.querySelector('.campos_escondidos');
