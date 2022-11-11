@@ -24,7 +24,7 @@
         ?>
         <section class="form-add-exercicio">
 				<form method="post" action="../../conexao/updates/upajuda.php?cd=<?php echo $exibe_ajuda[0]['id_ajuda'];?>">
-                    <h2>Adicionar</h2>
+                    <h2>Alterar</h2>
 					<div class="input-form-cadastro">
 						<label for="inputnome" id="labelnome">Pergunta</label>
 						<input type="text" name="pergunta" id="inputnome" value="<?php echo $exibe_ajuda[0]['perguta_ajuda'];?>">

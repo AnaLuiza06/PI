@@ -68,4 +68,4 @@ echo json_encode([
   "sql_adiciona_videos" => $sql_adiciona_videos
 ]);
 
-// echo "<script>window.location='../../adm/formsAdd/adddesafio.php?adcionado=true'</script>";
+header("Location: ../../adm/pagesMenu/desafios.php?");

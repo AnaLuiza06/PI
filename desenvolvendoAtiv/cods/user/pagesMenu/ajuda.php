@@ -30,10 +30,16 @@
 	</section>
 
 	<section class="minhaarea-usua">
-
+		<?php
+			// Acessar Dados
+			$consulta_ajuda = mysqli_query($cn, "SELECT * from ajuda");
+			$exibe_ajuda = mysqli_fetch_all($consulta_ajuda, MYSQLI_ASSOC);
+			
+			for($i=0; $i < count($exibe_ajuda); $i++){
+		?>
 		<div class="card-ajuda">
 			<div class="titulo-ajuda">
-				<h2>Como eu começo um Alongamento?</h2>
+				<h2><?php echo $exibe_ajuda[$i]['perguta_ajuda'];?></h2>
 				<button onclick="mostrarmais()" class="button-lg">
 					<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
 					  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
@@ -48,38 +54,101 @@
 			
 			<div class="desc-ajuda">
 				<div class="mostrar-div">
-					<p>Primeiramente é pecisso acessar o página de Alongamenos. Para isso, basta ir a barra de menu e clicar no link "Alongamentos".</p>
-					<img src="../../../imgs/img-menu-alongamentos.png"> 
+					<p><?php echo $exibe_ajuda[$i]['p1_ajuda'];?></p>
+					<img src="<?php echo $exibe_ajuda[$i]['img1_ajuda'];?>"> 
 				</div>
-				<div class="mostrar-div">
-					<img src="../../../imgs/img-cards-alongamentos.png"> 
-					<p>Depois, quando já tiver na página, é só escolher o alongamento que deseja fazer e clicar no botão começar.</p>
-				</div>
-				<div>
-					<p>Nisso, aparecerá a página do exercício, tendo o vídeo e toda a descrição sobre o alongamento. Para concluir é preciso preencher o formulário de autoavaluação. Caso não preenchido, não irá constar como feito.</p>
-					<img src="../../../imgs/img-page-alongamentos.png"> 
-				</div>
+				<?php
+					if($exibe_ajuda[$i]['p2_ajuda'] == ""){
+						echo "";
+					} else{
+						echo "	<div class='mostrar-div'>
+									<img src='".$exibe_ajuda[$i]['img2_ajuda']."'> 
+									<p>".$exibe_ajuda[$i]['p2_ajuda']."</p>
+								</div>";
+					}
+
+					if($exibe_ajuda[$i]['p3_ajuda'] == ""){
+						echo "";
+					} else{
+						echo "	<div class='mostrar-div'>
+									<p>".$exibe_ajuda[$i]['p3_ajuda']."</p>
+									<img src='".$exibe_ajuda[$i]['img3_ajuda']."'> 
+								</div>";
+					}
+
+					if($exibe_ajuda[$i]['p4_ajuda'] == ""){
+						echo "";
+					} else{
+						echo "	<div class='mostrar-div'>
+									<img src='".$exibe_ajuda[$i]['img4_ajuda']."'> 
+									<p>".$exibe_ajuda[$i]['p4_ajuda']."</p>
+								</div>";
+					}
+
+					if($exibe_ajuda[$i]['p5_ajuda'] == ""){
+						echo "";
+					} else{
+						echo "	<div class='mostrar-div'>
+									<p>".$exibe_ajuda[$i]['p5_ajuda']."</p>
+									<img src='".$exibe_ajuda[$i]['img5_ajuda']."'> 
+								</div>";
+					}
+				?>
 			</div>
 
 			<div class="desc-ajuda-md">
 				<div class="mostrar-div">
-					<p>Primeiramente é pecisso acessar o página de Alongamenos. Para isso, basta ir a barra de menu e clicar no link "Alongamentos".</p>
-					<img src="../../../imgs/img-menu-alongamentos.png"> 
+					<p><?php echo $exibe_ajuda[$i]['p1_ajuda'];?></p>
+					<img src="<?php echo $exibe_ajuda[$i]['img1_ajuda'];?>"> 
 				</div>
-				<div class="mostrar-div">
-					<p>Depois, quando já tiver na página, é só escolher o alongamento que deseja fazer e clicar no botão começar.</p>
-					<img src="../../../imgs/img-cards-alongamentos.png"> 
-				</div>
-				<div class="mostrar-div">
-					<p>Nisso, aparecerá a página do exercício, tendo o vídeo e toda a descrição sobre o alongamento. Para concluir é preciso preencher o formulário de autoavaluação. Caso não preenchido, não irá constar como feito.</p>
-					<img src="../../../imgs/img-page-alongamentos.png"> 
-				</div>
+				<?php
+					if($exibe_ajuda[$i]['p2_ajuda'] == ""){
+						echo "";
+					} else{
+						echo "	<div class='mostrar-div'>
+									<p>".$exibe_ajuda[$i]['p2_ajuda']."</p>
+									<img src='".$exibe_ajuda[$i]['img2_ajuda']."'> 
+								</div>";
+					}
+
+					if($exibe_ajuda[$i]['p3_ajuda'] == ""){
+						echo "";
+					} else{
+						echo "	<div class='mostrar-div'>
+									<p>".$exibe_ajuda[$i]['p3_ajuda']."</p>
+									<img src='".$exibe_ajuda[$i]['img3_ajuda']."'> 
+								</div>";
+					}
+
+					if($exibe_ajuda[$i]['p4_ajuda'] == ""){
+						echo "";
+					} else{
+						echo "	<div class='mostrar-div'>
+									<p>".$exibe_ajuda[$i]['p4_ajuda']."</p>
+									<img src='".$exibe_ajuda[$i]['img4_ajuda']."'> 
+								</div>";
+					}
+
+					if($exibe_ajuda[$i]['p5_ajuda'] == ""){
+						echo "";
+					} else{
+						echo "	<div class='mostrar-div'>
+									<p>".$exibe_ajuda[$i]['p5_ajuda']."</p>
+									<img src='".$exibe_ajuda[$i]['img5_ajuda']."'> 
+								</div>";
+					}
+				?>
 			</div>
 
 			<div class="btn-mais-ajuda">
 				
 			</div>
 		</div>
+
+		<?php
+			}
+
+		?>
 
 		<div class="card-form-ajuda">
 			<div class="desc-card-form-ajuda">

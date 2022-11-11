@@ -68,10 +68,14 @@ button:hover {
   margin-top: 20px;
 }
 .form-desafio button {
-  margin-left: 440px;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 15px;
   color: #fff;
+}
+.btn-desafio{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .form-desafio button:hover {
   color: #5bc2a3;

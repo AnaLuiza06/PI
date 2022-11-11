@@ -36,8 +36,8 @@
 	$exibe_exercicio = mysqli_fetch_all($consulta_exercicio, MYSQLI_ASSOC);
 	?>
 	<section class="form-add-exercicio">
-		<h2>Adicionar</h2>
 		<form class="form-desafio" method="post" action="../../conexao/updates/updesafio.php?cd=<?= $id_desafio; ?>">
+			<h2>Alterar</h2>
 			<div>
 				<section>
 					<div class="input-form-cadastro">

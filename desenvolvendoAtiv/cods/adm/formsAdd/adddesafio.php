@@ -93,7 +93,9 @@
                             </div>  
                         </section>
                     </div>
-					<button onclick="" type="submit">Enviar</button>
+					<div class="btn-desafio">
+                        <button onclick="" type="submit">Enviar</button>
+                    </div>
 				</form>
 		</section>
         <script type="text/javascript">
