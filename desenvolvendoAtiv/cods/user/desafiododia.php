@@ -230,6 +230,7 @@
       if (exists) return exists;
       const response = await fetch(`./api/pegaVideo.php?id=${id}`);
       const data = await response.json();
+      console.log("DATA", data)
       return data
     }
 
@@ -261,9 +262,11 @@
         console.log("Dados do exercicio", data)
 
         data.forEach(async (el) => {
+          console.log("EL", el)
           const id_video = el.id_video;
           const existe = videoNaPagina.find(video => video.id_video === id_video)
-          if (existe) return;
+          console.log("EXISTE", existe)
+          // if (existe) return;
 
           const res = await pegaVideo(id_video);
           console.log("Resultado do vídeo", res)
