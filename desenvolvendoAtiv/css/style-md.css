@@ -264,6 +264,7 @@
   #inicio {
     width: 100%;
     min-height: 400px;
+    margin-top: 130px;
   }
   .img-inicio {
     display: none;
@@ -329,9 +330,9 @@
   #alongamentos h1 {
     text-align: center;
   }
-  /*.cards-exercicios{
+  .cards-exercicios{
         display: none;
-    }*/
+    }
   .cards-exercicios-sm {
     display: none;
   }
@@ -374,22 +375,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-  }
-  .carrosel-depoimentos-md .btn-carrosel {
-    background-color: transparent;
-    width: 40px;
-    color: #fff;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .carrosel-depoimentos-md .btn-carrosel:hover {
-    border: 1px solid #fff;
+    gap: 15px;
   }
   .card-depoimentos {
-    width: 382px;
+    width: 330px;
     height: 300px;
   }
 
@@ -646,6 +635,12 @@
   .form-add {
     margin-top: 110px;
   }
+  footer{
+    gap: 50px;
+  }
+  .links-footer{
+    display: none;
+  }
 }
 
 @media (max-width: 700px) {
@@ -874,5 +869,10 @@
     height: 520px;
     overflow: auto;
     margin: auto;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
   }
 }
