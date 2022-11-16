@@ -23,7 +23,7 @@
 		
 		$favoritos_consulta =  mysqli_query($cn, "SELECT * FROM `favoritos` WHERE `id_usuario` = '$id_usuario'");
 		$favoritos = mysqli_fetch_all($favoritos_consulta, MYSQLI_ASSOC);
-		// print_r($favoritos)
+		print_r($favoritos)
     ?>
 
 	<section class="imguser">
@@ -62,6 +62,7 @@
 									$id_exercicio = $exibe[$i]['id_exercicio'];
 									
 									for($favorito = 0; $favorito < count($favoritos); $favorito++) {
+										$classe = '';
 										if($id_exercicio == $favoritos[$favorito]['id_exercicio']) {
 											$classe = 'active';
 											break;

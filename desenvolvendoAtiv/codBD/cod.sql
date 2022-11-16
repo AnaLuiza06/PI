@@ -157,16 +157,16 @@ VALUES
         "00:12:35",
         "asdasd",
         "fwetgrfuhduhg",
-        '<iframe width="560" height="315" src="https://www.youtube.com/embed/HhoATZ1Imtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'https://www.youtube.com/embed/HhoATZ1Imtw',
         "https://i.pinimg.com/736x/db/21/36/db2136077e65ceb776414923880ff726.jpg"
     ), (
         "Teste 2",
         "AAAAAAAAAA",
         "Exercício focado",
-        "00:12:35",
+        "00:12:25",
         "asdasd",
         "fwetgrfuhduhg",
-        '<iframe width="560" height="315" src="https://www.youtube.com/embed/LZyybvVx-js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'https://www.youtube.com/embed/LZyybvVx-js',
         "https://unsplash.com/photos/3ERr2ip5T9k"
     );
 
