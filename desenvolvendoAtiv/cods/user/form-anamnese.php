@@ -6,12 +6,16 @@
                     <p>Você fuma?</p>
                     <div class="inputs-anamnese">
                         <div class="input-anamnese">
-                            <input type="radio" name="fumante" value="sim">
-                            <label>Sim</label>
+                            <label>
+                                <input type="radio" name="fumante" value="sim">
+                                Sim
+                            </label>
                         </div>
                         <div class="input-anamnese">
-                            <input type="radio" name="fumante" value="nao">
-                            <label>Não</label>
+                            <label>
+                                <input type="radio" name="fumante" value="nao">
+                                Não
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -20,16 +24,21 @@
                     <p>Como está a pressão alta?</p>
                     <div class="inputs-anamnese">
                         <div class="input-anamnese">
-                            <input type="radio" name="pressao" value="alta">
-                            <label>Pressão Alta</label>
+                            <label>
+                                <input type="radio" name="pressao" value="alta">
+                                Pressão Alta
+                            </label>
                         </div>
                         <div class="input-anamnese">
-                            <input type="radio" name="pressao"value="baixa">
-                            <label>Pressão Baixa</label>
+                            <label>
+                                <input type="radio" name="pressao"value="baixa">
+                                Pressão Baixa
+                            </label>
                         </div>
                         <div class="input-anamnese">
-                            <input type="radio" name="pressao"value="normal">
-                            <label>Normal</label>
+                            <label>
+                                <input type="radio" name="pressao"value="normal">
+                                Normal</label>
                         </div>
                     </div>
                 </div>
@@ -38,12 +47,16 @@
                     <p>Possuí diabéticos na família?</p>
                     <div class="inputs-anamnese">
                         <div class="input-anamnese">
-                            <input type="radio" name="diabetes" value="sim">
-                            <label>Sim</label>
+                            <label>
+                                <input type="radio" name="diabetes" value="sim">
+                                Sim
+                            </label>
                         </div>
                         <div class="input-anamnese">
-                            <input type="radio" name="diabetes"value="nao">
-                            <label>Não</label>
+                            <label>
+                                <input type="radio" name="diabetes"value="nao">
+                                Não
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -52,12 +65,16 @@
                     <p>Possuí algum problema cardíaco?</p>
                     <div class="inputs-anamnese">
                         <div class="input-anamnese">
-                            <input type="radio" name="problemas-cardiacos" value="sim">
-                            <label>Sim</label>
+                            <label>
+                                <input type="radio" name="problemas-cardiacos" value="sim">
+                                Sim
+                            </label>
                         </div>
                         <div class="input-anamnese">
-                            <input type="radio" name="problemas-cardiacos"value="nao">
-                            <label>Não</label>
+                            <label>
+                                <input type="radio" name="problemas-cardiacos"value="nao">
+                                Não
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -66,12 +83,16 @@
                     <p>Possuí alguma lesão ou problema ortopédico?</p>
                     <div class="inputs-anamnese">
                         <div class="input-anamnese">
-                            <input type="radio" name="lesao" value="sim">
-                            <label>Sim</label>
+                            <label>
+                                <input type="radio" name="lesao" value="sim">
+                                Sim
+                            </label>
                         </div>
                         <div class="input-anamnese">
-                            <input type="radio" name="lesao"value="nao">
-                            <label>Não</label>
+                            <label>
+                                <input type="radio" name="lesao"value="nao">
+                                Não
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -80,12 +101,16 @@
                     <p>Pratica alguma atividade física regularmente?</p>
                     <div class="inputs-anamnese">
                         <div class="input-anamnese">
-                            <input type="radio" name="praticaatividade" value="sim">
-                            <label>Sim</label>
+                            <label>
+                                <input type="radio" name="praticaatividade" value="sim">
+                                Sim
+                            </label>
                         </div>
                         <div class="input-anamnese">
-                            <input type="radio" name="praticaatividade"value="nao">
-                            <label>Não</label>
+                            <label>
+                                <input type="radio" name="praticaatividade"value="nao">
+                                Não
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -94,12 +119,16 @@
                     <p>Sente dores no peito ao praticar alguma atividade?</p>
                     <div class="inputs-anamnese">
                         <div class="input-anamnese">
-                            <input type="radio" name="dornopeito" value="sim">
-                            <label>Sim</label>
+                            <label>
+                                <input type="radio" name="dornopeito" value="sim">
+                                Sim
+                            </label>
                         </div>
                         <div class="input-anamnese">
-                            <input type="radio" name="dornopeito"value="nao">
-                            <label>Não</label>
+                            <label>
+                                <input type="radio" name="dornopeito"value="nao">
+                                Não
+                            </label>
                         </div>
                     </div>
                 </div>
