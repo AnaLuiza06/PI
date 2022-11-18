@@ -91,7 +91,7 @@
 
 					<?php
 						if($exibe_anamnese[0]['pressao_anamnese'] == 'alta' || $exibe_anamnese[0]['pressao_anamnese'] == 'baixa'){
-							echo "<p>Meda sempre sua pressão e não deixe de ir em consultas para ver se está tudo bem.</p>";
+							echo "<p>Meça sempre sua pressão e não deixe de ir em consultas para ver se está tudo bem.</p>";
 						}
 						if($exibe_anamnese[0]['lesao_anamnese'] == 'sim'){
 							echo "<p>Tenha mais precalção ao realizar os alongamentos, mas nunca deixe de se movimentar.</p>";
@@ -102,7 +102,6 @@
 						if($exibe_anamnese[0]['dorpeito_anamnese'] == 'sim'){
 							echo "<p>Fique atento as dores no peito. Caso persistam avise seu médico.</p>";
 						}
-
 						if($exibe_anamnese[0]['ativo_anamnese'] == 'nao'){
 							echo "<p>Caso não consiga acompanhar o tempo dos exercícios, pause o vídeo e faça no seu tempo.</p>";
 						}
