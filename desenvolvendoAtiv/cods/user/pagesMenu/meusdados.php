@@ -110,12 +110,12 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="fumante" value="sim" checked>
-								<label>Sim</label>
+								<label><input type="radio" name="fumante" value="sim" checked>
+								Sim</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="fumante" value="nao">
-								<label>Não</label>
+								<label><input type="radio" name="fumante" value="nao">
+								Não</label>
 							</div>
 						</div>
 
@@ -124,12 +124,12 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="fumante" value="sim">
-								<label>Sim</label>
+								<label><input type="radio" name="fumante" value="sim">
+								Sim</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="fumante" value="nao" checked>
-								<label>Não</label>
+								<label><input type="radio" name="fumante" value="nao" checked>
+								Não</label>
 							</div>
 						</div>
 
@@ -146,16 +146,16 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="pressao" value="alta" checked>
-								<label>Pressão Alta</label>
+								<label><input type="radio" name="pressao" value="alta" checked>
+								Pressão Alta</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="pressao" value="baixa">
-								<label>Pressão Baixa</label>
+								<label><input type="radio" name="pressao" value="baixa">
+								Pressão Baixa</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="pressao" value="normal">
-								<label>Normal</label>
+								<label><input type="radio" name="pressao" value="normal">
+								Normal</label>
 							</div>
 						</div>
 					<?php
@@ -163,16 +163,16 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="pressao" value="alta">
-								<label>Pressão Alta</label>
+								<label><input type="radio" name="pressao" value="alta">
+								Pressão Alta</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="pressao" value="baixa" checked>
-								<label>Pressão Baixa</label>
+								<label><input type="radio" name="pressao" value="baixa" checked>
+								Pressão Baixa</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="pressao" value="normal">
-								<label>Normal</label>
+								<label><input type="radio" name="pressao" value="normal">
+								Normal</label>
 							</div>
 						</div>
 					<?php
@@ -180,16 +180,16 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="pressao" value="alta">
-								<label>Pressão Alta</label>
+								<label><input type="radio" name="pressao" value="alta">
+								Pressão Alta</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="pressao" value="baixa">
-								<label>Pressão Baixa</label>
+								<label><input type="radio" name="pressao" value="baixa">
+								Pressão Baixa</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="pressao" value="normal" checked>
-								<label>Normal</label>
+								<label><input type="radio" name="pressao" value="normal" checked>
+								Normal</label>
 							</div>
 						</div>
 					<?php
@@ -204,12 +204,12 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="diabetes" value="sim" checked>
-								<label>Sim</label>
+								<label><input type="radio" name="diabetes" value="sim" checked>
+								Sim</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="diabetes" value="nao">
-								<label>Não</label>
+								<label><input type="radio" name="diabetes" value="nao">
+								Não</label>
 							</div>
 						</div>
 					<?php
@@ -217,12 +217,12 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="diabetes" value="sim">
-								<label>Sim</label>
+								<label><input type="radio" name="diabetes" value="sim">
+								Sim</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="diabetes" value="nao" checked>
-								<label>Não</label>
+								<label><input type="radio" name="diabetes" value="nao" checked>
+								Não</label>
 							</div>
 						</div>
 					<?php
@@ -237,12 +237,12 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="problemas-cardiacos" value="sim" checked>
-								<label>Sim</label>
+								<label><input type="radio" name="problemas-cardiacos" value="sim" checked>
+								Sim</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="problemas-cardiacos" value="nao">
-								<label>Não</label>
+								<label><input type="radio" name="problemas-cardiacos" value="nao">
+								Não</label>
 							</div>
 						</div>
 					<?php
@@ -250,12 +250,12 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="problemas-cardiacos" value="sim">
-								<label>Sim</label>
+								<label><input type="radio" name="problemas-cardiacos" value="sim">
+								Sim</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="problemas-cardiacos" value="nao" checked>
-								<label>Não</label>
+								<label><input type="radio" name="problemas-cardiacos" value="nao" checked>
+								Não</label>
 							</div>
 						</div>
 					<?php
@@ -270,12 +270,12 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="lesao" value="sim" checked>
-								<label>Sim</label>
+								<label><input type="radio" name="lesao" value="sim" checked>
+								Sim</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="lesao" value="nao">
-								<label>Não</label>
+								<label><input type="radio" name="lesao" value="nao">
+								Não</label>
 							</div>
 						</div>
 					<?php
@@ -283,12 +283,12 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="lesao" value="sim">
-								<label>Sim</label>
+								<label><input type="radio" name="lesao" value="sim">
+								Sim</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="lesao" value="nao" checked>
-								<label>Não</label>
+								<label><input type="radio" name="lesao" value="nao" checked>
+								Não</label>
 							</div>
 						</div>
 					<?php
@@ -303,12 +303,12 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="praticaatividade" value="sim" checked>
-								<label>Sim</label>
+								<label><input type="radio" name="praticaatividade" value="sim" checked>
+								Sim</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="praticaatividade" value="nao">
-								<label>Não</label>
+								<label><input type="radio" name="praticaatividade" value="nao">
+								Não</label>
 							</div>
 						</div>
 					<?php
@@ -316,12 +316,12 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="praticaatividade" value="sim">
-								<label>Sim</label>
+								<label><input type="radio" name="praticaatividade" value="sim">
+								Sim</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="praticaatividade" value="nao" checked>
-								<label>Não</label>
+								<label><input type="radio" name="praticaatividade" value="nao" checked>
+								Não</label>
 							</div>
 						</div>
 					<?php
@@ -336,12 +336,12 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="dornopeito" value="sim" checked>
-								<label>Sim</label>
+								<label><input type="radio" name="dornopeito" value="sim" checked>
+								Sim</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="dornopeito" value="nao">
-								<label>Não</label>
+								<label><input type="radio" name="dornopeito" value="nao">
+								Não</label>
 							</div>
 						</div>
 					<?php
@@ -349,12 +349,12 @@
 					?>
 						<div class="inputs-anamnese">
 							<div class="input-anamnese">
-								<input type="radio" name="dornopeito" value="sim">
-								<label>Sim</label>
+								<label><input type="radio" name="dornopeito" value="sim">
+								Sim</label>
 							</div>
 							<div class="input-anamnese">
-								<input type="radio" name="dornopeito" value="nao" checked>
-								<label>Não</label>
+								<label><input type="radio" name="dornopeito" value="nao" checked>
+								Não</label>
 							</div>
 						</div>
 					<?php
