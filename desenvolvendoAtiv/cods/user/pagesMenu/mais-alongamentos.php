@@ -23,13 +23,12 @@
 		
 		$favoritos_consulta =  mysqli_query($cn, "SELECT * FROM `favoritos` WHERE `id_usuario` = '$id_usuario'");
 		$favoritos = mysqli_fetch_all($favoritos_consulta, MYSQLI_ASSOC);
-		print_r($favoritos)
     ?>
 
 	<section class="imguser">
 		<div class="txt-imguser">
-			<h1>Alongamentos</h1>
-			<h4>O hábito de se alongar todos os dias trás muitos beneficios ao corpo. O como você irá se alongar hoje?</h4>
+			<h1>Exercícios</h1>
+			<h4>O hábito de se exercitar todos os dias trás muitos beneficios ao corpo. O como você irá se exercitar hoje?</h4>
 		</div>
 		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
 		<div class="background-user"></div>

@@ -102,6 +102,10 @@
 						if($exibe_anamnese[0]['dorpeito_anamnese'] == 'sim'){
 							echo "<p>Fique atento as dores no peito. Caso persistam avise seu médico.</p>";
 						}
+
+						if($exibe_anamnese[0]['ativo_anamnese'] == 'nao'){
+							echo "<p>Caso não consiga acompanhar o tempo dos exercícios, pause o vídeo e faça no seu tempo.</p>";
+						}
 					?>
 				</section>
 
@@ -118,7 +122,7 @@
 								}
 							?>
 							
-							<h5>Alongamentos Feitos</h5>
+							<h5>Exercícios Feitos</h5>
 						</div>
 						<div class="numero-desafios">
 							<?php

@@ -23,7 +23,7 @@
 					<li><a href="../indexadm.php">Minha Área</a></li>
 					<li><a href="./administradores.php">Adiministradores</a></li>
 					<li><a href="./desafios.php">Desafios</a></li>
-					<li><a href="./alongamentos.php">Alongamentos</a></li>
+					<li><a href="./alongamentos.php">Exercícios</a></li>
 					<li><a href="./ajuda.php">Ajuda</a></li>
 					<li><a href="./sair.php">Sair</a></li>
 				</ul>

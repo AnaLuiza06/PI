@@ -22,7 +22,7 @@
 				<ul>
 					<li><a href="../indexuser.php">Minha Área</a></li>
 					<li><a href="../pagesMenu/mais-desafios.php">Desafios</a></li>
-					<li><a href="../pagesMenu/mais-alongamentos.php">Alongamentos</a></li>
+					<li><a href="../pagesMenu/mais-alongamentos.php">Exercícios</a></li>
 					<li><a href="../pagesMenu/favoritos.php">Favoritos</a></li>
 					<li><a href="../pagesMenu/ajuda.php">Ajuda</a></li>
 					<li><a href="../pagesMenu/sair.php">Sair</a></li>

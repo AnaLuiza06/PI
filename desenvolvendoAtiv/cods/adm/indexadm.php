@@ -92,7 +92,7 @@
 						}
 
 					?>
-					<h5>Alongamentos</h5>
+					<h5>Exercícios</h5>
 				</div>
 				<div class="numero-desafios">
 					<?php
