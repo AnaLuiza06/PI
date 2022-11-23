@@ -35,7 +35,7 @@
 			<h1>Acesse seus Dados</h1>
 			<h4>Tenha acesso aos dados cadastrados, podendo fazer alterações quando quiser.</h4>
 		</div>
-		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
+		<img src="https://img.freepik.com/foto-gratis/pareja-entrenando-juntos-casa_23-2148730122.jpg?w=740&t=st=1669163199~exp=1669163799~hmac=22ded676c315277ace6477829ae5b9b2061836e0a3fe4f8694c87889c051e841">
 		<div class="background-user"></div>
 	</section>
 

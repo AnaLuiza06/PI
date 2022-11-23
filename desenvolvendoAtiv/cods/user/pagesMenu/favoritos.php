@@ -28,7 +28,7 @@
 			<h1>Meus Favoritos</h1>
 			<h4>Tenha acesso aos seu exercícios favoritos, podendo refazelos quantas vezes quiser.</h4>
 		</div>
-		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
+		<img src="https://img.freepik.com/foto-gratis/adulto-jubilado-tirando-banda-resistencia-sentado-alfombra-yoga-casa-persona-madura-haciendo-ejercicio-estiramiento-cinturon-elastico-flexible-entrenar-musculos-brazos-formacion-pensionistas_482257-36494.jpg?w=900&t=st=1669162980~exp=1669163580~hmac=9cadb73334490e42a36442d50cda74378964a3989e1c0dc49bc3544a351d54d2">
 		<div class="background-user"></div>
 	</section>
 

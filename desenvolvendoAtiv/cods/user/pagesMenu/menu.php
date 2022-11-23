@@ -55,7 +55,7 @@
 				<ul>
 					<li><a href="../indexuser.php">Minha Área</a></li>
 					<li><a href="./mais-desafios.php">Desafios</a></li>
-					<li><a href="./mais-alongamentos.php">Alongamentos</a></li>
+					<li><a href="./mais-alongamentos.php">Exercícios</a></li>
 					<li><a href="./favoritos.php">Favoritos</a></li>
 					<li><a href="./ajuda.php">Ajuda</a></li>
 					<li><a href="./sair.php">Sair</a></li>

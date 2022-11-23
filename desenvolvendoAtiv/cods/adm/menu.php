@@ -54,7 +54,7 @@
 					<li><a href="./indexadm.php">Minha Área</a></li>
 					<li><a href="./pagesMenu/administradores.php">Adiministradores</a></li>
 					<li><a href="./pagesMenu/desafios.php">Desafios</a></li>
-					<li><a href="./pagesMenu/alongamentos.php">Alongamentos</a></li>
+					<li><a href="./pagesMenu/alongamentos.php">Exercícios</a></li>
 					<li><a href="./pagesMenu/ajuda.php">Ajuda</a></li>
 					<li><a href="./pagesMenu/sair.php">Sair</a></li>
 				</ul>

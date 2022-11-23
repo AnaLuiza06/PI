@@ -25,7 +25,7 @@
 			<h1>Precisa de Ajuda?</h1>
 			<h4>Veja as respostas para as principais dúvidas sobre o sistema da ATIV, podendo também manda a sua, caso não esteja listada abaixo.</h4>
 		</div>
-		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
+		<img src="https://img.freepik.com/foto-gratis/pareja-juguetona-haciendo-ejercicio-yoga-casa_23-2148097409.jpg?w=900&t=st=1669163237~exp=1669163837~hmac=8c326ec810a029ea745ac5367040cd607022c8774a7230edc6350052950ed060">
 		<div class="background-user"></div>
 	</section>
 

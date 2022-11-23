@@ -29,7 +29,7 @@
 			<h1>Desafios</h1>
 			<h4>Comece um desafio e crie o hábito de se exercitar todos os dias.</h4>
 		</div>
-		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
+		<img src="https://img.freepik.com/foto-gratis/alegre-pareja-senior-entrenando-juntos-sentados-estera-yoga-anciano-estilo-vida-saludable-activo-ejercicio-entrenamiento-casa-entrenamiento-fitness-ancianos_482257-3367.jpg?w=900&t=st=1669163124~exp=1669163724~hmac=42f68643b2cc29a6a4557f5547ceb3d2851027af747c002367f5d9d2e40247b4">
 		<div class="background-user"></div>
 	</section>
 

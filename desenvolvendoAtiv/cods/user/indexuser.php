@@ -24,7 +24,7 @@
 			<h1>Olá, <?php echo $exibe[0]['nome_usuario'];?>!</h1>
 			<h4>Escolha um exercício ou continue o desafio escolhido. Vamos nos exercitar!!</h4>
 		</div>
-		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
+		<img src="https://img.freepik.com/foto-gratis/mantener-estilo-vida-saludable-importar-edad_637285-7872.jpg?w=740&t=st=1669162777~exp=1669163377~hmac=d19d2a5a2a38aaf8289c2bd0a2d4a2f5d08bed2885c614f5d513c662bd33f5ee">
 		<div class="background-user"></div>
 	</section>
 

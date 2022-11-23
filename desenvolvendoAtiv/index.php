@@ -75,7 +75,7 @@
 				<div class="btn-logon"><button><a href="./cods/inicio/cadastro.php">Cadastre-se aquí!</a></button></div>
 			</div>
 			<div class="img-inicio">
-				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-oP3ZpsbFzPuIiQWqBbTw6JHExhz1PHPYg&usqp=CAU">
+				<img src="https://img.freepik.com/foto-gratis/tiro-completo-personas-mayores-que-estiran_23-2148247182.jpg?w=740&t=st=1669163077~exp=1669163677~hmac=28cee00e2a7aa8645b6b6739e3ecb9c06876c1d8181f116a813e5b25e60c1277">
 				<div class="sombra-inicio"></div>
 			</div>
 			<!-- <img src="../../imgs/triangulo-inicio.png" class="triangulo-inicio"> -->
@@ -122,7 +122,7 @@
 
 		<section id="proposito">
 			<div class="img-proposito">
-				<img src="../../imgs/img-beneficios.png">
+				<img src="https://img.freepik.com/fotos-premium/ajuste-feliz-pareja-senior-haciendo-ejercicio-parque_484921-13303.jpg?w=360">
 				<div class="sombra-proposito"></div>
 			</div>
 			<div class="txt-proposito">
