@@ -32,7 +32,7 @@
 			<h1>Meus Dados</h1>
 			<h4>Tenha acesso aos dados cadastrados, podendo fazer alterações quando quiser.</h4>
 		</div>
-		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
+		<img src="https://img.freepik.com/foto-gratis/gente-plano-completo-trabajando-juntos_23-2148917030.jpg?w=1380&t=st=1669224210~exp=1669224810~hmac=1548006859242950d4e08b39eb945e5b0b30901cfb488e3f179fab20d747ac7f">
 		<div class="background-user"></div>
 	</section>
 

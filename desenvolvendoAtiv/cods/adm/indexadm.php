@@ -41,7 +41,7 @@
 			<h1>Olá, <?php echo $exibe[0]['nome_adm'];?>!</h1>
 			<h4>Tenha acesso à todos os dados da ATIV!</h4>
 		</div>
-		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
+		<img src="https://img.freepik.com/foto-gratis/mujer-senior-tiro-completo-estar-activo_23-2148917035.jpg?w=1380&t=st=1669224127~exp=1669224727~hmac=03d5875eb4e0c159a3e18c22a486496f9717da4879f5408b59061cf21f90105e">
 		<div class="background-user"></div>
 	</section>
 
