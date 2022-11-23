@@ -29,10 +29,10 @@
 	<section class="imguser">
 		<div class="txt-imguser">
 			<h1>Ajuda</h1>
-			<h4>O hábito de se alongar todos os dias trás muitos beneficios ao corpo. O como você irá se alongar hoje?</h4>
+			<h4>Responda as dúvidas dos usuário além de inserir novos cards de ajuda.</h4>
 			<button><a href="../formsAdd/addajuda.php?adcionado=entrada">Adicionar Ajuda</a></button>
 		</div>
-		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
+		<img src="https://img.freepik.com/foto-gratis/mujer-senior-tiro-completo-estar-activo_23-2148917035.jpg?w=1380&t=st=1669224595~exp=1669225195~hmac=0ee26529c6fe1f712973e1510facded27644fd6e46916925254c5cd2b14b21ea">
 		<div class="background-user"></div>
 	</section>
 

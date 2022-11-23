@@ -26,12 +26,12 @@
 	<section class="imguser">
 		<div class="txt-imguser">
 			<h1>Exercícios</h1>
-			<h4>O hábito de se exercitar todos os dias trás muitos beneficios ao corpo. O como você irá se exercitar hoje?</h4>
+			<h4>Tenha acesso à tosos os exercícios inseridos, podendo modificá-los e excluí-los.</h4>
 
 			<button><a href="../formsAdd/addexercicio.php?adcionado=entrada">Adicionar Alongamento</a></button>
 		</div>
 		</div>
-		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
+		<img src="https://img.freepik.com/foto-gratis/banda-estiramiento-mujer-senior-tiro-medio_23-2148917038.jpg?w=1380&t=st=1669224498~exp=1669225098~hmac=1c245e7b02cde43764810e041b2bd9ac37f37c1642329dd98a4967c88ac12352">
 		<div class="background-user"></div>
 	</section>
 

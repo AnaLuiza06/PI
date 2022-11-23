@@ -30,10 +30,10 @@
 	<section class="imguser">
 		<div class="txt-imguser">
 			<h1>Desafios</h1>
-			<h4>O hábito de se alongar todos os dias trás muitos beneficios ao corpo. O como você irá se alongar hoje?</h4>
+			<h4>Tenha acesso à todos os desafios inseridos, podendo modificá-los e excluí-los.</h4>
 			<button><a href="../formsAdd/adddesafio.php?adcionado=entrada">Adicionar Desafio</a></button>
 		</div>
-		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
+		<img src="https://img.freepik.com/foto-gratis/hombre-senior-tiro-completo-trabajando-banda_23-2148916983.jpg?w=1060&t=st=1669224550~exp=1669225150~hmac=2ccd6ab6cfd6dd2fdc8833d92175806e56fa91ef38422cda125889c9638fa868">
 		<div class="background-user"></div>
 	</section>
 

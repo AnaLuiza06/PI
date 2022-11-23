@@ -30,7 +30,7 @@
 			<h1>Exercícios</h1>
 			<h4>O hábito de se exercitar todos os dias trás muitos beneficios ao corpo. O como você irá se exercitar hoje?</h4>
 		</div>
-		<img src="https://img.freepik.com/foto-gratis/tiro-completo-personas-mayores-que-estiran_23-2148247182.jpg?w=740&t=st=1669163077~exp=1669163677~hmac=28cee00e2a7aa8645b6b6739e3ecb9c06876c1d8181f116a813e5b25e60c1277">
+		<img src="https://img.freepik.com/foto-gratis/personas-mayores-tiro-completo-colchonetas-yoga_23-2148916972.jpg?w=996&t=st=1669225323~exp=1669225923~hmac=cbdee92a6c35bbd7abcbbcc10fb7eddfa864d1b05403757a058ccce08cdcb7d4">
 		<div class="background-user"></div>
 	</section>
 

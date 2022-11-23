@@ -45,7 +45,7 @@
 		<div class="background-user"></div>
 	</section>
 
-	<section class="dados-plataforma">
+	<section class="dados-plataforma minha-area">
 		<div class="card-dados">
 			
 		</div>

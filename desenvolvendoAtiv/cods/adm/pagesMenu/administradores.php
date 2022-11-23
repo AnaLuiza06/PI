@@ -29,7 +29,7 @@
 			<h4>O hábito de se alongar todos os dias trás muitos beneficios ao corpo. O como você irá se alongar hoje?</h4>
 			<button><a href="../formsAdd/addadministrador.php?adcionado=entrada">Adicionar Alongamento</a></button>
 		</div>
-		<img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-fazendo-exercicios-em-casa_23-2148730109.jpg">
+		<img src="https://img.freepik.com/foto-gratis/personas-mayores-sonrientes-tiro-medio_23-2148917033.jpg?w=1060&t=st=1669224666~exp=1669225266~hmac=0a46cdfb9c83f9f0920375dee3cb4699179e6fea0eaa5a2a82a99ec1ae85f749">
 		<div class="background-user"></div>
 	</section>
 

@@ -29,7 +29,7 @@
 			<h1>Desafios</h1>
 			<h4>Comece um desafio e crie o hábito de se exercitar todos os dias.</h4>
 		</div>
-		<img src="https://img.freepik.com/foto-gratis/alegre-pareja-senior-entrenando-juntos-sentados-estera-yoga-anciano-estilo-vida-saludable-activo-ejercicio-entrenamiento-casa-entrenamiento-fitness-ancianos_482257-3367.jpg?w=900&t=st=1669163124~exp=1669163724~hmac=42f68643b2cc29a6a4557f5547ceb3d2851027af747c002367f5d9d2e40247b4">
+		<img src="https://img.freepik.com/foto-gratis/personas-mayores-estirando-juntos_23-2148917041.jpg?w=1380&t=st=1669224824~exp=1669225424~hmac=131f447a12bcd531dd9931f408a8c2fbc5878789d32df3127989f37386a7b973">
 		<div class="background-user"></div>
 	</section>
 
