@@ -211,7 +211,7 @@
 							</svg>
 						</div>
 					</div>
-					<img src="../../imgs/img-inicio.png">
+					<img src="<?php echo $exibe_alongamentos[$i]['imagem_exercicio']; ?>">
 				</div>
 	 		<?php
 	 			}
@@ -249,7 +249,7 @@
 							</svg>
 						</div>
 					</div>
-					<img src="../../imgs/img-inicio.png">
+					<img src="<?php echo $exibe_alongamentos[$i]['imagem_exercicio']; ?>">
 				</div>
 	 		<?php
 	 			}

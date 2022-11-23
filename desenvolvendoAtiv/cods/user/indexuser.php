@@ -175,7 +175,7 @@
 							</svg>
 						</div>
 					</div>
-					<img src="../../imgs/img-inicio.png">
+					<img src="<?php echo $exibe_ultimos[$posicao]['imagem_exercicio']; ?>">
 				</div>
 				</a>
 			<?php
