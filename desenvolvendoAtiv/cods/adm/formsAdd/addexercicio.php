@@ -25,12 +25,12 @@
 
         			if($msg == 'true'){
         		?>
-        			<div class="msg-add"><p>Alongamento Cadastrado</p></div>
+        			<div class="msg-add"><p>Exercício Cadastrado</p></div>
         		<?php
         			}
         			else if($msg == 'false'){
         		?>
-        			<div class="msg-add"><p>Alongamento Já Exixtente</p></div>
+        			<div class="msg-add"><p>Exercício Já Exixtente</p></div>
         		<?php
         			}
         		?>
