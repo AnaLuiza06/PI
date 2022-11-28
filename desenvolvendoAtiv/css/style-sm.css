@@ -39,7 +39,7 @@
     height: 180px;
     display: none;
   }
-  .card-beneficios.sm{
+  .card-beneficios.sm {
     display: block;
   }
   .card-beneficios p {
@@ -51,11 +51,11 @@
     width: 430px;
     margin: auto;
   }
-  .cards-exercicios-md{
-    display: none; 
+  .cards-exercicios-md {
+    display: none;
   }
-  .cards-exercicios-sm{
-    display: block; 
+  .cards-exercicios-sm {
+    display: block;
   }
   .cards-exercicios {
     display: none;
@@ -113,12 +113,12 @@
 
   /* Perguntas */
   #duvidas {
-    width: 450px;
+    width: 100%;
     margin-top: 70px;
   }
   #duvidas h1 {
     margin-top: 0px;
-    text-align: center; 
+    text-align: center;
   }
   #duvidas span {
     color: #5bc2a3;
@@ -213,7 +213,7 @@
   }
   .cards-exercicios-sm {
     display: flex;
-    justify-content:  center; 
+    justify-content: center;
   }
   .card-exercicios {
     width: 342px;
@@ -236,7 +236,7 @@
   }
   .carrosel-depoimentos-sm {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
   }
   .card-depoimentos {
     width: 382px;

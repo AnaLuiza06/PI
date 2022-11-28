@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ATIV</title>
 
 	<!-- style bootstrap -->
@@ -11,17 +17,18 @@
 	<link rel="stylesheet" type="text/css" href="../../../css/style-adm.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/style-md.css">
 </head>
+
 <body>
 
 	<?php
-        include ('../../conexao/conexao.php');
-        include ('./menu.php');
-        // include menu
+	include('../../conexao/conexao.php');
+	include('./menu.php');
+	// include menu
 
-        // Acessar Dados
-        $consulta = mysqli_query($cn, "SELECT * from adm");
-        $exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
-    ?>
+	// Acessar Dados
+	$consulta = mysqli_query($cn, "SELECT * from adm");
+	$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
+	?>
 
 	<section class="imguser">
 		<div class="txt-imguser">
@@ -36,27 +43,27 @@
 	<section class="minhaarea-usua">
 		<div class="cards-tabela">
 			<?php
-				for ($i=0; $i < count($exibe); $i++) { 
+			for ($i = 0; $i < count($exibe); $i++) {
 			?>
 
-			<div class="card-tabela">
-				<section>
-					<div class="titulo-card-tabela">
-						<h3><?php echo $exibe[$i]['nome_adm']; ?></h3>
-					</div>
-					<div class="desc-card-tabela">
-						<p><?php echo $exibe[$i]['email_adm']; ?></p>
-					</div>
-				</section>
-				
-			</div>
+				<div class="card-tabela">
+					<section>
+						<div class="titulo-card-tabela">
+							<h3><?php echo $exibe[$i]['nome_adm']; ?></h3>
+						</div>
+						<div class="desc-card-tabela">
+							<p><?php echo $exibe[$i]['email_adm']; ?></p>
+						</div>
+					</section>
+
+				</div>
 			<?php
-				};
+			};
 			?>
 
 		</div>
 		<?php
-			include("./footer.php");
+		include("./footer.php");
 		?>
 	</section>
 
@@ -66,4 +73,5 @@
 
 	<script src="../../../js/js-user.js"></script>
 </body>
+
 </html>

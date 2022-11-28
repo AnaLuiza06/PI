@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ATIV</title>
 
 	<!-- style bootstrap -->
@@ -9,17 +15,18 @@
 	<link rel="stylesheet" type="text/css" href="../../css/style-inicio.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style-usua.css">
 </head>
+
 <body>
 
 	<?php
-        include ('../conexao/conexao.php');
-        include ('./menu.php');
-        // include menu
+	include('../conexao/conexao.php');
+	include('./menu.php');
+	// include menu
 
-        // Acessar Dados
-        $consulta = mysqli_query($cn, "select * from exercicio");
-        $exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC)
-    ?>
+	// Acessar Dados
+	$consulta = mysqli_query($cn, "select * from exercicio");
+	$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC)
+	?>
 
 	<section class="imguser">
 		<div class="txt-imguser">
@@ -33,33 +40,33 @@
 	<section class="minhaarea-usua">
 		<div class="cards-exercicios">
 			<?php
-				for ($i=0; $i < count($exibe); $i++) { 
+			for ($i = 0; $i < count($exibe); $i++) {
 			?>
-				<a href="./videoexercicio.php?cd=<?php echo $exibe[$i]['id_exercicio'];?>">
-				<div class="card-exercicios">
-					<div class="desc-exercicios">
-						<div class="topo-desc-exercicios">
-							<h2><?php echo $exibe[$i]['nome_exercicio']; ?></h2>
-						</div>
-						<div class="descricao-exercicio">
-							<p><?php echo $exibe[$i]['desc_exercicio']; ?></p>
-							<p><?php echo $exibe[$i]['duracao_exercicio']; ?></p>
-							<p><?php echo $exibe[$i]['equipamentos_exercicio']; ?></p>
-						</div>
-						<div class="favoritar">
-							<div class="tipo-maisteinos">
-								<p>Articulações</p>
+				<a href="./videoexercicio.php?cd=<?php echo $exibe[$i]['id_exercicio']; ?>">
+					<div class="card-exercicios">
+						<div class="desc-exercicios">
+							<div class="topo-desc-exercicios">
+								<h2><?php echo $exibe[$i]['nome_exercicio']; ?></h2>
 							</div>
-							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-	  							<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-							</svg>
+							<div class="descricao-exercicio">
+								<p><?php echo $exibe[$i]['desc_exercicio']; ?></p>
+								<p><?php echo $exibe[$i]['duracao_exercicio']; ?></p>
+								<p><?php echo $exibe[$i]['equipamentos_exercicio']; ?></p>
+							</div>
+							<div class="favoritar">
+								<div class="tipo-maisteinos">
+									<p>Articulações</p>
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+									<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+								</svg>
+							</div>
 						</div>
+						<img src="../../imgs/img-inicio.png">
 					</div>
-					<img src="../../imgs/img-inicio.png">
-				</div>
 				</a>
 			<?php
-				};
+			};
 			?>
 
 		</div>
@@ -72,4 +79,5 @@
 	<script src="../../js/js-user.js"></script>
 
 </body>
+
 </html>

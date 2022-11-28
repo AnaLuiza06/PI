@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ATIV</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -9,10 +15,11 @@
 	<link rel="stylesheet" type="text/css" href="../../css/style-md.css">
 
 </head>
+
 <body>
 
-	<?php 
-		include ('../conexao/conexao.php');
+	<?php
+	include('../conexao/conexao.php');
 	?>
 
 	<div class="container-cadastro">
@@ -44,17 +51,11 @@
 						<div class="container-inputduplo">
 							<div class="inputduplo-cadastro">
 								<label for="labelpeso">Peso</label>
-								<input 
-									type="text" 
-									name="peso" 
-									id="inputpeso" 
-									placeholder="Exemplo: 70.6"
-									onchange="setValueInputPeso(event)"
-								>
+								<input type="text" name="peso" id="inputpeso" placeholder="Exemplo: 70.6" onchange="setValueInputPeso(event)">
 							</div>
 							<div class="inputduplo-cadastro">
 								<label for="labelaltura">Altura</label>
-								<input type="text" name="altura" id="inputaltura"  placeholder="Exemplo: 1.65" onchange="setValueInputAltura(event)">
+								<input type="text" name="altura" id="inputaltura" placeholder="Exemplo: 1.65" onchange="setValueInputAltura(event)">
 							</div>
 						</div>
 					</div>
@@ -82,22 +83,26 @@
 	<script type="text/javascript">
 		const inputPeso = document.querySelector('#inputpeso');
 		const inputAltura = document.querySelector("#inputaltura")
+
 		function formatValue(value = "") {
-		  	const num = value.replace(/\D/g, "")
+			const num = value.replace(/\D/g, "")
 			const numbers = num.replace(/(^\d{2})(\d{1,2})/, "$1.$2")
 			return numbers
 		}
+
 		function setValueInputPeso(event) {
-			const value = String(event.target.value) 
+			const value = String(event.target.value)
 			const numbers = formatValue(value);
 			inputPeso.value = numbers
 		}
+
 		function setValueInputAltura(event) {
-			const value = String(event.target.value) 
-		  	const num = value.replace(/\D/g, "")
+			const value = String(event.target.value)
+			const num = value.replace(/\D/g, "")
 			const numbers = num.replace(/(^\d{1})(\d{1,2})/, "$1.$2")
 			inputAltura.value = numbers
 		}
 	</script>
 </body>
+
 </html>

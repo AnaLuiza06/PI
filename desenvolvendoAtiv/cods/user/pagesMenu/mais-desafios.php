@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ATIV</title>
 
 	<!-- style bootstrap -->
@@ -11,18 +17,19 @@
 	<link rel="stylesheet" type="text/css" href="../../../css/style-usua-pagesmenu.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/style-md.css">
 </head>
+
 <body>
 
 	<?php
-        include ('../../conexao/conexao.php');
-        include ('./menu.php');
-        // include menu
-		$id_usuario = $_SESSION['ID'];
-        // Acessar Dados
-        $consulta = mysqli_query($cn, "SELECT * from desafios");
-        $exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
-		
-    ?>
+	include('../../conexao/conexao.php');
+	include('./menu.php');
+	// include menu
+	$id_usuario = $_SESSION['ID'];
+	// Acessar Dados
+	$consulta = mysqli_query($cn, "SELECT * from desafios");
+	$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
+
+	?>
 
 	<section class="imguser">
 		<div class="txt-imguser">
@@ -36,7 +43,7 @@
 	<section class="minhaarea-usua">
 		<div class="cards-exercicios">
 			<?php
-				for ($i=0; $i < count($exibe); $i++) { 
+			for ($i = 0; $i < count($exibe); $i++) {
 			?>
 				<div class="card-exercicios">
 					<div class="desc-exercicios">
@@ -47,18 +54,18 @@
 							<p><?php echo $exibe[$i]['desc_desafios']; ?></p>
 							<p>Duração: <?php echo $exibe[$i]['duracao_desafios']; ?> dias</p>
 							<div>
-								<button><a href="../desafiododia.php?cd=<?php echo $exibe[$i]['id_desafios'];?>">Começar</a></button>
+								<button><a href="../desafiododia.php?cd=<?php echo $exibe[$i]['id_desafios']; ?>">Começar</a></button>
 							</div>
 						</div>
 					</div>
 					<img src="<?php echo $exibe[$i]['imagem_desafio']; ?>">
 				</div>
 			<?php
-				};
+			};
 			?>
 
 			<?php
-				include ("./footer.php");
+			include("./footer.php");
 			?>
 	</section>
 
@@ -69,4 +76,5 @@
 	<script src="../../../js/js-user.js"></script>
 	<script src="../../../js/js-menu.js"></script>
 </body>
+
 </html>

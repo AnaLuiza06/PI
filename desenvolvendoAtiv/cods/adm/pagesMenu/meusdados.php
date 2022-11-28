@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<title>ATIV</title>
 
@@ -12,20 +18,21 @@
 	<link rel="stylesheet" type="text/css" href="../../../css/style-adm.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/style-md.css">
 </head>
+
 <body>
 
 	<?php
-        include ('../../conexao/conexao.php');
-        include ('./menu.php');
-        // include menu
+	include('../../conexao/conexao.php');
+	include('./menu.php');
+	// include menu
 
-        // Acessar Dados
-        $id = $_SESSION['ID'];
+	// Acessar Dados
+	$id = $_SESSION['ID'];
 
-        $consulta = mysqli_query($cn, "SELECT * FROM adm WHERE id_adm = '$id'");
-        $exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
-        // print_r($exibe);
-    ?>
+	$consulta = mysqli_query($cn, "SELECT * FROM adm WHERE id_adm = '$id'");
+	$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
+	// print_r($exibe);
+	?>
 
 	<section class="imguser">
 		<div class="txt-imguser">
@@ -37,40 +44,40 @@
 	</section>
 
 	<section class="minhaarea-usua">
-		
+
 
 		<div class="form-dadospessoais">
 			<h2>Dados Pessoais</h2>
-			<form method="post" action="../../conexao/updates/updados-adm.php?cd=<?php echo $id;?>">
+			<form method="post" action="../../conexao/updates/updados-adm.php?cd=<?php echo $id; ?>">
 				<div class="form-row">
 					<div>
 						<label>Nome</label>
-						<input type="text" name="nome" value="<?php echo $exibe[0]['nome_adm'];?>">
+						<input type="text" name="nome" value="<?php echo $exibe[0]['nome_adm']; ?>">
 					</div>
 					<div>
 						<label>Email</label>
-						<input type="email" name="email" value="<?php echo $exibe[0]['email_adm'];?>">
+						<input type="email" name="email" value="<?php echo $exibe[0]['email_adm']; ?>">
 					</div>
 				</div>
 				<div class="form-row">
 					<div>
 						<label>Data de Nascimento</label>
-						<input type="date" name="nascimento" value="<?php echo $exibe[0]['nascimento_adm'];?>">
+						<input type="date" name="nascimento" value="<?php echo $exibe[0]['nascimento_adm']; ?>">
 					</div>
 					<div>
 						<label>Senha</label>
-						<input type="password" name="senha" value="<?php echo $exibe[0]['senha_adm'];?>">
+						<input type="password" name="senha" value="<?php echo $exibe[0]['senha_adm']; ?>">
 					</div>
 				</div>
 				<div class="btn-alterar">
 					<button type="submit">Alterar</button>
-					<button><a href="../../conexao/delete/deldados.php?cd=<?php echo $id;?>">Deletar</a></button>
+					<button><a href="../../conexao/delete/deldados.php?cd=<?php echo $id; ?>">Deletar</a></button>
 				</div>
 			</form>
 		</div>
 
 		<?php
-			include("./footer.php");
+		include("./footer.php");
 		?>
 	</section>
 
@@ -80,4 +87,5 @@
 	<script src="../../js/js-user.js"></script>
 
 </body>
+
 </html>

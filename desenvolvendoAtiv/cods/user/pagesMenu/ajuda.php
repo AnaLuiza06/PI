@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<title>ATIV</title>
 
@@ -12,12 +18,13 @@
 	<link rel="stylesheet" type="text/css" href="../../../css/style-usua-pagesmenu.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/style-md.css">
 </head>
+
 <body>
 
 	<?php
-			include ('../../conexao/conexao.php');
-			include ('./menu.php');
-			// include menu
+	include('../../conexao/conexao.php');
+	include('./menu.php');
+	// include menu
 	?>
 
 	<section class="imguser">
@@ -31,122 +38,122 @@
 
 	<section class="minhaarea-usua">
 		<?php
-			// Acessar Dados
-			$consulta_ajuda = mysqli_query($cn, "SELECT * from ajuda");
-			$exibe_ajuda = mysqli_fetch_all($consulta_ajuda, MYSQLI_ASSOC);
-			
-			for($i=0; $i < count($exibe_ajuda); $i++){
+		// Acessar Dados
+		$consulta_ajuda = mysqli_query($cn, "SELECT * from ajuda");
+		$exibe_ajuda = mysqli_fetch_all($consulta_ajuda, MYSQLI_ASSOC);
+
+		for ($i = 0; $i < count($exibe_ajuda); $i++) {
 		?>
-		<div class="card-ajuda">
-			<div class="titulo-ajuda">
-				<h2><?php echo $exibe_ajuda[$i]['perguta_ajuda'];?></h2>
-				<button onclick="mostrarmais()" class="button-lg">
-					<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-					  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
-					</svg>
-				</button>
-				<button onclick="mostrarmaisMD()" class="button-md">
-					<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-					  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
-					</svg>
-				</button>
-			</div>
-			
-			<div class="desc-ajuda">
-				<div class="mostrar-div">
-					<p><?php echo $exibe_ajuda[$i]['p1_ajuda'];?></p>
-					<img src="<?php echo $exibe_ajuda[$i]['img1_ajuda'];?>"> 
+			<div class="card-ajuda">
+				<div class="titulo-ajuda">
+					<h2><?php echo $exibe_ajuda[$i]['perguta_ajuda']; ?></h2>
+					<button onclick="mostrarmais()" class="button-lg">
+						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+						</svg>
+					</button>
+					<button onclick="mostrarmaisMD()" class="button-md">
+						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+						</svg>
+					</button>
 				</div>
-				<?php
-					if($exibe_ajuda[$i]['p2_ajuda'] == ""){
+
+				<div class="desc-ajuda">
+					<div class="mostrar-div">
+						<p><?php echo $exibe_ajuda[$i]['p1_ajuda']; ?></p>
+						<img src="<?php echo $exibe_ajuda[$i]['img1_ajuda']; ?>">
+					</div>
+					<?php
+					if ($exibe_ajuda[$i]['p2_ajuda'] == "") {
 						echo "";
-					} else{
+					} else {
 						echo "	<div class='mostrar-div'>
-									<img src='".$exibe_ajuda[$i]['img2_ajuda']."'> 
-									<p>".$exibe_ajuda[$i]['p2_ajuda']."</p>
+									<img src='" . $exibe_ajuda[$i]['img2_ajuda'] . "'> 
+									<p>" . $exibe_ajuda[$i]['p2_ajuda'] . "</p>
 								</div>";
 					}
 
-					if($exibe_ajuda[$i]['p3_ajuda'] == ""){
+					if ($exibe_ajuda[$i]['p3_ajuda'] == "") {
 						echo "";
-					} else{
+					} else {
 						echo "	<div class='mostrar-div'>
-									<p>".$exibe_ajuda[$i]['p3_ajuda']."</p>
-									<img src='".$exibe_ajuda[$i]['img3_ajuda']."'> 
+									<p>" . $exibe_ajuda[$i]['p3_ajuda'] . "</p>
+									<img src='" . $exibe_ajuda[$i]['img3_ajuda'] . "'> 
 								</div>";
 					}
 
-					if($exibe_ajuda[$i]['p4_ajuda'] == ""){
+					if ($exibe_ajuda[$i]['p4_ajuda'] == "") {
 						echo "";
-					} else{
+					} else {
 						echo "	<div class='mostrar-div'>
-									<img src='".$exibe_ajuda[$i]['img4_ajuda']."'> 
-									<p>".$exibe_ajuda[$i]['p4_ajuda']."</p>
+									<img src='" . $exibe_ajuda[$i]['img4_ajuda'] . "'> 
+									<p>" . $exibe_ajuda[$i]['p4_ajuda'] . "</p>
 								</div>";
 					}
 
-					if($exibe_ajuda[$i]['p5_ajuda'] == ""){
+					if ($exibe_ajuda[$i]['p5_ajuda'] == "") {
 						echo "";
-					} else{
+					} else {
 						echo "	<div class='mostrar-div'>
-									<p>".$exibe_ajuda[$i]['p5_ajuda']."</p>
-									<img src='".$exibe_ajuda[$i]['img5_ajuda']."'> 
+									<p>" . $exibe_ajuda[$i]['p5_ajuda'] . "</p>
+									<img src='" . $exibe_ajuda[$i]['img5_ajuda'] . "'> 
 								</div>";
 					}
-				?>
-			</div>
-
-			<div class="desc-ajuda-md">
-				<div class="mostrar-div">
-					<p><?php echo $exibe_ajuda[$i]['p1_ajuda'];?></p>
-					<img src="<?php echo $exibe_ajuda[$i]['img1_ajuda'];?>"> 
+					?>
 				</div>
-				<?php
-					if($exibe_ajuda[$i]['p2_ajuda'] == ""){
+
+				<div class="desc-ajuda-md">
+					<div class="mostrar-div">
+						<p><?php echo $exibe_ajuda[$i]['p1_ajuda']; ?></p>
+						<img src="<?php echo $exibe_ajuda[$i]['img1_ajuda']; ?>">
+					</div>
+					<?php
+					if ($exibe_ajuda[$i]['p2_ajuda'] == "") {
 						echo "";
-					} else{
+					} else {
 						echo "	<div class='mostrar-div'>
-									<p>".$exibe_ajuda[$i]['p2_ajuda']."</p>
-									<img src='".$exibe_ajuda[$i]['img2_ajuda']."'> 
+									<p>" . $exibe_ajuda[$i]['p2_ajuda'] . "</p>
+									<img src='" . $exibe_ajuda[$i]['img2_ajuda'] . "'> 
 								</div>";
 					}
 
-					if($exibe_ajuda[$i]['p3_ajuda'] == ""){
+					if ($exibe_ajuda[$i]['p3_ajuda'] == "") {
 						echo "";
-					} else{
+					} else {
 						echo "	<div class='mostrar-div'>
-									<p>".$exibe_ajuda[$i]['p3_ajuda']."</p>
-									<img src='".$exibe_ajuda[$i]['img3_ajuda']."'> 
+									<p>" . $exibe_ajuda[$i]['p3_ajuda'] . "</p>
+									<img src='" . $exibe_ajuda[$i]['img3_ajuda'] . "'> 
 								</div>";
 					}
 
-					if($exibe_ajuda[$i]['p4_ajuda'] == ""){
+					if ($exibe_ajuda[$i]['p4_ajuda'] == "") {
 						echo "";
-					} else{
+					} else {
 						echo "	<div class='mostrar-div'>
-									<p>".$exibe_ajuda[$i]['p4_ajuda']."</p>
-									<img src='".$exibe_ajuda[$i]['img4_ajuda']."'> 
+									<p>" . $exibe_ajuda[$i]['p4_ajuda'] . "</p>
+									<img src='" . $exibe_ajuda[$i]['img4_ajuda'] . "'> 
 								</div>";
 					}
 
-					if($exibe_ajuda[$i]['p5_ajuda'] == ""){
+					if ($exibe_ajuda[$i]['p5_ajuda'] == "") {
 						echo "";
-					} else{
+					} else {
 						echo "	<div class='mostrar-div'>
-									<p>".$exibe_ajuda[$i]['p5_ajuda']."</p>
-									<img src='".$exibe_ajuda[$i]['img5_ajuda']."'> 
+									<p>" . $exibe_ajuda[$i]['p5_ajuda'] . "</p>
+									<img src='" . $exibe_ajuda[$i]['img5_ajuda'] . "'> 
 								</div>";
 					}
-				?>
+					?>
+				</div>
+
+				<div class="btn-mais-ajuda">
+
+				</div>
 			</div>
-
-			<div class="btn-mais-ajuda">
-				
-			</div>
-		</div>
 
 		<?php
-			}
+		}
 
 		?>
 
@@ -155,7 +162,7 @@
 				<h2>Caso sua Dúvida não esteja listada acima, nos envie para que possamos ajudar!</h2>
 			</div>
 			<div>
-				<form method="post" action="../../conexao/inserts/iajuda-user.php?cd=<?php echo $_SESSION['ID'];?>">
+				<form method="post" action="../../conexao/inserts/iajuda-user.php?cd=<?php echo $_SESSION['ID']; ?>">
 					<textarea type="text" rows="6" cols="50" name="mensagem" placeholder="Digite sua mensagem" maxlength="100"></textarea>
 					<div>
 						<button type="submit">Enviar</button>
@@ -165,7 +172,7 @@
 		</div>
 
 		<?php
-			include ("./footer.php");
+		include("./footer.php");
 		?>
 	</section>
 
@@ -174,8 +181,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script src="../../../js/js-menu.js"></script>
 	<script>
-
-		function mostrarmais(){
+		function mostrarmais() {
 			const cardAjuda = document.querySelector(".card-ajuda")
 			cardAjuda.classList.toggle("active")
 
@@ -186,13 +192,13 @@
 			descAjudamd.classList.toggle("active")
 		}
 
-		function mostrarmaisMD(){
+		function mostrarmaisMD() {
 
 			const descAjudamd = document.querySelector(".desc-ajuda-md")
 			descAjudamd.classList.toggle("active")
 		}
-
 	</script>
 
 </body>
+
 </html>

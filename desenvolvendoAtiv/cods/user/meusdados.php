@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<title>ATIV</title>
 
@@ -10,15 +16,16 @@
 	<link rel="stylesheet" type="text/css" href="../../../css/style-inicio.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/style-usua.css">
 </head>
+
 <body>
 
 	<?php
-        include ('../conexao/conexao.php');
-        include ('./menu.php');
-        // include menu
+	include('../conexao/conexao.php');
+	include('./menu.php');
+	// include menu
 
-        // Acessar Dados
-    ?>
+	// Acessar Dados
+	?>
 
 	<section class="imguser">
 		<div class="txt-imguser">
@@ -79,7 +86,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="problemas-cardiovasculares"value="não">
+							<input type="radio" name="problemas-cardiovasculares" value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -93,7 +100,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="fumaante"value="não">
+							<input type="radio" name="fumaante" value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -107,7 +114,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="problemas-ortopedicos"value="não">
+							<input type="radio" name="problemas-ortopedicos" value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -121,7 +128,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="pessoa-ativa"value="não">
+							<input type="radio" name="pessoa-ativa" value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -135,7 +142,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="dor-peito"value="não">
+							<input type="radio" name="dor-peito" value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -149,7 +156,7 @@
 							<label>Sim</label>
 						</div>
 						<div class="input-anamnese">
-							<input type="radio" name="medicamento-continuo"value="não">
+							<input type="radio" name="medicamento-continuo" value="não">
 							<label>Não</label>
 						</div>
 					</div>
@@ -166,4 +173,5 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

@@ -330,9 +330,9 @@
   #alongamentos h1 {
     text-align: center;
   }
-  .cards-exercicios{
-        display: none;
-    }
+  .cards-exercicios {
+    display: none;
+  }
   .cards-exercicios-sm {
     display: none;
   }
@@ -390,7 +390,8 @@
     text-align: center;
   }
   .container-pergunta {
-    width: 620px;
+    width: 100%;
+    max-width: 620px;
     margin: auto;
   }
   .card-resposta {
@@ -635,17 +636,17 @@
   .form-add {
     margin-top: 110px;
   }
-  footer{
+  footer {
     gap: 50px;
   }
-  .links-footer{
+  .links-footer {
     display: none;
   }
 }
 
 @media (max-width: 700px) {
   /* Index */
-  .cards-inicio-md{
+  .cards-inicio-md {
     display: none;
   }
   .card-tabela {
@@ -870,7 +871,7 @@
     overflow: auto;
     margin: auto;
   }
-  footer{
+  footer {
     display: flex;
     flex-direction: column;
     gap: 0px;
